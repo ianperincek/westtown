@@ -1,0 +1,108 @@
+{
+  "title": "Professional Website Management & Maintenance | Westtown Websites",
+  "description": "Keep your website running smoothly with our expert management services. From SEO optimization and <a href='/blog/core-web-vitals'>Core Web Vitals</a> audits to security monitoring and content updates, we ensure your site stays fast, secure, and optimized for growth.",
+  "aboutSection": {
+    "heading": "Impress your customers with our <span class='abMark'>Custom Web Design Services</span>.",
+    "content": "<p>A professional-looking website is key to building trust and credibility with your audience. At Westtown Websites, we create custom designs that elevate your business and leave a strong first impression. Our services focus on:</p> ",
+    "headerImg": "stateStreet-barbership-02.webp"
+  },
+  
+
+"aboutList": "<article class='about-item'><header class='about-title'><strong>Making a Strong First Impression:</strong></header><p class='about-description'>Your website will immediately communicate professionalism and quality.</p></article><article class='about-item'><header class='about-title'><strong>Building Customer Confidence:</strong></header><p class='about-description'>A sleek, high-performing site shows your customers you’re serious about your business.</p></article><article class='about-item'><header class='about-title'><strong>Enhancing Your Brand's Image:</strong></header><p class='about-description'>Our custom web design ensures your business is presented as trustworthy and credible online.</p></article>",
+
+
+
+  "thePitch": "<section><header><h2>Why Choose a Dedicated Web Design Agency?</h2></header><p>When it comes to building websites, expertise matters. A dedicated web design agency doesn’t just build websites; we craft digital experiences optimized for performance, accessibility, and results. Here’s how we stand apart:</p><section><header><h3>Web Design Agency vs. Traditional Agency</h3></header><article><header><h4>Why We Build Better Websites</h4></header><p>We live and breathe web design. Unlike traditional agencies, websites aren’t an afterthought—they’re our sole focus. Every project we take on is powered by deep technical expertise and industry best practices.</p></article><article><header><h4>Traditional Agencies vs. Digital Specialists</h4></header><ul><li><strong>Outdated approaches:</strong> Many rely on old-school marketing techniques that don’t work in a fast-evolving digital landscape.</li><li><strong>Lack of specialization:</strong> They don’t have the dedicated expertise required to craft high-performing, modern websites.</li></ul><p>In contrast, a digital web design agency like ours delivers websites built specifically for the digital era:</p><ul><li><strong>Laser focus:</strong> Our team is 100% dedicated to web design and development, ensuring we’re always on top of the latest trends and technologies.</li><li><strong>Decades of experience:</strong> Each team member has 10x more website-specific experience than the typical employee at a full-service agency.</li></ul></article></section><section><header><h3>What Sets Us Apart</h3></header><article><header><h4>Optimized for Core Web Vitals</h4></header><p>Your website’s speed, interactivity, and visual stability directly impact its success. That’s why we focus on:</p><ul><li><strong>Page load speed:</strong> Ensuring your site is lightning-fast to keep users engaged and improve search engine rankings.</li><li><strong>Smooth interactivity:</strong> Reducing delays and providing a seamless experience for every visitor.</li><li><strong>Visual stability:</strong> Eliminating layout shifts to maintain a polished, frustration-free interface.</li></ul></article><article><header><h4>Accessibility Built In</h4></header><p>A truly great website is one that everyone can use. Accessibility isn’t a nice-to-have—it’s a must-have. Our commitment to accessibility ensures:</p><ul><li><strong>Inclusivity for all users:</strong> From screen readers to keyboard navigation, we design websites that are functional and usable for everyone.</li><li><strong>Compliance with standards:</strong> We adhere to WCAG (Web Content Accessibility Guidelines) to meet both ethical and legal requirements.</li><li><strong>Enhanced user experience:</strong> Accessible websites are better for everyone, leading to higher satisfaction and retention rates.</li></ul></article><article><header><h4>Driving User Retention and Conversion</h4></header><p>We don’t just build websites; we create platforms that drive results. Every element is carefully crafted to:</p><ul><li><strong>Engage visitors:</strong> From intuitive navigation to compelling content, we ensure your users find what they’re looking for quickly.</li><li><strong>Encourage action:</strong> Clear calls-to-action and conversion-focused design turn visitors into loyal customers.</li><li><strong>Retain users:</strong> Optimized performance and user experience keep people coming back, building trust and boosting long-term growth.</li></ul><p>While traditional agencies may stop at launch, we design with your business goals in mind, ensuring your site performs for years to come.</p></article></section><section><header><h3>The Difference is Clear</h3></header><p>Websites are hard to get right, and traditional agencies often miss the mark. A dedicated web design agency understands the nuances, challenges, and opportunities of the web. We deliver websites that aren’t just beautiful—they’re fast, accessible, and built to convert.</p><p>If you’re ready to take your website to the next level, let’s talk. Together, we’ll build something extraordinary.</p></section></section>",
+
+  "masonryLayout": [
+    {
+      "title": "Custom Design & Branding",
+      "description": "Your website is the face of your business online, and first impressions matter. We collaborate with you to create a design that not only looks great but reflects your brand’s identity. Every design is tailored to your unique needs, ensuring your site feels as professional as your business.",
+      "img": "/assets/images/services/s-osteria.webp",
+      "alt": "Osteria Courtney"
+    },
+    {
+      "title": "Hand-Coded Websites for Optimal Performance",
+      "description": "We build websites from scratch—no bloated templates, no shortcuts. Every line of code is carefully crafted to make sure your site is fast, secure, and scalable. Hand-coding allows us to customize your site to perfection, ensuring it grows with your business.",
+      "img": "/assets/images/services/s-3.webp",
+      "alt": "Computer with code"
+    },
+    {
+      "title": "E-commerce Solutions",
+      "description": "Ready to sell online? We design and build e-commerce platforms tailored to your products and business goals. Whether you're launching a new store or upgrading an existing one, we create seamless, secure, and fully optimized shopping experiences. <strong>(Pricing for e-commerce solutions is available upon consultation.)</strong>",
+      "img": "/assets/images/services/s-4.webp",
+      "alt": "Biolage store mockup"
+    },
+    {
+      "title": "SEO & Google Optimization",
+      "description": "A great website isn’t just about design—it’s about being found. All of our websites are built with SEO best practices baked in, ensuring your business ranks higher on Google. We optimize your site for speed, mobile performance, and include features like schema markup to help search engines understand and rank your content.",
+      "img": "/assets/images/services/s-5.webp",
+      "alt": "performance charts"
+    },
+    {
+      "title": "Google Core Web Vitals Compliance",
+      "description": "Your website’s performance directly affects how well it ranks on Google. We design websites that meet Google's  <a href='/blog/core-web-vitals'>Core Web Vitals</a> standards—delivering fast load times, smooth interactivity, and a polished user experience that keeps visitors engaged.",
+       "img": "/assets/images/services/s-6.webp",
+      "alt": "Man at desk"
+    },
+    {
+      "title": "CMS Integration",
+      "description": "Want control over your content? We provide Content Management System (CMS) integration, allowing you to update your site’s content without needing technical expertise. Whether it’s WordPress or a headless CMS, we’ll implement the best solution to fit your business needs.",
+       "img": "/assets/images/services/s-7.webp",
+      "alt": "Wordpress templates"
+    },
+    {
+      "title": "WCAG Accessibility Compliance",
+      "description": "We ensure your website meets WCAG standards, providing accessibility for all users, including those with disabilities. From keyboard navigation to screen reader compatibility, our accessible designs open your site to a wider audience and ensure compliance with ADA regulations.",
+       "img": "/assets/images/services/s-9.webp",
+      "alt": "2 Computers "
+    },
+    {
+      "title": "Email Template Design & Integration",
+      "description": "Boost your email marketing with our custom email templates. We design responsive, branded templates that work seamlessly across all email platforms, increasing your engagement and conversion rates. We'll also help you integrate your emails into your marketing platform for smooth campaigns.",
+      "img": "/assets/images/services/s-8.webp",
+      "alt": "Html email development"
+    }
+  ],
+  "specialOffer": {
+    "subheading": "Special Offer for Small Businesses!",
+    "offerDescription": "We understand that budgets can be tight for small businesses, but that shouldn’t stop you from having a high-performing, professional website. That’s why we offer a 5-page brochure website for just $175 a month, with an 8-month minimum.",
+    "offerTitle": "What’s included:",
+    "offerList": [
+      "Hosting & DNS Management",
+      "On-Page SEO",
+      "24/7 Uptime Monitoring",
+      "Google Analytics Integration",
+      "Google Business Listing & Schema Installation"
+    ],
+    "offerNote": "<strong>Own your content and domain:</strong> You’ll own the domain name and any images or content you provide. We’ll handle the code and hosting, making sure everything runs like clockwork. If you prefer to own the code as well, we offer a $1900 upfront option that provides the same services but gives you full ownership."
+  },
+  "faqItems": [
+    {
+      "question": "How long does it take to build a custom website?",
+      "answer": "A five-page brochure site can be live in as little as two weeks, provided our communication is consistent, and client deliverables are ready."
+    },
+    {
+      "question": "Do you use templates for your websites?",
+      "answer": "We use custom design templates and reusable components that we’ve built. This ensures your website is tailored to your needs while also being efficient and scalable."
+    },
+    {
+      "question": "Can I update my custom website on my own?",
+      "answer": "Yes! We integrate content management systems (CMS) like WordPress, enabling you to update and manage your website without technical expertise."
+    },
+    {
+      "question": "How do you ensure my website is optimized for SEO?",
+      "answer": "We incorporate SEO best practices into every website, from metadata and alt text to schema markup and fast load times, ensuring better visibility on search engines."
+    },
+    {
+      "question": "Will my custom website be mobile-friendly?",
+      "answer": "Absolutely. All of our websites are fully responsive, designed to look and function smoothly on any device, from desktops to smartphones."
+    }
+  ],
+  "cta": {
+    "title": "Ready to Grow Your Online Presence?",
+    "description": "Contact us today to schedule a consultation and start building a custom website that sets your business apart.",
+    "buttonText": "Click here to get in touch",
+    "buttonLink": "/contact"
+  }
+}

@@ -1,0 +1,100 @@
+---
+interface FAQItem {
+  question: string;
+  answer: string;
+}
+
+interface Props {
+  faqs: FAQItem[];
+}
+
+const { faqs } = Astro.props;
+---
+
+<section class="section faqs" aria-labelledby="faqs-title">
+  <h2 id="faqs-title" class="faqs__title">Frequently Asked Questions</h2>
+  <dl class="faqs__list">
+    {
+      faqs.map((faq, index) => (
+        <div class="faqs__item" key={index}>
+          <dt class="faqs__question">
+            <button
+              class="faqs__toggle"
+              aria-expanded="false"
+              aria-controls={`faq-answer-${index}`}
+              data-index={index}
+            >
+              {faq.question}
+              <span class="faqs__icon" aria-hidden="true">
+                +
+              </span>
+            </button>
+          </dt>
+          <dd id={`faq-answer-${index}`} class="faqs__answer" hidden>
+            {faq.answer}
+          </dd>
+        </div>
+      ))
+    }
+  </dl>
+</section>
+
+<style lang="scss">
+  .faqs {
+    &__title {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    &__list {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0;
+    }
+    &__item {
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 1rem;
+    }
+    &__question {
+      margin: 0;
+    }
+    &__toggle {
+      width: 100%;
+      background: none;
+      border: none;
+      text-align: left;
+      font-size: 1.2rem;
+      padding: 0.5rem 0;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__icon {
+      font-size: 1.5rem;
+      transition: transform 0.3s ease;
+    }
+    &__answer {
+      padding: 0.5rem 0 0 0;
+    }
+  }
+</style>
+
+<script client:load>
+  document.addEventListener("DOMContentLoaded", () => {
+    const toggles = document.querySelectorAll(".faqs__toggle");
+    toggles.forEach((toggle) => {
+      toggle.addEventListener("click", () => {
+        const index = toggle.dataset.index;
+        const isExpanded = toggle.getAttribute("aria-expanded") === "true";
+        toggle.setAttribute("aria-expanded", String(!isExpanded));
+        const answer = document.getElementById(`faq-answer-${index}`);
+        answer.hidden = isExpanded;
+
+        // Update the icon
+        const icon = toggle.querySelector(".faqs__icon");
+        icon.textContent = isExpanded ? "+" : "−";
+      });
+    });
+  });
+</script>

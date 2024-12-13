@@ -1,0 +1,604 @@
+/* CODESTITCH STYLES, RESET, HEADER/NAVIGATION AND FOOTER */
+
+/*-- -------------------------- -->
+<---        Core Styles         -->
+<--- -------------------------- -*/
+
+@mixin button-pulsing ( $animation-name, $color )
+
+{
+
+    .bg-#{$animation-name} {
+
+        &::before { 
+            background-color: $color;
+            animation: pulse-#{$animation-name} 2s infinite;
+            border: 3px solid $color;
+        }
+
+        &:hover {
+            background-color: $color;
+
+            ::before {
+                border-color: $color;
+            }
+
+        }
+
+    }
+
+    @keyframes pulse-#{$animation-name} {
+        0% { box-shadow: 0 0 0 0 rgba($color, 0.7); }
+        70% { box-shadow: 0 0 0 12px rgba($color, 0); }
+        100% { box-shadow: 0 0 0 0 rgba($color, 0); }
+    }
+
+}
+
+/* CodeStitch Root and Helpers */
+@media only screen and (min-width: 0em) {
+  // Website colors
+  :root {
+    --primary: #031d1e;
+    --primaryLight: #8ba79b;
+    --secondary: #c74f54;
+    --secondaryLight:     #FF7175;;
+    --secondaryBgLight: #f5f5f5;
+    --headerColor: #2b3552;
+    
+    // --bodyTextColor: #1f1f1f;
+    // --bodyTextColorWhite: #ffffff;
+    // --headingTextColor: #031d1e;
+    // --mutedTextColor: #6c757d;
+
+    // --accent-teal: #4FA3B8;
+    // --accent-orange: #F28B30 ;
+    // --accent-coral: #ca4a3e;
+    // --accent-blue: #91B3C4;
+    // --accent-green: #183f3e;
+
+    //RETRO 
+    // --primary: #01a8aa;
+    // --primaryLight: #fedc3d;
+    // --secondary: #000000;
+    // --secondaryLight: #fea680;
+    // --secondaryBgLight: #faf7e5;
+    // --headerColor: #000000;
+
+
+
+// --primary: #2d3a5c;
+// --primaryLight: #51766f;
+// --secondary: #f05f4c;
+// --secondaryLight: #FF7175;
+// --secondaryBgLight: #f3ffe9;
+// --headerColor: #2d3a5c;
+
+--bodyTextColor: #1f1f1f;
+--bodyTextColorWhite: #e9e6d7;
+
+
+--accent-teal: #4FA3B8; 
+--accent-orange: #F28B30;
+--accent-coral: #db5647;
+--accent-blue: #91B3C4; 
+--accent-green: #183f3e; 
+
+    /* 13px - 16px */
+    --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+    /* 31px - 49px */
+    --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+    --bodyFontSize: 1rem;
+    --largerFontSize: 1.25rem;
+    /* 60px - 100px top and bottom */
+    --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+
+    --global-radius: .5rem;
+
+    --site-max: 81.25rem;
+
+    --breakpoint-tablet: 48rem;
+    --breakpoint-lg-tablet: 64rem;
+  }
+
+  section {
+    position: relative;
+    z-index: 6;
+  }
+  
+  // Text styles - can be replaced using CodeStitch's "Content Flair" Stitches
+  .cs-topper {
+    font-size: var(--topperFontSize);
+    font-weight: 700;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--bodyTextColor);
+    display: block;
+  }
+
+  .cs-title {
+    font-size: var(--headerFontSize);
+    font-weight: 900;
+    line-height: 1.5;
+    margin: 0 auto 1rem; // Simplified calculation
+    color: var(--headerColor);
+    position: relative;
+  }
+
+  .cs-text {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    width: 100%;
+    margin: 0 auto;
+    color: var(--bodyTextColor);
+  }
+
+  // Button - can be replaced using CodeStitch's "Button" Stitches
+  .cs-button {
+    font-size: 1rem; // Simplified calculation
+    font-weight: bold;
+    line-height: 3.125em; // Converted from (50/16em)
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: auto;
+    height: 3.125rem; // Converted from (50/16rem)
+    padding: 0 1.875rem; // Converted from 0 (30/16rem)
+
+    // Transition Properties
+    color: var(--bodyTextColor);
+    background-color: var(--bodyTextColorWhite);
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s;
+    transition-delay: 0.1s;
+    border-radius: .8rem;
+
+    &:hover {
+      color: #fff;
+      
+
+      &:before {
+        width: 100%;
+      }
+    }
+
+    &:before {
+      content: "";
+      border-radius: .8rem;
+      //Transition properties
+      width: 0;
+      height: 100%;
+      background-color: var(--primary);
+      opacity: 1;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: width 0.3s;
+    }
+  }
+}
+
+.cs-button-mini {
+ 
+
+  &:hover {
+    color: #fff;
+    
+
+    &:before {
+      width: 100%;
+    }
+  }
+
+  &:before {
+    content: "";
+    border-radius: .8rem;
+    //Transition properties
+    width: 0;
+    height: 100%;
+    background-color: var(--primary);
+    opacity: 1;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
+  }
+}
+
+
+
+/* Fonts and general styles */
+@media only screen and (min-width: 0em) {
+
+  @font-face {
+      font-family: Gilmer-Regular;
+      src: url(/assets/fonts/Gilmer-Regular.woff2) format("woff2"), url(/assets/fonts/Gilmer-Regular.woff) format("woff");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap
+    }
+  
+    @font-face {
+      font-family: Gilmer-Medium;
+      src: url(/assets/fonts/Gilmer-Medium.woff2) format("woff2"), url(/assets/fonts/Gilmer-Medium.woff) format("woff");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap
+    }
+  
+    @font-face {
+      font-family: Gilmer-Bold;
+      src: url(/assets/fonts/Gilmer-Bold.woff2) format("woff2"), url(/assets/fonts/Gilmer-Bold.woff) format("woff");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap
+    }
+
+  
+  /* roboto-regular - latin */
+  @font-face {
+    font-style: normal;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-display: swap;
+    src: local(""),
+      url("/assets/fonts/roboto-v29-latin-regular.woff2") format("woff2"),
+      /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("/assets/fonts/roboto-v29-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-700 - latin */
+  @font-face {
+    font-style: normal;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-display: swap;
+    src: local(""),
+      url("/assets/fonts/roboto-v29-latin-700.woff2") format("woff2"),
+      /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("/assets/fonts/roboto-v29-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-900 - latin */
+  @font-face {
+    font-style: normal;
+    font-family: "Roboto";
+    font-weight: 900;
+    font-display: swap;
+    src: local(""),
+      url("/assets/fonts/roboto-v29-latin-900.woff2") format("woff2"),
+      /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("/assets/fonts/roboto-v29-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  body,
+  html {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    color: var(--bodyTextColor);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
+  *,
+  *:before,
+  *:after {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+  }
+
+  body {
+    transition: background-color 0.3s;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .container {
+    width: 92%;
+    margin: auto;
+    position: relative;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    color: var(--headerColor);
+    font-family: "Gilmer-Regular", "Roboto", "Arial";
+  }
+
+  // p,
+  // li,
+  // a {
+  //   font-size: calc(16 / 16 * 1rem);
+  //   line-height: 1.5em;
+  //   margin: 0;
+  // }
+
+  p,
+  li {
+    color: #353535;
+  }
+
+  a,
+  button {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  // Hidden Screen reader skip nav button
+  .skip {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1111111;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* Prevent text from wrapping */
+  border: 0;
+}
+
+@media only screen and (min-width: 48rem) {
+ 
+}
+
+/* Reset Margins */
+@media only screen and (min-width: 1024px) {
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Scale full website with the viewport width */
+@media only screen and (min-width: 2000px) {
+  body,
+  html {
+    font-size: 0.85vw;
+  }
+}
+
+/*-- -------------------------- -->
+<---      Dark Mode Toggle      -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0em) {
+  // Grab your fonts to locally host from https://google-webfonts-helper.herokuapp.com/fonts
+  @font-face {
+    font-family: "Gilmer-Regular";
+    src: url(/assets/fonts/Gilmer-Regular.woff2) format("woff2"), url(/assets/fonts/Gilmer-Regular.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Gilmer-Medium";
+    src: url(/assets/fonts/Gilmer-Medium.woff2) format("woff2"), url(/assets/fonts/Gilmer-Medium.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Gilmer-Bold";
+    src: url(/assets/fonts/Gilmer-Bold.woff2) format("woff2"), url(/assets/fonts/Gilmer-Bold.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  /* roboto-regular - latin */
+  @font-face {
+    font-style: normal;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-display: swap;
+    src: local(""),
+      url("/assets/fonts/roboto-v29-latin-regular.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("/assets/fonts/roboto-v29-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  /* roboto-700 - latin */
+  @font-face {
+    font-style: normal;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-display: swap;
+    src: local(""),
+      url("/assets/fonts/roboto-v29-latin-700.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("/assets/fonts/roboto-v29-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  /* roboto-900 - latin */
+  @font-face {
+    font-style: normal;
+    font-family: "Roboto";
+    font-weight: 900;
+    font-display: swap;
+    src: local(""),
+      url("/assets/fonts/roboto-v29-latin-900.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("/assets/fonts/roboto-v29-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  body,
+  html {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    color: var(--bodyTextColor);
+    overflow-x: hidden;
+  }
+
+  *,
+  *:before,
+  *:after {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+  }
+
+  body {
+    transition: background-color 0.3s;
+  }
+
+  .container {
+    width: 92%;
+    margin: auto;
+    position: relative;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    color: var(--headerColor);
+  }
+
+  p,
+  li,
+  a {
+    font-size: calc(18 / 16 * 1rem);
+    line-height: 1.5em;
+    margin: 0;
+  }
+
+  p,
+  li {
+    color: #353535;
+  }
+
+  a,
+  button {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  // Hidden Screen reader skip nav button
+  .skip {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1111111;
+  }
+}
+
+@media  (min-width: 48rem) {
+  :root {
+    --bodyFontSize: 1.25rem; 
+    --topperFontSize: clamp(1rem, 2vw, 1.5rem);
+    --largerFontSize: 1.5rem;
+  }
+
+  p,
+  li,
+  a {
+    font-size: 1.25rem;
+    line-height: 1.5em;
+    margin: 0;
+  }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #dark-mode-toggle {
+    margin: 0;
+    position: relative;
+    top: auto;
+    right: auto;
+    transform: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  
+
+
+}
+
+
+// Pulsing button
+
+.pulsing {
+  background: transparent;
+  position: relative;
+  
+  &::before {
+      border-radius: 50%;
+      content: '';
+      display: block;
+      height: 36px;
+      width: 36px;
+      
+      transition: all .25s ease-out;
+      
+      position: absolute;
+      top: 3px;
+      left: 0;
+      z-index: 1;
+  }
+  
+  &:hover {
+      color: #fff;
+      
+      &::before {
+          border-radius: var(--global-radius);
+          width: 100%;
+          height: 100%;
+          top: 0;
+      }
+  }
+  span {
+    position: relative;
+    z-index: 5;
+  }
+
+  &.external-link span::after {
+      content: '\f08e';
+      font-family: FontAwesome;
+      margin-left: 5px;
+      vertical-align: top;
+  }
+
+}
+
+@media  (max-width: 47.99rem) {
+  .no-mobile {
+    display: none  !important;
+  }
+}
+

@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 1920 68.6">
+  <!-- Generator: Adobe Illustrator 29.0.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 192)  -->
+  <defs>
+    <style>
+      .st0 {
+        opacity: .4;
+      }
+
+      .st0, .st1, .st2, .st3, .st4, .st5, .st6, .st7, .st8, .st9, .st10, .st11, .st12, .st13, .st14, .st15, .st16, .st17, .st18, .st19, .st20, .st21, .st22, .st23, .st24, .st25, .st26, .st27, .st28, .st29, .st30, .st31 {
+        fill: #9b8bc2;
+      }
+
+      .st1 {
+        opacity: .5;
+      }
+
+      .st2 {
+        opacity: .9;
+      }
+
+      .st3 {
+        opacity: 1;
+      }
+
+      .st4 {
+        opacity: .7;
+      }
+
+      .st5 {
+        opacity: .7;
+      }
+
+      .st6 {
+        opacity: .7;
+      }
+
+      .st7 {
+        opacity: .8;
+      }
+
+      .st8 {
+        opacity: .2;
+      }
+
+      .st9 {
+        opacity: .5;
+      }
+
+      .st10 {
+        opacity: .5;
+      }
+
+      .st11 {
+        opacity: .5;
+      }
+
+      .st12 {
+        opacity: .6;
+      }
+
+      .st13 {
+        opacity: .6;
+      }
+
+      .st14 {
+        opacity: .6;
+      }
+
+      .st15 {
+        opacity: .4;
+      }
+
+      .st16 {
+        opacity: .4;
+      }
+
+      .st17 {
+        opacity: .3;
+      }
+
+      .st18 {
+        opacity: .3;
+      }
+
+      .st19 {
+        opacity: .3;
+      }
+
+      .st20 {
+        opacity: .2;
+      }
+
+      .st21 {
+        opacity: .1;
+      }
+
+      .st22 {
+        opacity: .2;
+      }
+
+      .st23 {
+        opacity: 0;
+      }
+
+      .st24 {
+        opacity: .8;
+      }
+
+      .st25 {
+        opacity: .8;
+      }
+
+      .st26 {
+        opacity: .9;
+      }
+
+      .st27 {
+        opacity: .9;
+      }
+
+      .st28 {
+        opacity: 0;
+      }
+
+      .st29 {
+        opacity: 0;
+      }
+
+      .st32 {
+        mix-blend-mode: color-burn;
+        opacity: .5;
+      }
+
+      .st33 {
+        fill: #fff;
+        opacity: .3;
+      }
+
+      .st31 {
+        opacity: 0;
+      }
+
+      .st34 {
+        isolation: isolate;
+      }
+
+      .st35 {
+        mix-blend-mode: color-dodge;
+      }
+
+      .st36 {
+        opacity: .2;
+      }
+    </style>
+  </defs>
+  <g class="st34">
+    <g id="Layer_1">
+      <g>
+        <image width="8000" height="3334" transform="scale(.2)" xlink:href="header-bg-1.png"/>
+        <g class="st35">
+          <g>
+            <polygon class="st33" points="112 0 1162 0 1162 800 112 0"/>
+            <g class="st36">
+              <polygon class="st31" points="112 0 1162 800 1016.8 800 1 0 112 0"/>
+              <polygon class="st29" points="112 0 1162 800 1020.7 800 3.9 0 112 0"/>
+              <polygon class="st28" points="112 0 1162 800 1024.6 800 6.8 0 112 0"/>
+              <polygon class="st23" points="112 0 1162 800 1028.4 800 9.7 0 112 0"/>
+              <polygon class="st21" points="112 0 1162 800 1032.3 800 12.6 0 112 0"/>
+              <polygon class="st22" points="112 0 1162 800 1036.2 800 15.5 0 112 0"/>
+              <polygon class="st20" points="112 0 1162 800 1040 800 18.4 0 112 0"/>
+              <polygon class="st8" points="112 0 1162 800 1043.9 800 21.3 0 112 0"/>
+              <polygon class="st17" points="112 0 1162 800 1047.8 800 24.2 0 112 0"/>
+              <polygon class="st18" points="112 0 1162 800 1051.7 800 27.1 0 112 0"/>
+              <polygon class="st19" points="112 0 1162 800 1055.5 800 30 0 112 0"/>
+              <polygon class="st15" points="112 0 1162 800 1059.4 800 32.9 0 112 0"/>
+              <polygon class="st16" points="112 0 1162 800 1063.3 800 35.8 0 112 0"/>
+              <polygon class="st0" points="112 0 1162 800 1067.1 800 38.7 0 112 0"/>
+              <polygon class="st1" points="112 0 1162 800 1071 800 41.6 0 112 0"/>
+              <polygon class="st9" points="112 0 1162 800 1074.9 800 44.5 0 112 0"/>
+              <polygon class="st10" points="112 0 1162 800 1078.8 800 47.4 0 112 0"/>
+              <polygon class="st11" points="112 0 1162 800 1082.6 800 50.3 0 112 0"/>
+              <polygon class="st12" points="112 0 1162 800 1086.5 800 53.2 0 112 0"/>
+              <polygon class="st13" points="112 0 1162 800 1090.4 800 56.1 0 112 0"/>
+              <polygon class="st14" points="112 0 1162 800 1094.2 800 59 0 112 0"/>
+              <polygon class="st4" points="112 0 1162 800 1098.1 800 61.9 0 112 0"/>
+              <polygon class="st5" points="112 0 1162 800 1102 800 64.9 0 112 0"/>
+              <polygon class="st6" points="112 0 1162 800 1105.9 800 67.8 0 112 0"/>
+              <polygon class="st7" points="112 0 1162 800 1109.7 800 70.7 0 112 0"/>
+              <polygon class="st24" points="112 0 1162 800 1113.6 800 73.6 0 112 0"/>
+              <polygon class="st25" points="112 0 1162 800 1117.5 800 76.5 0 112 0"/>
+              <polygon class="st26" points="112 0 1162 800 1121.3 800 79.4 0 112 0"/>
+              <polygon class="st27" points="112 0 1162 800 1125.2 800 82.3 0 112 0"/>
+              <polygon class="st2" points="112 0 1162 800 1129.1 800 85.2 0 112 0"/>
+              <polygon class="st3" points="112 0 1162 800 1132.9 800 88.1 0 112 0"/>
+              <polygon class="st30" points="112 0 1162 800 1136.8 800 91 0 112 0"/>
+            </g>
+          </g>
+          <g>
+            <polygon class="st33" points="252 0 1302 0 1302 800 252 0"/>
+            <g class="st36">
+              <polygon class="st31" points="252 0 1302 800 1156.8 800 141 0 252 0"/>
+              <polygon class="st29" points="252 0 1302 800 1160.7 800 143.9 0 252 0"/>
+              <polygon class="st28" points="252 0 1302 800 1164.6 800 146.8 0 252 0"/>
+              <polygon class="st23" points="252 0 1302 800 1168.4 800 149.7 0 252 0"/>
+              <polygon class="st21" points="252 0 1302 800 1172.3 800 152.6 0 252 0"/>
+              <polygon class="st22" points="252 0 1302 800 1176.2 800 155.5 0 252 0"/>
+              <polygon class="st20" points="252 0 1302 800 1180 800 158.4 0 252 0"/>
+              <polygon class="st8" points="252 0 1302 800 1183.9 800 161.3 0 252 0"/>
+              <polygon class="st17" points="252 0 1302 800 1187.8 800 164.2 0 252 0"/>
+              <polygon class="st18" points="252 0 1302 800 1191.7 800 167.1 0 252 0"/>
+              <polygon class="st19" points="252 0 1302 800 1195.5 800 170 0 252 0"/>
+              <polygon class="st15" points="252 0 1302 800 1199.4 800 172.9 0 252 0"/>
+              <polygon class="st16" points="252 0 1302 800 1203.3 800 175.8 0 252 0"/>
+              <polygon class="st0" points="252 0 1302 800 1207.1 800 178.7 0 252 0"/>
+              <polygon class="st1" points="252 0 1302 800 1211 800 181.6 0 252 0"/>
+              <polygon class="st9" points="252 0 1302 800 1214.9 800 184.5 0 252 0"/>
+              <polygon class="st10" points="252 0 1302 800 1218.8 800 187.4 0 252 0"/>
+              <polygon class="st11" points="252 0 1302 800 1222.6 800 190.3 0 252 0"/>
+              <polygon class="st12" points="252 0 1302 800 1226.5 800 193.2 0 252 0"/>
+              <polygon class="st13" points="252 0 1302 800 1230.4 800 196.1 0 252 0"/>
+              <polygon class="st14" points="252 0 1302 800 1234.2 800 199 0 252 0"/>
+              <polygon class="st4" points="252 0 1302 800 1238.1 800 201.9 0 252 0"/>
+              <polygon class="st5" points="252 0 1302 800 1242 800 204.9 0 252 0"/>
+              <polygon class="st6" points="252 0 1302 800 1245.9 800 207.8 0 252 0"/>
+              <polygon class="st7" points="252 0 1302 800 1249.7 800 210.7 0 252 0"/>
+              <polygon class="st24" points="252 0 1302 800 1253.6 800 213.6 0 252 0"/>
+              <polygon class="st25" points="252 0 1302 800 1257.5 800 216.5 0 252 0"/>
+              <polygon class="st26" points="252 0 1302 800 1261.3 800 219.4 0 252 0"/>
+              <polygon class="st27" points="252 0 1302 800 1265.2 800 222.3 0 252 0"/>
+              <polygon class="st2" points="252 0 1302 800 1269.1 800 225.2 0 252 0"/>
+              <polygon class="st3" points="252 0 1302 800 1272.9 800 228.1 0 252 0"/>
+              <polygon class="st30" points="252 0 1302 800 1276.8 800 231 0 252 0"/>
+            </g>
+          </g>
+          <g>
+            <polygon class="st33" points="522 0 1572 0 1572 800 522 0"/>
+            <g class="st36">
+              <polygon class="st31" points="522 0 1572 800 1426.8 800 411 0 522 0"/>
+              <polygon class="st29" points="522 0 1572 800 1430.7 800 413.9 0 522 0"/>
+              <polygon class="st28" points="522 0 1572 800 1434.6 800 416.8 0 522 0"/>
+              <polygon class="st23" points="522 0 1572 800 1438.4 800 419.7 0 522 0"/>
+              <polygon class="st21" points="522 0 1572 800 1442.3 800 422.6 0 522 0"/>
+              <polygon class="st22" points="522 0 1572 800 1446.2 800 425.5 0 522 0"/>
+              <polygon class="st20" points="522 0 1572 800 1450 800 428.4 0 522 0"/>
+              <polygon class="st8" points="522 0 1572 800 1453.9 800 431.3 0 522 0"/>
+              <polygon class="st17" points="522 0 1572 800 1457.8 800 434.2 0 522 0"/>
+              <polygon class="st18" points="522 0 1572 800 1461.7 800 437.1 0 522 0"/>
+              <polygon class="st19" points="522 0 1572 800 1465.5 800 440 0 522 0"/>
+              <polygon class="st15" points="522 0 1572 800 1469.4 800 442.9 0 522 0"/>
+              <polygon class="st16" points="522 0 1572 800 1473.3 800 445.8 0 522 0"/>
+              <polygon class="st0" points="522 0 1572 800 1477.1 800 448.7 0 522 0"/>
+              <polygon class="st1" points="522 0 1572 800 1481 800 451.6 0 522 0"/>
+              <polygon class="st9" points="522 0 1572 800 1484.9 800 454.5 0 522 0"/>
+              <polygon class="st10" points="522 0 1572 800 1488.8 800 457.4 0 522 0"/>
+              <polygon class="st11" points="522 0 1572 800 1492.6 800 460.3 0 522 0"/>
+              <polygon class="st12" points="522 0 1572 800 1496.5 800 463.2 0 522 0"/>
+              <polygon class="st13" points="522 0 1572 800 1500.4 800 466.1 0 522 0"/>
+              <polygon class="st14" points="522 0 1572 800 1504.2 800 469 0 522 0"/>
+              <polygon class="st4" points="522 0 1572 800 1508.1 800 471.9 0 522 0"/>
+              <polygon class="st5" points="522 0 1572 800 1512 800 474.9 0 522 0"/>
+              <polygon class="st6" points="522 0 1572 800 1515.9 800 477.8 0 522 0"/>
+              <polygon class="st7" points="522 0 1572 800 1519.7 800 480.7 0 522 0"/>
+              <polygon class="st24" points="522 0 1572 800 1523.6 800 483.6 0 522 0"/>
+              <polygon class="st25" points="522 0 1572 800 1527.5 800 486.5 0 522 0"/>
+              <polygon class="st26" points="522 0 1572 800 1531.3 800 489.4 0 522 0"/>
+              <polygon class="st27" points="522 0 1572 800 1535.2 800 492.3 0 522 0"/>
+              <polygon class="st2" points="522 0 1572 800 1539.1 800 495.2 0 522 0"/>
+              <polygon class="st3" points="522 0 1572 800 1542.9 800 498.1 0 522 0"/>
+              <polygon class="st30" points="522 0 1572 800 1546.8 800 501 0 522 0"/>
+            </g>
+          </g>
+          <g>
+            <polygon class="st33" points="872 0 1922 0 1922 800 872 0"/>
+            <g class="st36">
+              <polygon class="st31" points="872 0 1922 800 1776.8 800 761 0 872 0"/>
+              <polygon class="st29" points="872 0 1922 800 1780.7 800 763.9 0 872 0"/>
+              <polygon class="st28" points="872 0 1922 800 1784.6 800 766.8 0 872 0"/>
+              <polygon class="st23" points="872 0 1922 800 1788.4 800 769.7 0 872 0"/>
+              <polygon class="st21" points="872 0 1922 800 1792.3 800 772.6 0 872 0"/>
+              <polygon class="st22" points="872 0 1922 800 1796.2 800 775.5 0 872 0"/>
+              <polygon class="st20" points="872 0 1922 800 1800 800 778.4 0 872 0"/>
+              <polygon class="st8" points="872 0 1922 800 1803.9 800 781.3 0 872 0"/>
+              <polygon class="st17" points="872 0 1922 800 1807.8 800 784.2 0 872 0"/>
+              <polygon class="st18" points="872 0 1922 800 1811.7 800 787.1 0 872 0"/>
+              <polygon class="st19" points="872 0 1922 800 1815.5 800 790 0 872 0"/>
+              <polygon class="st15" points="872 0 1922 800 1819.4 800 792.9 0 872 0"/>
+              <polygon class="st16" points="872 0 1922 800 1823.3 800 795.8 0 872 0"/>
+              <polygon class="st0" points="872 0 1922 800 1827.1 800 798.7 0 872 0"/>
+              <polygon class="st1" points="872 0 1922 800 1831 800 801.6 0 872 0"/>
+              <polygon class="st9" points="872 0 1922 800 1834.9 800 804.5 0 872 0"/>
+              <polygon class="st10" points="872 0 1922 800 1838.8 800 807.4 0 872 0"/>
+              <polygon class="st11" points="872 0 1922 800 1842.6 800 810.3 0 872 0"/>
+              <polygon class="st12" points="872 0 1922 800 1846.5 800 813.2 0 872 0"/>
+              <polygon class="st13" points="872 0 1922 800 1850.4 800 816.1 0 872 0"/>
+              <polygon class="st14" points="872 0 1922 800 1854.2 800 819 0 872 0"/>
+              <polygon class="st4" points="872 0 1922 800 1858.1 800 821.9 0 872 0"/>
+              <polygon class="st5" points="872 0 1922 800 1862 800 824.9 0 872 0"/>
+              <polygon class="st6" points="872 0 1922 800 1865.9 800 827.8 0 872 0"/>
+              <polygon class="st7" points="872 0 1922 800 1869.7 800 830.7 0 872 0"/>
+              <polygon class="st24" points="872 0 1922 800 1873.6 800 833.6 0 872 0"/>
+              <polygon class="st25" points="872 0 1922 800 1877.5 800 836.5 0 872 0"/>
+              <polygon class="st26" points="872 0 1922 800 1881.3 800 839.4 0 872 0"/>
+              <polygon class="st27" points="872 0 1922 800 1885.2 800 842.3 0 872 0"/>
+              <polygon class="st2" points="872 0 1922 800 1889.1 800 845.2 0 872 0"/>
+              <polygon class="st3" points="872 0 1922 800 1892.9 800 848.1 0 872 0"/>
+              <polygon class="st30" points="872 0 1922 800 1896.8 800 851 0 872 0"/>
+            </g>
+          </g>
+        </g>
+        <image class="st32" width="8000" height="3334" transform="scale(.2)" xlink:href="header-bg-2.png"/>
+      </g>
+    </g>
+  </g>
+</svg>

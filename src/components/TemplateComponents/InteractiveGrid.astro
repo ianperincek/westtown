@@ -1,0 +1,162 @@
+---
+const services = [
+  {
+    id: 1,
+    title: "Custom Web Design",
+    description: "We craft unique websites that reflect your brand.",
+  },
+  {
+    id: 2,
+    title: "Front-End Development",
+    description: "Fast, clean, and efficient code for performance.",
+  },
+  {
+    id: 3,
+    title: "Accessibility Compliance",
+    description: "Ensuring your website is accessible to all users.",
+  },
+  {
+    id: 4,
+    title: "Performance Optimization",
+    description: "Optimizing load times for better user experience.",
+  },
+];
+---
+
+<!-- GRID CONTAINER FOR SERVICES -->
+<section class="serviceGrid">
+  <div class="grid">
+    {
+      services.map((service) => (
+        <div
+          class="grid__item"
+          key={service.id}
+          onClick={() => expandService(service.id)}
+        >
+          <h2 class="grid__item-heading">{service.title}</h2>
+          <img src={service.icon} alt={service.title} class="service-icon" />
+        </div>
+      ))
+    }
+  </div>
+</section>
+
+<!-- MODAL FOR SERVICE DETAILS -->
+<div class="modal" id="service-modal" style="display: none;">
+  <div class="modal-content">
+    <h2 id="modal-title"></h2>
+    <p id="modal-description"></p>
+    <button id="close-btn">Close</button>
+  </div>
+</div>
+
+<!-- Adding GSAP/ScrollTrigger Script -->
+
+<script>
+  import gsap from "gsap";
+  import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const gridItems = document.querySelectorAll(".grid-item");
+
+    // Scroll-triggered animations for grid items
+    gridItems.forEach((item) => {
+      gsap.from(item, {
+        opacity: 0,
+        y: 100,
+        duration: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: item,
+          start: "top 80%",
+          toggleActions: "play none none none",
+          once: true,
+        },
+      });
+
+      // Open modal when clicking a grid item
+      item.addEventListener("click", () => {
+        openModal(item);
+      });
+    });
+
+    function openModal(item) {
+      const title = item.dataset.title;
+      const description = item.dataset.description;
+
+      if (title && description) {
+        document.getElementById("modal-title").innerText = title;
+        document.getElementById("modal-description").innerText = description;
+        document.getElementById("service-modal").style.display = "block";
+      }
+    }
+
+    // Close modal logic
+    function closeModal() {
+      document.getElementById("service-modal").style.display = "none";
+    }
+
+    document.getElementById("close-btn").addEventListener("click", closeModal);
+  });
+</script>
+
+<!-- Add the GSAP/ScrollTrigger CDN if needed in astro.config.mjs -->
+
+<style lang="scss">
+  .serviceGrid {
+    height: 100vh;
+    position: relative;
+    z-index: 9;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .grid-item {
+    padding: 20px;
+    background-color: #f4f4f4;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  .grid-item:hover {
+    transform: translateY(-10px);
+  }
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+  }
+</style>

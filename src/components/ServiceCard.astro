@@ -1,0 +1,85 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+  link?: string; // Optional link for more information
+}
+
+const { title, description, link } = Astro.props;
+---
+
+<article class="masonry-layout__card">
+  <header>
+    <h3 class="masonry-layout__card-title">{title}</h3>
+  </header>
+  <p class="masonry-layout__card-description">
+    {description}
+    {
+      link && (
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener"
+          class="masonry-layout__card-link"
+        >
+          Learn more
+        </a>
+      )
+    }
+  </p>
+</article>
+
+<style lang="scss">
+  .masonry-layout__card {
+    padding: 1rem;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--primaryLight);
+
+    @media (min-width: 48rem) {
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+
+      header {
+        width: 50%;
+      }
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .masonry-layout__card-title {
+    margin-bottom: 1.5rem;
+    //color: var(--accent-blue);
+    color: #fff;
+    font-size: 1.2rem;
+
+    @media (min-width: 48rem) {
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .masonry-layout__card-description {
+    margin-bottom: 1.2rem;
+    font-size: 1rem;
+    color: var(--bodyTextColorWhite);
+
+    a {
+      color: var(--bodyTextColorWhite);
+      font-size: 1rem;
+    }
+
+    @media (min-width: 48rem) {
+      font-size: 1.2rem;
+
+      a {
+        font-size: 1.2rem;
+      }
+    }
+  }
+</style>

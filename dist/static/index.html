@@ -1,0 +1,4121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--  ONLY FOR PREVIEW   -->
+    <meta name="robots" content="noindex, nofollow">
+    <!--  DO NOT USE THIS LIVE   -->
+
+
+
+    <link rel="stylesheet" id="premium-addons-css"
+        href="https://eadn-wc05-7743509.nxedge.io/wp-content/plugins/premium-addons-for-elementor/assets/frontend/min-css/premium-addons.min.css?ver=4.10.62"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="wp-block-library-css"
+        href="https://eadn-wc05-7743509.nxedge.io/wp-includes/css/dist/block-library/style.min.css?ver=cf2931da80e401b6901e879033cd3791"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="mediaelement-css"
+        href="https://eadn-wc05-7743509.nxedge.io/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="wp-mediaelement-css"
+        href="https://eadn-wc05-7743509.nxedge.io/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=cf2931da80e401b6901e879033cd3791"
+        type="text/css" media="all">
+    <style id="jetpack-sharing-buttons-style-inline-css" type="text/css">
+        .jetpack-sharing-buttons__services-list {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 0;
+            list-style-type: none;
+            margin: 5px;
+            padding: 0
+        }
+
+        .jetpack-sharing-buttons__services-list.has-small-icon-size {
+            font-size: 12px
+        }
+
+        .jetpack-sharing-buttons__services-list.has-normal-icon-size {
+            font-size: 16px
+        }
+
+        .jetpack-sharing-buttons__services-list.has-large-icon-size {
+            font-size: 24px
+        }
+
+        .jetpack-sharing-buttons__services-list.has-huge-icon-size {
+            font-size: 36px
+        }
+
+        @media print {
+            .jetpack-sharing-buttons__services-list {
+                display: none !important
+            }
+        }
+
+        .editor-styles-wrapper .wp-block-jetpack-sharing-buttons {
+            gap: 0;
+            padding-inline-start: 0
+        }
+
+        ul.jetpack-sharing-buttons__services-list.has-background {
+            padding: 1.25em 2.375em
+        }
+    </style>
+    <style id="classic-theme-styles-inline-css" type="text/css">
+        /*! This file is auto-generated */
+        .wp-block-button__link {
+            color: #fff;
+            background-color: #32373c;
+            border-radius: 9999px;
+            box-shadow: none;
+            text-decoration: none;
+            padding: calc(.667em + 2px) calc(1.333em + 2px);
+            font-size: 1.125em
+        }
+
+        .wp-block-file__button {
+            background: #32373c;
+            color: #fff;
+            text-decoration: none
+        }
+    </style>
+    <style id="global-styles-inline-css" type="text/css">
+        :root {
+            --wp--preset--aspect-ratio--square: 1;
+            --wp--preset--aspect-ratio--4-3: 4/3;
+            --wp--preset--aspect-ratio--3-4: 3/4;
+            --wp--preset--aspect-ratio--3-2: 3/2;
+            --wp--preset--aspect-ratio--2-3: 2/3;
+            --wp--preset--aspect-ratio--16-9: 16/9;
+            --wp--preset--aspect-ratio--9-16: 9/16;
+            --wp--preset--color--black: #000;
+            --wp--preset--color--cyan-bluish-gray: #abb8c3;
+            --wp--preset--color--white: #fff;
+            --wp--preset--color--pale-pink: #f78da7;
+            --wp--preset--color--vivid-red: #cf2e2e;
+            --wp--preset--color--luminous-vivid-orange: #ff6900;
+            --wp--preset--color--luminous-vivid-amber: #fcb900;
+            --wp--preset--color--light-green-cyan: #7bdcb5;
+            --wp--preset--color--vivid-green-cyan: #00d084;
+            --wp--preset--color--pale-cyan-blue: #8ed1fc;
+            --wp--preset--color--vivid-cyan-blue: #0693e3;
+            --wp--preset--color--vivid-purple: #9b51e0;
+            --wp--preset--color--ascend-primary: #e5b034;
+            --wp--preset--color--ascend-primary-light: #f9c448;
+            --wp--preset--color--very-light-gray: #eee;
+            --wp--preset--color--very-dark-gray: #444;
+            --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+            --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+            --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+            --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+            --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+            --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+            --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+            --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+            --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+            --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+            --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+            --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+            --wp--preset--font-size--small: 13px;
+            --wp--preset--font-size--medium: 20px;
+            --wp--preset--font-size--large: 36px;
+            --wp--preset--font-size--x-large: 42px;
+            --wp--preset--font-family--inter: "Inter", sans-serif;
+            --wp--preset--font-family--cardo: Cardo;
+            --wp--preset--spacing--20: 0.44rem;
+            --wp--preset--spacing--30: 0.67rem;
+            --wp--preset--spacing--40: 1rem;
+            --wp--preset--spacing--50: 1.5rem;
+            --wp--preset--spacing--60: 2.25rem;
+            --wp--preset--spacing--70: 3.38rem;
+            --wp--preset--spacing--80: 5.06rem;
+            --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+            --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+            --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+            --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+            --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+        }
+
+        :where(.is-layout-flex) {
+            gap: 0.5em;
+        }
+
+        :where(.is-layout-grid) {
+            gap: 0.5em;
+        }
+
+        body .is-layout-flex {
+            display: flex;
+        }
+
+        .is-layout-flex {
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .is-layout-flex> :is(*, div) {
+            margin: 0;
+        }
+
+        body .is-layout-grid {
+            display: grid;
+        }
+
+        .is-layout-grid> :is(*, div) {
+            margin: 0;
+        }
+
+        :where(.wp-block-columns.is-layout-flex) {
+            gap: 2em;
+        }
+
+        :where(.wp-block-columns.is-layout-grid) {
+            gap: 2em;
+        }
+
+        :where(.wp-block-post-template.is-layout-flex) {
+            gap: 1.25em;
+        }
+
+        :where(.wp-block-post-template.is-layout-grid) {
+            gap: 1.25em;
+        }
+
+        .has-black-color {
+            color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-color {
+            color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-color {
+            color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-color {
+            color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-color {
+            color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-color {
+            color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-color {
+            color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-color {
+            color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-color {
+            color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-color {
+            color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-color {
+            color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-color {
+            color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-black-background-color {
+            background-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-background-color {
+            background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-background-color {
+            background-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-background-color {
+            background-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-background-color {
+            background-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-background-color {
+            background-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-background-color {
+            background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-background-color {
+            background-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-black-border-color {
+            border-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-border-color {
+            border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-border-color {
+            border-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-border-color {
+            border-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-border-color {
+            border-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-border-color {
+            border-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-border-color {
+            border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-border-color {
+            border-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+            background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+        }
+
+        .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+            background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+        }
+
+        .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+        }
+
+        .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+            background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+        }
+
+        .has-cool-to-warm-spectrum-gradient-background {
+            background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+        }
+
+        .has-blush-light-purple-gradient-background {
+            background: var(--wp--preset--gradient--blush-light-purple) !important;
+        }
+
+        .has-blush-bordeaux-gradient-background {
+            background: var(--wp--preset--gradient--blush-bordeaux) !important;
+        }
+
+        .has-luminous-dusk-gradient-background {
+            background: var(--wp--preset--gradient--luminous-dusk) !important;
+        }
+
+        .has-pale-ocean-gradient-background {
+            background: var(--wp--preset--gradient--pale-ocean) !important;
+        }
+
+        .has-electric-grass-gradient-background {
+            background: var(--wp--preset--gradient--electric-grass) !important;
+        }
+
+        .has-midnight-gradient-background {
+            background: var(--wp--preset--gradient--midnight) !important;
+        }
+
+        .has-small-font-size {
+            font-size: var(--wp--preset--font-size--small) !important;
+        }
+
+        .has-medium-font-size {
+            font-size: var(--wp--preset--font-size--medium) !important;
+        }
+
+        .has-large-font-size {
+            font-size: var(--wp--preset--font-size--large) !important;
+        }
+
+        .has-x-large-font-size {
+            font-size: var(--wp--preset--font-size--x-large) !important;
+        }
+
+        :where(.wp-block-post-template.is-layout-flex) {
+            gap: 1.25em;
+        }
+
+        :where(.wp-block-post-template.is-layout-grid) {
+            gap: 1.25em;
+        }
+
+        :where(.wp-block-columns.is-layout-flex) {
+            gap: 2em;
+        }
+
+        :where(.wp-block-columns.is-layout-grid) {
+            gap: 2em;
+        }
+
+        :root :where(.wp-block-pullquote) {
+            font-size: 1.5em;
+            line-height: 1.6;
+        }
+    </style>
+    <link rel="stylesheet" id="wpa-css-css"
+        href="https://eadn-wc05-7743509.nxedge.io/wp-content/plugins/honeypot/includes/css/wpa.css?ver=2.2.03"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="print_science-css"
+        href="https://eadn-wc05-7743509.nxedge.io/wp-content/plugins/print-science-designer/css/style.css?ver=1.0.6"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="modalPopLite-css"
+        href="https://eadn-wc05-7743509.nxedge.io/wp-content/plugins/print-science-designer/css/modalPopLite.css?ver=cf2931da80e401b6901e879033cd3791"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="woocommerce_prettyPhoto_css-css"
+        href="https://eadn-wc05-7743509.nxedge.io/wp-content/plugins/woocommerce/assets/css/prettyPhoto.css?ver=cf2931da80e401b6901e879033cd3791"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="tss-css"
+        href="https://eadn-wc05-7743509.nxedge.io/wp-content/plugins/testimonial-slider-and-showcase/assets/css/wptestimonial.css?ver=2.3.11"
+        type="text/css" media="all">
+    <style id="woocommerce-inline-inline-css" type="text/css">
+        .woocommerce form .form-row .required {
+            visibility: visible;
+        }
+    </style>
+    <link rel="stylesheet" id="aws-style-css"
+        href="https://eadn-wc05-7743509.nxedge.io/wp-content/plugins/advanced-woo-search/assets/css/common.min.css?ver=3.19"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="megamenu-css"
+        href="https://eadn-wc05-7743509.nxedge.io/wp-content/uploads/maxmegamenu/style.css?ver=c4f42a" type="text/css"
+        media="all">
+    <link rel="stylesheet" id="dashicons-css"
+        href="https://eadn-wc05-7743509.nxedge.io/wp-includes/css/dashicons.min.css?ver=cf2931da80e401b6901e879033cd3791"
+        type="text/css" media="all">
+    <!--[if lt IE]>
+<link rel='stylesheet' id='ascend_ie_fallback-css' href='https://eadn-wc05-7743509.nxedge.io/wp-content/themes/ascend_premium/assets/css/ie_fallback.css?ver=1.9.30' type='text/css' media='all' />
+<![endif]-->
+    <link rel="stylesheet" id="e-animation-fadeIn-css"
+        href="https://eadn-wc05-7743509.nxedge.io/wp-content/plugins/elementor/assets/lib/animations/styles/fadeIn.min.css?ver=3.25.4"
+        type="text/css" media="all">
+    <link rel="stylesheet"
+        href="https://midwestcustomprint.com/wp-content/plugins/elementor/assets/css/conditionals/dialog.min.css?ver=3.25.4">
+    <link rel="stylesheet" id="elementor-frontend-css"
+        href="https://eadn-wc05-7743509.nxedge.io/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.25.4"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="widget-heading-css"
+        href="https://eadn-wc05-7743509.nxedge.io/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=3.25.4"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="widget-text-editor-css"
+        href="https://eadn-wc05-7743509.nxedge.io/wp-content/plugins/elementor/assets/css/widget-text-editor.min.css?ver=3.25.4"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="widget-form-css"
+        href="https://eadn-wc05-7743509.nxedge.io/wp-content/plugins/elementor-pro/assets/css/widget-form.min.css?ver=3.25.2"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="e-animation-slideInLeft-css"
+        href="https://eadn-wc05-7743509.nxedge.io/wp-content/plugins/elementor/assets/lib/animations/styles/slideInLeft.min.css?ver=3.25.4"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="eael-general-css"
+        href="https://eadn-wc05-7743509.nxedge.io/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/css/view/general.min.css?ver=6.0.9"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="eael-2198-css"
+        href="https://eadn-wc05-7743509.nxedge.io/wp-content/uploads/essential-addons-elementor/eael-2198.css?ver=1710164667"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="elementor-icons-css"
+        href="https://eadn-wc05-7743509.nxedge.io/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.31.0"
+        type="text/css" media="all">
+    <style id="elementor-icons-inline-css" type="text/css">
+        .elementor-add-new-section .elementor-add-templately-promo-button {
+            background-color: #5d4fff;
+            background-image: url(https://eadn-wc05-7743509.nxedge.io/wp-content/plugins/essential-addons-for-elementor-lite/assets/admin/images/templately/logo-icon.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            position: relative;
+        }
+
+        .elementor-add-new-section .elementor-add-templately-promo-button>i {
+            height: 12px;
+        }
+
+        body .elementor-add-new-section .elementor-add-section-area-button {
+            margin-left: 0;
+        }
+
+        .elementor-add-new-section .elementor-add-templately-promo-button {
+            background-color: #5d4fff;
+            background-image: url(https://eadn-wc05-7743509.nxedge.io/wp-content/plugins/essential-addons-for-elementor-lite/assets/admin/images/templately/logo-icon.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            position: relative;
+        }
+
+        .elementor-add-new-section .elementor-add-templately-promo-button>i {
+            height: 12px;
+        }
+
+        body .elementor-add-new-section .elementor-add-section-area-button {
+            margin-left: 0;
+        }
+    </style>
+    <link rel="stylesheet" id="swiper-css"
+        href="https://eadn-wc05-7743509.nxedge.io/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="e-swiper-css"
+        href="https://eadn-wc05-7743509.nxedge.io/wp-content/plugins/elementor/assets/css/conditionals/e-swiper.min.css?ver=3.25.4"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="elementor-post-521-css"
+        href="https://eadn-wc05-7743509.nxedge.io/wp-content/uploads/elementor/css/post-521.css?ver=1731428399"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="e-popup-style-css"
+        href="https://eadn-wc05-7743509.nxedge.io/wp-content/plugins/elementor-pro/assets/css/conditionals/popup.min.css?ver=3.25.2"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="widget-spacer-css"
+        href="https://eadn-wc05-7743509.nxedge.io/wp-content/plugins/elementor/assets/css/widget-spacer.min.css?ver=3.25.4"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="widget-icon-box-css"
+        href="https://eadn-wc05-7743509.nxedge.io/wp-content/plugins/elementor/assets/css/widget-icon-box.min.css?ver=3.25.4"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="font-awesome-5-all-css"
+        href="https://eadn-wc05-7743509.nxedge.io/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=4.10.62"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="tss-fontello-css"
+        href="https://eadn-wc05-7743509.nxedge.io/wp-content/plugins/testimonial-slider-and-showcase/assets/vendor/fontello/css/tss-font.min.css?ver=2.3.11"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="elementor-post-2198-css"
+        href="https://eadn-wc05-7743509.nxedge.io/wp-content/uploads/elementor/css/post-2198.css?ver=1731428400"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="elementor-post-4430-css"
+        href="https://eadn-wc05-7743509.nxedge.io/wp-content/uploads/elementor/css/post-4430.css?ver=1731428400"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="font-awesome-4-shim-css"
+        href="https://eadn-wc05-7743509.nxedge.io/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=6.0.9"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="ascend_main-css"
+        href="https://eadn-wc05-7743509.nxedge.io/wp-content/themes/ascend_premium/assets/css/ascend.css?ver=1.9.30"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="ascend_woo-css"
+        href="https://eadn-wc05-7743509.nxedge.io/wp-content/themes/ascend_premium/assets/css/ascend_woo.css?ver=1.9.30"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="ascend_select2-css"
+        href="https://eadn-wc05-7743509.nxedge.io/wp-content/themes/ascend_premium/assets/css/ascend_select2.css?ver=1.9.30"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="ascend_posttype-css"
+        href="https://eadn-wc05-7743509.nxedge.io/wp-content/themes/ascend_premium/assets/css/ascend_posttype.css?ver=1.9.30"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="ascend_icons-css"
+        href="https://eadn-wc05-7743509.nxedge.io/wp-content/themes/ascend_premium/assets/css/ascend_icons.css?ver=1.9.30"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="redux-google-fonts-ascend-css"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A200%2C300%2C400%2C600%2C700%2C900%2C200italic%2C300italic%2C400italic%2C600italic%2C700italic%2C900italic%7CPoppins%3A700%2C600%2C400&amp;subset=latin&amp;ver=6.6.2"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="google-fonts-1-css"
+        href="https://fonts.googleapis.com/css?family=Poppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=auto&amp;ver=6.6.2"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="elementor-icons-shared-0-css"
+        href="https://eadn-wc05-7743509.nxedge.io/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="elementor-icons-fa-solid-css"
+        href="https://eadn-wc05-7743509.nxedge.io/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3"
+        type="text/css" media="all">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Swap our for actual link-->
+    <link rel="canonical" href="https://midwestcustomprint.com/">
+
+    <meta name="description"
+        content=": At Midwest Custom Print, we offer you everything from yard signs and business cards to an endless variety of custom-printed banners in Chicago. Here’s more!">
+    <meta name="keywords"
+        content="custom banner printing near me, vinyl banners Chicago, printing services Chicago, Chicago print shop, business card printing Chicago, graphic design Chicago">
+
+
+
+    <!--Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png?v1">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicons/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Preload -->
+    <link rel="preload" as="image" href="assets/images/logo-light.png">
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-regular.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-700.woff2" crossorigin>
+
+    <link rel="stylesheet" href="/css/core-styles.css">
+
+
+
+    <title>Service Keyword Phrase | Company Name | City, State</title>
+</head>
+
+<body>
+    <!--Screen reader skip main nav-->
+    <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
+
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+
+    <header id="cs-navigation" class="cs-navigation">
+        <div class="cs-container">
+            <!--Nav Logo-->
+            <a href="/index.html" class="cs-logo" aria-label="back to home">
+                <img src="https://eadn-wc05-7743509.nxedge.io/wp-content/uploads/2024/11/Untitled-design-1-500x250.png"
+                    srcset="https://eadn-wc05-7743509.nxedge.io/wp-content/uploads/2024/11/Untitled-design-1-500x250.png 500w, https://eadn-wc05-7743509.nxedge.io/wp-content/uploads/2024/11/Untitled-design-1-300x150.png 300w, https://eadn-wc05-7743509.nxedge.io/wp-content/uploads/2024/11/Untitled-design-1-600x300.png 600w, https://eadn-wc05-7743509.nxedge.io/wp-content/uploads/2024/11/Untitled-design-1-628x314.png 628w, https://eadn-wc05-7743509.nxedge.io/wp-content/uploads/2024/11/Untitled-design-1.png 648w"
+                    sizes="(max-width: 500px) 100vw, 500px" class="ascend-mobile-logo" alt="Midwest Custom Print">
+            </a>
+            <!--Navigation List-->
+            <nav class="cs-nav" role="navigation">
+                <!--Mobile Nav Toggle-->
+                <button class="cs-toggle" aria-label="mobile menu toggle">
+                    <div class="cs-box" aria-hidden="true">
+                        <span class="cs-line cs-line1" aria-hidden="true"></span>
+                        <span class="cs-line cs-line2" aria-hidden="true"></span>
+                        <span class="cs-line cs-line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+
+                <div class="cs-ul-wrapper">
+                    <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+
+
+                        <!-- <li class="cs-li">
+                            <a href="#" class="cs-li-link">
+                                Print Products
+                            </a>
+                        </li> -->
+                        <li class="cs-li">
+                            <a href="#" class="cs-li-link">
+                                Graphic Design Services
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="#" class="cs-li-link">
+                                Request A Quote
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="#" class="cs-li-link">
+                                About Us
+                            </a>
+                        </li>
+
+                        <li class="cs-li">
+                            <a href="#" class="cs-li-link">
+                                Blog
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="tel:844-928-7866" class="cs-li-link">
+                                <strong>Call: (844)-928-7866</strong>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="kad-right-header kt-header-flex-item">
+                <div class="kt-header-extras clearfix">
+                    <ul class="sf-menu sf-menu-normal sf-js-enabled" style="touch-action: pan-y;">
+                        <li class="menu-cart-icon-kt sf-dropdown">
+                            <a class="menu-cart-btn sf-with-ul" href="https://midwestcustomprint.com/cart/">
+                                <span class="kt-extras-label">
+                                    <span class="cart-extras-title">Cart</span>
+                                    <i class="kt-icon-bag"></i><span class="kt-cart-total">0</span></span>
+                            </a>
+                            <ul id="kad-head-cart-popup" class="sf-dropdown-menu kad-head-cart-popup kt-subright"
+                                style="display: none; top: 120%;">
+                                <li class="kt-mini-cart-refreash">
+
+
+                                    <p class="woocommerce-mini-cart__empty-message">No products in the cart.</p>
+
+
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+    <style>
+        .menu-cart-icon-kt {
+            margin-left: auto;
+        }
+
+        .print-products-menu {
+            position: absolute;
+            top: 35px;
+            left: -400px;
+            background: #000;
+            padding: 1rem 0 2rem 3rem;
+
+            border-top: 2px solid #747373;
+            min-width: 370px;
+            transition: left .5s ease;
+        }
+
+        .print-products-menu.toggle-active {
+            left: -1rem;
+        }
+
+        .menu-printproducts {
+            padding-right: 3rem;
+        }
+
+        .menu-printproducts p {
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .cs-category-nav .menu-toggle-close {
+            aspect-ratio: 1 / 1;
+            background-color: #000;
+            border-radius: 100%;
+            cursor: pointer;
+            display: flex;
+            font-size: 0;
+            margin-left: auto;
+            padding: 7px 7px 6px;
+            text-decoration: none;
+            position: absolute;
+            right: 1rem;
+            top: 3px;
+        }
+
+        .sf-dropdown-menu {
+            padding-top: 1rem;
+
+        }
+
+        .sf-dropdown-menu .accordion-toggle,
+        .sf-dropdown-menu .menu-item {
+            border-bottom: 1px solid #5e5e5e;
+        }
+
+        .menu-toggle-close:after {
+            align-items: center;
+            color: #fff;
+            content: "✕";
+            display: inline-flex;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .menu-requestaquote {
+            padding-top: 1rem;
+        }
+
+        .sub-menu.sf-dropdown-menu .sf-sub-dropdown-menu {
+            max-height: 0;
+            opacity: 0;
+            transition: max-height 0.5s ease, opacity 0.5s ease 0.2s;
+            padding: 0;
+        }
+
+        .sub-menu.sf-dropdown-menu .sf-sub-dropdown-menu.toggle-active {
+            opacity: 1;
+            padding-top: .8rem;
+            margin-left: 1rem;
+        }
+
+        .mfp-content {
+            display: inline !important;
+        }
+    </style>
+    <nav aria-label="Product Categories" class="cs-category-nav">
+        <div class="mfp-content">
+
+            <div class="mag-pop-sldr mfp-with-anim kt-mobile-menu print-products-menu" id="kt-mobile-menu" tabindex="-1"
+                role="dialog" aria-hidden="true">
+                <div class="pop-modal-content">
+                    <div class="pop-modal-body">
+                        <ul id="menu-global-menu-3-24" class="kad-mobile-nav">
+                            <li
+                                class="menu-printproducts menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-has-children sf-dropdown sf-dropdown-toggle menu-item-4850 sf-dropdown">
+                                <p>Print Products</p>
+                                <a class="menu-toggle-close" data-parent=".kad-nav-collapse" data-toggle="collapse"
+                                    data-target="">Close</a>
+                                <ul class="sub-menu sf-dropdown-menu  collapse in" aria-expanded="true" style="">
+                                    <a href="https://midwestcustomprint.com/printing-products/"
+                                        class="menu-item">Product Categories</a>
+                                    <li
+                                        class="menu-popularproducts menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children sf-dropdown-submenu sf-dropdown-toggle menu-item-4867 sf-dropdown-submenu">
+                                        <a href="#" class="accordion-toggle">Popular Products</a><span
+                                            class="kad-submenu-accordion collapse-next kad-submenu-accordion-open "
+                                            data-parent=".kad-nav-collapse" data-toggle="collapse" data-target=""><i
+                                                class="kt-icon-chevron-down"></i><i
+                                                class="kt-icon-chevron-up"></i></span>
+                                        <ul class="sub-menu sf-dropdown-menu sf-sub-dropdown-menu collapse in"
+                                            aria-expanded="true" style="">
+                                            <li
+                                                class="menu-banners menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-4871">
+                                                <a
+                                                    href="https://midwestcustomprint.com/product-category/banners/">Banners</a>
+                                            </li>
+                                            <li
+                                                class="menu-brochures menu-item menu-item-type-post_type menu-item-object-product menu-item-4878">
+                                                <a
+                                                    href="https://midwestcustomprint.com/product/brochure-printing/">Brochures</a>
+                                            </li>
+                                            <li
+                                                class="menu-businesscards menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-4855">
+                                                <a
+                                                    href="https://midwestcustomprint.com/product-category/business-cards/">Business
+                                                    Cards</a>
+                                            </li>
+                                            <li
+                                                class="menu-flyers menu-item menu-item-type-post_type menu-item-object-product menu-item-4877">
+                                                <a
+                                                    href="https://midwestcustomprint.com/product/custom-flyers/">Flyers</a>
+                                            </li>
+                                            <li
+                                                class="menu-postcards menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-4870">
+                                                <a
+                                                    href="https://midwestcustomprint.com/product-category/marketing-materials/postcards/">Postcards</a>
+                                            </li>
+                                            <li
+                                                class="menu-posters menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-4869">
+                                                <a
+                                                    href="https://midwestcustomprint.com/product-category/marketing-materials/posters/">Posters</a>
+                                            </li>
+                                            <li
+                                                class="menu-stickers menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-4856">
+                                                <a
+                                                    href="https://midwestcustomprint.com/product-category/labels-stickers/">Stickers</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li
+                                        class="menu-banners menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-4912">
+                                        <a href="https://midwestcustomprint.com/product-category/banners/">Banners</a>
+                                    </li>
+                                    <li
+                                        class="menu-businesscards menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-4910">
+                                        <a href="https://midwestcustomprint.com/product-category/business-cards/">Business
+                                            Cards</a>
+                                    </li>
+                                    <li
+                                        class="menu-signs menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children sf-dropdown-submenu sf-dropdown-toggle menu-item-4911 sf-dropdown-submenu">
+                                        <a href="#" class="accordion-toggle">Signs</a><span
+                                            class="kad-submenu-accordion collapse-next kad-submenu-accordion-open "
+                                            data-parent=".kad-nav-collapse" data-toggle="collapse" data-target=""><i
+                                                class="kt-icon-chevron-down"></i><i
+                                                class="kt-icon-chevron-up"></i></span>
+                                        <ul class="sub-menu sf-dropdown-menu sf-sub-dropdown-menu collapse in"
+                                            aria-expanded="true" style="">
+                                            <li
+                                                class="menu-banners menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-4914">
+                                                <a
+                                                    href="https://midwestcustomprint.com/product-category/signage-solutions/">All
+                                                    Signs</a>
+                                            </li>
+                                            <li
+                                                class="menu-banners menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-4914">
+                                                <a
+                                                    href="https://midwestcustomprint.com/product-category/banners/">Banners</a>
+                                            </li>
+                                            <li
+                                                class="menu-posters menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-4913">
+                                                <a
+                                                    href="https://midwestcustomprint.com/product-category/marketing-materials/posters/">Posters</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li
+                                        class="menu-tradeshows menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children sf-dropdown-submenu sf-dropdown-toggle menu-item-4853 sf-dropdown-submenu">
+                                        <a href="#" class="accordion-toggle">Trade
+                                            Shows</a><span
+                                            class="kad-submenu-accordion collapse-next kad-submenu-accordion-open "
+                                            data-parent=".kad-nav-collapse" data-toggle="collapse" data-target=""><i
+                                                class="kt-icon-chevron-down"></i><i
+                                                class="kt-icon-chevron-up"></i></span>
+                                        <ul class="sub-menu sf-dropdown-menu sf-sub-dropdown-menu  collapse in"
+                                            aria-expanded="true" style="">
+                                            <li
+                                                class="menu-backwalls menu-item menu-item-type-post_type menu-item-object-product menu-item-4880">
+                                                <a href="https://midwestcustomprint.com/product-category/trade-show/">All
+                                                    Trade
+                                                    Shows</a>
+                                            </li>
+                                            <li
+                                                class="menu-backwalls menu-item menu-item-type-post_type menu-item-object-product menu-item-4880">
+                                                <a
+                                                    href="https://midwestcustomprint.com/product/formulate-10-ft-master-fabric-backwall/">Backwalls</a>
+                                            </li>
+                                            <li
+                                                class="menu-banners menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-4865">
+                                                <a
+                                                    href="https://midwestcustomprint.com/product-category/banners/">Banners</a>
+                                            </li>
+                                            <li
+                                                class="menu-catalog menu-item menu-item-type-post_type menu-item-object-product menu-item-4900">
+                                                <a
+                                                    href="https://midwestcustomprint.com/product/trade-show-catalog/">Catalog</a>
+                                            </li>
+                                            <li
+                                                class="menu-flags menu-item menu-item-type-custom menu-item-object-custom menu-item-4908">
+                                                <a href="#">Flags</a>
+                                            </li>
+                                            <li
+                                                class="menu-hopupdisplay menu-item menu-item-type-post_type menu-item-object-product menu-item-4879">
+                                                <a
+                                                    href="https://midwestcustomprint.com/product/hopup-lite-fabric-display/">Hopup
+                                                    Display</a>
+                                            </li>
+                                            <li
+                                                class="menu-idbadges menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-4866">
+                                                <a href="https://midwestcustomprint.com/product-category/id-badges/">ID
+                                                    Badges</a>
+                                            </li>
+                                            <li
+                                                class="menu-tablecovers menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-4858">
+                                                <a
+                                                    href="https://midwestcustomprint.com/product-category/custom-table-covers/">Table
+                                                    Covers</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li
+                                        class="menu-printingservices menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children sf-dropdown-submenu sf-dropdown-toggle menu-item-4882 sf-dropdown-submenu">
+                                        <a href="#" class="accordion-toggle">Product Categories</a><span
+                                            class="kad-submenu-accordion collapse-next kad-submenu-accordion-open"
+                                            data-parent=".kad-nav-collapse" data-toggle="collapse" data-target=""><i
+                                                class="kt-icon-chevron-down"></i><i
+                                                class="kt-icon-chevron-up"></i></span>
+                                        <ul class="sub-menu sf-dropdown-menu sf-sub-dropdown-menu  collapse in">
+                                            <li
+                                                class="menu-banners menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-4885">
+                                                <a
+                                                    href="https://midwestcustomprint.com/product-category/banners/">Banners</a>
+                                            </li>
+                                            <li
+                                                class="menu-barricadecovers menu-item menu-item-type-post_type menu-item-object-product menu-item-4897">
+                                                <a
+                                                    href="https://midwestcustomprint.com/product/custom-barricade-covers/">Barricade
+                                                    Covers</a>
+                                            </li>
+                                            <li
+                                                class="menu-beveragecoasters menu-item menu-item-type-post_type menu-item-object-product menu-item-4903">
+                                                <a href="https://midwestcustomprint.com/product/custom-coasters/">Beverage
+                                                    Coasters</a>
+                                            </li>
+                                            <li
+                                                class="menu-booklets menu-item menu-item-type-post_type menu-item-object-product menu-item-4898">
+                                                <a
+                                                    href="https://midwestcustomprint.com/product/custom-booklets/">Booklets</a>
+                                            </li>
+                                            <li
+                                                class="menu-bookmarks menu-item menu-item-type-post_type menu-item-object-product menu-item-4895">
+                                                <a
+                                                    href="https://midwestcustomprint.com/product/custom-bookmarks/">Bookmarks</a>
+                                            </li>
+                                            <li
+                                                class="menu-brochures menu-item menu-item-type-post_type menu-item-object-product menu-item-4905">
+                                                <a
+                                                    href="https://midwestcustomprint.com/product/brochure-printing/">Brochures</a>
+                                            </li>
+                                            <li
+                                                class="menu-businesscards menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-4886">
+                                                <a
+                                                    href="https://midwestcustomprint.com/product-category/business-cards/">Business
+                                                    Cards</a>
+                                            </li>
+                                            <li
+                                                class="menu-doorhangers menu-item menu-item-type-post_type menu-item-object-product menu-item-4904">
+                                                <a href="https://midwestcustomprint.com/product/door-hangers/">Door
+                                                    Hangers</a>
+                                            </li>
+                                            <li
+                                                class="menu-eventtickets menu-item menu-item-type-custom menu-item-object-custom menu-item-4936">
+                                                <a href="https://midwestcustomprint.com/product/event-ticket-printing/">Event
+                                                    Tickets</a>
+                                            </li>
+                                            <li
+                                                class="menu-folders menu-item menu-item-type-post_type menu-item-object-product menu-item-4901">
+                                                <a
+                                                    href="https://midwestcustomprint.com/product/pocket-folders-2/">Folders</a>
+                                            </li>
+                                            <li
+                                                class="menu-idbadges menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-4889">
+                                                <a href="https://midwestcustomprint.com/product-category/id-badges/">ID
+                                                    Badges</a>
+                                            </li>
+                                            <li
+                                                class="menu-invitations menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-4890">
+                                                <a
+                                                    href="https://midwestcustomprint.com/product-category/invitations/">Invitations</a>
+                                            </li>
+                                            <li
+                                                class="menu-labelsandstickers menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-4887">
+                                                <a
+                                                    href="https://midwestcustomprint.com/product-category/labels-stickers/">Labels
+                                                    and Stickers</a>
+                                            </li>
+                                            <li
+                                                class="menu-magnets menu-item menu-item-type-post_type menu-item-object-product menu-item-4896">
+                                                <a
+                                                    href="https://midwestcustomprint.com/product/car-magnets-2/">Magnets</a>
+                                            </li>
+                                            <li
+                                                class="menu-newsletters menu-item menu-item-type-post_type menu-item-object-product menu-item-4902">
+                                                <a
+                                                    href="https://midwestcustomprint.com/product/custom-newsletters/">Newsletters</a>
+                                            </li>
+                                            <li
+                                                class="menu-postcards menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-4884">
+                                                <a
+                                                    href="https://midwestcustomprint.com/product-category/marketing-materials/postcards/">Postcards</a>
+                                            </li>
+                                            <li
+                                                class="menu-posters menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-4883">
+                                                <a
+                                                    href="https://midwestcustomprint.com/product-category/marketing-materials/posters/">Posters</a>
+                                            </li>
+                                            <li
+                                                class="menu-signs menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-4892">
+                                                <a
+                                                    href="https://midwestcustomprint.com/product-category/signage-solutions/">Signs</a>
+                                            </li>
+                                            <li
+                                                class="menu-tablecovers menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-4891">
+                                                <a
+                                                    href="https://midwestcustomprint.com/product-category/custom-table-covers/">Table
+                                                    Covers</a>
+                                            </li>
+                                            <li
+                                                class="menu-tradeshowcatalog menu-item menu-item-type-post_type menu-item-object-product menu-item-4899">
+                                                <a href="https://midwestcustomprint.com/product/trade-show-catalog/">Trade
+                                                    Show Catalog</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li
+                                class="menu-requestaquote menu-item menu-item-type-custom menu-item-object-custom menu-item-4862">
+                                <a href="https://midwestcustomprint.com/request-print-quote/">Request A Quote</a>
+                            </li>
+                            <li
+                                class="menu-requestaquote menu-item menu-item-type-custom menu-item-object-custom menu-item-4862">
+                                <a href="tel:844-928-7866">(844) 928-7866</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cs-category-nav__wrap">
+
+            <a href="#" class="js-all-products">All Products</a>
+            <ul class="cs-category-nav__links">
+                <li><a href="/product-category/banners/">Banners</a></li>
+                <li><a href="/product/brochure-printing/">Brochures</a></li>
+                <li><a href="/product-category/business-cards/">Business Cards</a></li>
+                <li><a href="/product/custom-flyers/">Flyers</a></li>
+                <li><a href="/product-category/marketing-materials/postcards/">Postcards</a></li>
+                <li><a href="/product-category/marketing-materials/posters/">Posters</a></li>
+                <li><a href="/product-category/labels-stickers/">Labels & Stickers</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+
+
+    <style>
+        .cs-category-nav {
+            background: #000;
+            list-style-type: none !important;
+            padding: .8rem 1rem;
+
+
+        }
+
+        .cs-category-nav__wrap {
+            display: flex;
+            flex-flow: row nowrap;
+            align-content: center;
+            max-width: 1180px;
+            margin: 0 auto;
+        }
+
+
+        .cs-category-nav__links {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            margin: 0;
+        }
+
+        .cs-category-nav__links li {
+            margin: 0 1rem;
+            list-style-type: none;
+            line-height: 0;
+        }
+
+        .cs-category-nav a {
+            color: #efefef;
+            font-size: 1rem;
+        }
+    </style>
+
+    <main id="main">
+        <section id="hero-81" class="hero-81">
+            <div class="cs-container">
+                <h1 class="cs-title">Midwest Custom Print <br /> Your<span> One-Stop</span> Chicago <span>Print
+                        Shop</span></h1>
+                <h2 class="cs-title-alt">High-Quality Printing Solutions for Small Businesses, Events, and More</h2>
+
+                <a href="/request-print-quote/" class="cs-button-solid">Request Quote</a>
+                <a href="/contact/" class="cta-button cta-secondary-button cs-button-solid">Call Us Now</a>
+                <a href="/printing-products/" class="cta-button cta-secondary-button cs-button-solid no-mobile">View
+                    Products</a>
+            </div>
+
+            <!-- Background Image -->
+            <picture class="cs-background">
+
+                <source media="(min-width: 501px)" srcset="assets/images/home-hero-t.webp">
+                <source media="(min-width: 1280px)" srcset="assets/images/home-hero-d.webp">
+                <source media="(min-width: 1400px)" srcset="assets/images/home-hero-l.webp">
+                <img loading="lazy" decoding="async" src="/assets/images/home-hero.webp" alt="hero background"
+                    width="2250" height="1500" aria-hidden="true">
+            </picture>
+            <style>
+                .hero-81 {
+                    text-align: center;
+                    padding: 5rem 1rem 5rem;
+
+                    position: relative;
+                    z-index: 1;
+                    overflow: hidden;
+                }
+
+
+                /* .hero-81:before {
+                    content: '';
+                    width: 31.25rem;
+                    height: 250rem;
+                    background: #fff;
+                    opacity: 1;
+                    transform: rotate(-67deg);
+                    transform-origin: center;
+                    position: absolute;
+                    display: block;
+                    bottom: -139.6875rem;
+                    right: 50%;
+                    z-index: 0;
+                }
+
+                .hero-81:after {
+                    content: '';
+                    width: 31.25rem;
+                    height: 250rem;
+                    background: #fff;
+                    opacity: 1;
+                    transform: rotate(67deg);
+                    transform-origin: center;
+                    position: absolute;
+                    display: block;
+                    bottom: -139.6875rem;
+                    left: 50%;
+                    z-index: 0;
+                } */
+
+                .hero-81 .cs-background {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: -2;
+                }
+
+                .hero-81 .cs-background:before {
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    background: #2e1058;
+                    opacity: 0.7;
+                    position: absolute;
+                    display: block;
+                    top: 0;
+                    left: 0;
+                    z-index: 1;
+                    pointer-events: none;
+                }
+
+                .hero-81 .cs-background img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+
+                .hero-81 .cs-container {
+                    width: 100%;
+                    max-width: 67.5rem;
+                    margin: auto;
+                }
+
+                .hero-81 .cs-title {
+                    font-size: clamp(1.8rem, 6.4vw, 2rem);
+                    font-weight: 700;
+                    line-height: 1.2em;
+                    text-align: center;
+                    max-width: 100%;
+                    margin: 0 auto clamp(1rem, 4vw, 1.5rem);
+                    color: #fff;
+                    position: relative;
+                }
+
+                .hero-81 .cs-title span {
+                    color: var(--primary);
+                }
+
+                /* .hero-81 .cs-title:after {
+                    content: '';
+                    width: clamp(3rem, 7.5vw, 4.25rem);
+                    height: clamp(0.25rem, 0.8vw, 0.5rem);
+                    margin: clamp(1rem, 4vw, 1.5rem) auto clamp(1rem, 4vw, 1.5rem);
+                    background: var(--primary);
+                    opacity: 1;
+                    position: relative;
+                    display: block;
+                } */
+
+                .hero-81 .cs-title-alt {
+                    font-size: clamp(1.1rem, 3.2vw, 1.60625rem);
+                    font-weight: 700;
+                    line-height: 1.2em;
+                    text-align: center;
+                    max-width: 100%;
+                    margin: 0 auto clamp(1rem, 4vw, 4rem);
+                    color: #fff;
+                    position: relative;
+                }
+
+                .hero-81 .cs-text {
+                    font-size: 1.25rem;
+                    line-height: 1.5em;
+                    text-align: center;
+                    width: 100%;
+                    max-width: clamp(29rem, 60vw, 50rem);
+                    margin: 0 auto;
+                    margin-bottom: clamp(2.5rem, 4vw, 3rem);
+                    color: #fff;
+                }
+
+                .hero-81 .cs-text span {
+                    color: var(--primary);
+                }
+
+                @media (min-width: 48rem) {
+                    .hero-81 .cta-secondary-button:not(.no-mobile) {
+                        margin: 0 1rem;
+                    }
+                }
+
+                @media only screen and (min-width: 48rem) {
+                    .hero-81 {
+                        padding-top: 10rem;
+                        padding-bottom: 10rem;
+                    }
+                }
+
+                /* Desktop - 1300px (To make image background parallax) */
+                @media only screen and (min-width: 81.25rem) {
+                    .hero-81 {
+                        background: url("/assets/images/home-hero-l.webp");
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-attachment: fixed;
+                        padding-top: 12rem;
+                        padding-bottom: 12rem;
+
+                    }
+
+                    .hero-81 .cs-background img {
+                        display: none;
+                    }
+
+                    .hero-81 .cs-title {
+                        font-size: clamp(1.8rem, 6.4vw, 3rem);
+                        max-width: 100%;
+                        ;
+                    }
+                }
+
+                @media only screen and (max-width: 47.9375rem) {
+                    .cs-button-solid {
+                        margin: 1rem;
+                    }
+                }
+            </style>
+        </section>
+
+        <section class="about-icons">
+            <ul class="cs-card-group">
+                <!-- <h3 class="cs-title">Here’s why our clients trust us for graphic design services and custom printing.
+                </h3> -->
+                <li class="cs-item">
+                    <picture class="cs-icon">
+                        <span class="elementor-icon elementor-animation-">
+                            <i aria-hidden="true" class="fas fa-shipping-fast"></i>
+                        </span>
+                    </picture>
+                    <h4 class="cs-title"><strong>Same day shipping</strong> on some orders</h4>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-icon">
+                        <!-- <img loading="lazy" decoding="async"
+                            src="" alt="appliance"
+                            width="52" height="52" aria-hidden="true"> -->
+                        <span class="elementor-icon elementor-animation-">
+                            <i aria-hidden="true" class="fas fa-hourglass-end"></i> </span>
+                    </picture>
+                    <h4 class="cs-title"><strong>24 hour turnaround</strong> on Vinyl Banners</h4>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-icon">
+                        <span class="elementor-icon elementor-animation-">
+                            <i aria-hidden="true" class="fas fa-handshake"></i> </span>
+                    </picture>
+                    <h4 class="cs-title">Awesome <strong>customer service</strong> to guide you from A-Z</h4>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-icon">
+                        <span class="elementor-icon elementor-animation-">
+                            <i aria-hidden="true" class="fas fa-laptop"></i> </span>
+                    </picture>
+                    <h4 class="cs-title">Free 20pt <strong>artwork inspection</strong> before production</h4>
+                </li>
+            </ul>
+        </section>
+
+        <style>
+            .about-icons {
+                /* background: var(--primary); */
+                /* border-bottom: 5px solid var(--primary); */
+                border-top: 5px solid var(--primary);
+                background-color: var(--secondary);
+            }
+
+            .about-icons .cs-card-group {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: auto;
+                padding: 1rem;
+                margin: 0 1rem;
+                gap: 1rem;
+
+                margin: auto;
+            }
+
+            .cs-card-group>.cs-title {
+                grid-column: span 2;
+                font-size: 1rem;
+                margin: 0 0 1rem;
+                color: var(--bodyTextColor);
+                max-width: 100%;
+
+            }
+
+            .cs-item .cs-title {
+                font-size: .8rem;
+                /* color: var(--bodyTextColor); */
+                padding-left: 1rem;
+                margin: 0;
+                color: var(--bodyTextColorWhite);
+                font-weight: 300;
+                line-height: 1.5;
+            }
+
+            .cs-card-group li {
+                list-style-type: none;
+            }
+
+            .about-icons .elementor-icon i,
+            .about-icons .elementor-icon svg {
+                /* color: var(--primary); */
+                font-size: 1rem;
+                color: #fff;
+            }
+
+            .about-icons .cs-card-group .cs-item {
+                display: flex;
+                align-items: center;
+            }
+
+
+
+
+            @media (min-width: 768px) {
+                .about-icons .cs-card-group {
+                    grid-template-columns: repeat(4, 1fr);
+                    gap: 0 1.5rem;
+                    max-width: 1800px;
+
+                }
+
+                .about-icons .cs-card-group>.cs-title {
+                    grid-column: span 4;
+                    font-size: 1.2rem;
+                }
+
+                .cs-item .cs-icon .elementor-icon i {
+                    font-size: 2rem;
+                }
+
+                .cs-item .cs-title {
+                    font-size: .9rem;
+                    padding-left: 1.5rem;
+                }
+            }
+
+            @media (max-width: 1023px) and (min-width: 768px) {
+                .about-icons .cs-card-group {
+                    align-items: stretch;
+                    gap: 0;
+                }
+
+                .about-icons .cs-item {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    flex: 1 1 50%;
+                    box-sizing: border-box;
+                    min-height: 100%;
+                }
+
+                .about-icons .cs-icon {
+                    margin-bottom: 0.5rem;
+                }
+
+                .about-icons .cs-title {
+                    text-align: center;
+
+                    height: 100%;
+                }
+
+            }
+        </style>
+
+        <section id="collection-1556">
+            <div class="cs-container">
+                <div class="cs-content cs-content--full">
+                    <h3 class="cs-title">Marketing Prints for Businesses</h3>
+                    <p class="cs-text">Professional high-quality custom printing for large and small</p>
+                    <a href="printing-products/" class="cs-button-solid">
+                        Explore Our Products.</a>
+                </div>
+                <div class="cs-card-group">
+                    <li class="cs-item">
+                        <a href="" class="cs-link">
+                            <picture class="cs-picture">
+                                <img decoding="async"
+                                    src="https://eadn-wc05-7743509.nxedge.io/wp-content/uploads/2022/01/custom-wall-hanging-banner-chicago-illinois-400x400.jpg"
+                                    srcset="/assets/images/vinyl-banner.webp"
+                                    alt="custom-wall-hanging-banner-chicago-illinois" width="400" height="400"
+                                    class="attachment-shop_catalog wp-post-image size-400x400">
+                            </picture>
+                            <h3 class="cs-product-name">Quick Ship Vinyl Banners</h3>
+                            <p class="cs-text">Our custom vinyl banners are sturdy and suitable for events, sales
+                                promotions, and trade
+                                shows.</p>
+                            <span class="cs-price">Starting at $18.00</span>
+                        </a>
+                    </li>
+                    <li class="cs-item">
+                        <a href="" class="cs-link">
+                            <picture class="cs-picture">
+                                <img loading="lazy" decoding="async" src="/assets/images/postcard.webp"
+                                    alt="2 custom postcards" width="400" height="400"
+                                    class="attachment-shop_catalog wp-post-image size-400x400">
+                            </picture>
+                            <h3 class="cs-product-name">Custom Postcards</h3>
+                            <p class="cs-text">We help you create impactful direct mail campaigns – and handouts –
+                                thanks to our detailed postcards.</p>
+                            <span class="cs-price">Starting at $27.65</span>
+                        </a>
+                    </li>
+
+                    <li class="cs-item">
+                        <a href="/product/glossy-business-cards/" class="cs-link">
+                            <picture class="cs-picture">
+                                <img loading="lazy" decoding="async" src="/assets/images/BusinessCardMockup2.webp"
+                                    alt="Custom Business Cards" width="400" height="400"
+                                    class="attachment-shop_catalog wp-post-image size-400x400">
+                            </picture>
+                            <h3 class="cs-product-name">Glossy Business Cards</h3>
+                            <p class="cs-text">Make a lasting impression with our custom business card printing
+                                services, let us help you spread our message clearly.</p>
+                            <span class="cs-price">Starting at $30.65</span>
+                        </a>
+                    </li>
+                    <li class="cs-item">
+                        <a href="/product/custom-flyers/" class="cs-link">
+                            <picture class="cs-picture">
+                                <img loading="lazy" decoding="async" src="/assets/images/flyer2.webp"
+                                    alt="Custom flyers and sales sheets" width="400" height="400"
+                                    class="attachment-shop_catalog wp-post-image size-400x400">
+                            </picture>
+                            <h3 class="cs-product-name">Flyers and Sales Sheets</h3>
+                            <p>With sales sheets and flyers as comprehensive as Midwest Custom Print’s, they’re the
+                                perfect marketing tools to grab attention.</p>
+                            <span class="cs-price">Starting at $81.83</span>
+                        </a>
+                    </li>
+                    <li class="cs-item">
+                        <a href="" class="cs-link">
+                            <picture class="cs-picture">
+                                <img loading="lazy" decoding="async" src="/assets/images/yardsign.webp" alt="Yard Signs"
+                                    width="400" height="400" class="attachment-shop_catalog wp-post-image size-400x400">
+                            </picture>
+                            <h3 class="cs-product-name">Custom Yard Signs</h3>
+                            <p>Eye-catching and durable yard signs are our specialty when it comes to outdoor
+                                advertising materials, get in touch today!</p>
+                            <span class="cs-price">Starting at $22.00</span>
+                        </a>
+                    </li>
+                    <li class="cs-item">
+                        <a href="/product/4-sided-table-cover-fitted/" class="cs-link">
+                            <picture class="cs-picture">
+                                <img loading="lazy" decoding="async" src="/assets/images/table-cover.webp"
+                                    sizes="(max-width: 400px) 100vw, 400px" alt="" width="400" height="400"
+                                    class="attachment-shop_catalog wp-post-image size-400x400">
+                            </picture>
+                            <h3 class="cs-product-name">Table Covers</h3>
+                            <p>For a professional touch – for your trade show and exhibition booth or events – order our
+                                custom table covers.</p>
+                            <span class="cs-price">Starting at $254.00</span>
+                        </a>
+                    </li>
+                    <li class="cs-item">
+                        <a href="" class="cs-link">
+                            <picture class="cs-picture">
+                                <img loading="lazy" decoding="async" src="/assets/images/sticker.webp"
+                                    alt="Stickers and lables" width="400" height="400"
+                                    class="attachment-shop_catalog wp-post-image size-400x400">
+                            </picture>
+                            <h3 class="cs-product-name">Labels and Stickers</h3>
+                            <p>Don’t let the promotion end with the events and promotional events. Get custom stickers
+                                for branding, packaging, and giveaways from Midwest.</p>
+                            <span class="cs-price">Starting at $39.12</span>
+                        </a>
+                    </li>
+                    <li class="cs-item">
+                        <a href="/product/brochure-printing/" class="cs-link">
+                            <picture class="cs-picture">
+                                <img loading="lazy" decoding="async" src="/assets/images/brochure.webp"
+                                    sizes="(max-width: 400px) 100vw, 400px" alt="Political Yard Sign" width="400"
+                                    height="400" class="attachment-shop_catalog wp-post-image size-400x400">
+                            </picture>
+                            <h3 class="cs-product-name">Brochures</h3>
+                            <p>Effectively communicate your campaign's message with our professionally designed and
+                                printed brochures, ideal for distribution at events and door-to-door canvassing.</p>
+                            <span class="cs-price">Starting at $150.07</span>
+                        </a>
+                    </li>
+                    <li class="cs-item cs-item--hide">
+                        <a href="" class="cs-link">
+                            <picture class="cs-picture">
+                                <img loading="lazy" decoding="async" src="/assets/images/political-vinyl-banner.webp"
+                                    alt="Political Vinyl Banner" width="400" height="400"
+                                    class="attachment-shop_catalog wp-post-image size-400x400">
+                            </picture>
+                            <h3 class="cs-product-name">Political Vinyl
+                                Banners</h3>
+                            <p class="cs-text">Elevate your campaign with our durable, custom-printed political vinyl
+                                banners, perfect for rallies and events.</p>
+                            <span class="cs-price">Starting at $14.00</span>
+                        </a>
+                    </li>
+
+                </div>
+            </div>
+        </section>
+
+        <style>
+            /* Mobile - 360px */
+            @media only screen and (min-width: 0rem) {
+                #collection-1556 {
+                    padding: var(--sectionPadding);
+                    background-color: #fff;
+                }
+
+                #collection-1556 .cs-container {
+                    width: 100%;
+                    max-width: 80rem;
+                    margin: auto;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                #collection-1556 .cs-content.cs-content--full {
+                    padding-bottom: 1rem;
+                }
+
+                #collection-1556 .cs-content {
+                    width: 100%;
+
+                }
+
+                #collection-1556 .cs-content.cs-content--full {
+                    display: block;
+                }
+
+
+
+                #collection-1556 .cs-title {
+                    margin: 0;
+                    text-align: left;
+                    max-width: 100%;
+                }
+
+                #collection-1556 .cs-text {
+                    font-size: 1rem;
+                    color: var(--wc-secondary-text);
+                    text-align: left;
+                }
+
+                #collection-1556 .cs-button-solid {
+                    font-size: 1rem;
+                    /* 46px - 56px */
+                    line-height: clamp(2rem, 5.5vw, 2.5rem);
+                    text-decoration: none;
+                    font-weight: 700;
+                    text-align: center;
+                    margin: 0;
+                    color: #fff;
+                    min-width: 9.375rem;
+                    padding: 0 1rem;
+                    background-color: var(--secondary);
+                    display: inline-block;
+                    position: relative;
+                    z-index: 1;
+                    /* prevents padding from adding to the width */
+                    box-sizing: border-box;
+                    margin-top: 1rem;
+                }
+
+                #collection-1556 .cs-button-solid:before {
+                    content: '';
+                    position: absolute;
+                    height: 100%;
+                    width: 0%;
+                    background: #000;
+                    opacity: 1;
+                    top: 0;
+                    left: 0;
+                    z-index: -1;
+                    transition: width .3s;
+                }
+
+
+
+                #collection-1556 .cs-button-solid:hover:before {
+                    width: 100%;
+                }
+
+                #collection-1556 .cs-button-solid {
+                    order: 3;
+                }
+
+                #collection-1556 .cs-card-group {
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                    column-gap: clamp(1rem, 3vw, 1.25rem);
+                    row-gap: clamp(1rem, 3vw, 2.5rem);
+                    align-items: flex-start;
+                }
+
+                #collection-1556 .cs-item {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                }
+
+
+
+
+                #collection-1556 .cs-item:hover .cs-picture {
+                    background-color: rgba(0, 0, 0, 0.1);
+                }
+
+                #collection-1556 .cs-item:hover .cs-picture img {
+                    transform: scale(1.05);
+                }
+
+                #collection-1556 .cs-link {
+                    text-decoration: none;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    cursor: pointer;
+                }
+
+                #collection-1556 .cs-picture {
+                    width: 100%;
+                    height: 100vw;
+                    min-height: 21.25rem;
+                    max-height: 21.25rem;
+                    aspect-ratio: 1 / 1;
+                    /* 12px - 20px */
+                    margin: 0 0 clamp(0.75rem, 2vw, 1.25rem);
+                    background-color: #efefef;
+                    overflow: hidden;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    z-index: 1;
+                    transition: background-color 0.3s;
+                    border: 1px solid #e8e8e8;
+                    padding: 0;
+
+                }
+
+                #collection-1556 .cs-picture img {
+                    width: 100%;
+
+                    height: auto;
+                    /* mix-blend-mode: multiply;
+                    max-height: 90%;
+                    max-width: 90%; */
+                    object-fit: cover;
+                    transition: transform .3s;
+                }
+
+                #collection-1556 .cs-product-name {
+                    /* 20px - 25px */
+                    font-size: clamp(1.25rem, 3vw, 1.5625rem);
+                    line-height: 1.2em;
+                    font-weight: 700;
+                    margin: 0 0 0.25rem 0;
+                    color: var(--headerColor);
+                }
+
+                #collection-1556 .cs-price {
+                    font-size: 1rem;
+                    line-height: 1.2em;
+                    font-weight: 400;
+                    margin: 1rem 0 0;
+                    color: var(--bodyTextColor);
+                    display: block;
+                }
+            }
+
+            /* Tablet - 768px */
+            @media only screen and (min-width: 48rem) {
+                #collection-1556 .cs-content {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: row;
+                    gap: 3rem;
+                }
+
+                #collection-1556 .cs-card-group {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+
+                    column-gap: clamp(1rem, 3vw, 1.25rem);
+
+                    row-gap: clamp(1rem, 3vw, 2.5rem);
+
+                }
+            }
+
+            @media only screen and (min-width: 64rem) {
+
+                #collection-1556 .cs-card-group {
+
+                    grid-template-columns: repeat(3, 1fr);
+                    column-gap: clamp(1rem, 3vw, 1.25rem);
+                    row-gap: clamp(1rem, 3vw, 2.5rem);
+
+                }
+            }
+
+            @media only screen and (min-width: 100rem) {
+
+                #collection-1556 .cs-card-group {
+
+                    grid-template-columns: repeat(4, 1fr);
+                    column-gap: clamp(1rem, 3vw, 1.25rem);
+                    row-gap: clamp(1rem, 3vw, 2.5rem);
+
+                }
+
+                #collection-1556 .cs-item.cs-item--hide {
+                    display: none;
+                }
+            }
+
+
+            @media (max-width: 63.9rem) and (min-width: 48rem) {
+                #collection-1556 .cs-item.cs-item--hide {
+                    display: none;
+                }
+
+            }
+        </style>
+
+
+        <!-- <section class="reasons-block">
+            <article class="reasons-block__wrap">
+                <div class="reasons-block__wrap--l">
+
+                    <p class="cs-title">Who We Are</p>
+                    <p>
+                        Midwest Custom Print is a premier print shop in Chicago. With years of hands-on experience, we
+                        deliver exceptional prints for both digital and print media. Our team, filled with practical and
+                        experienced professionals, relies on a customer-focused approach.
+                    </p>
+
+
+                    <p>
+                        We offer badge printing services, ticket printing, backdrop printing, and much more. Our company
+                        offers fast
+                        turnarounds – realizing the need for urgent, high-quality promotional and marketing content.
+                    </p>
+
+
+                    <p>
+                        Plus, we offer free 20pt artwork inspection before production with same-day shipping and
+                        high-quality product guarantees. You name it, we create it! So, what are you waiting for?
+                    </p>
+
+                </div>
+
+            </article>
+        </section> -->
+        <style>
+            .reasons-block {
+                padding: var(--sectionPadding);
+            }
+
+            .reasons-block__wrap--l p {
+                margin-bottom: 1rem;
+            }
+
+            .reasons-block__wrap {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+            }
+
+            @media (min-width: 48rem) {
+                .reasons-block__wrap--l {
+                    padding-right: 4rem;
+                }
+            }
+        </style>
+
+
+
+
+        <!-- <ul id="cs-list-1486" class="cs-ul">
+            <li class="cs-li">
+                <picture class="cs-li-picture">
+                    <img class="cs-li-icon" aria-hidden="true"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/direction.svg" decoding="async"
+                        alt="icon" width="36" height="36" loading="lazy">
+                </picture>
+                <div class="cs-flex">
+                    <h3 class="cs-h3">Why Choose Us?</h3>
+                    <p class="cs-li-text">
+                        Here’s why our clients trust us for graphic design services and custom printing in Chicago:
+                    </p>
+                </div>
+            </li>
+            <li class="cs-li">
+                <picture class="cs-li-picture">
+                    <img class="cs-li-icon" aria-hidden="true"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/target.svg" decoding="async"
+                        alt="icon" width="36" height="36" loading="lazy">
+                </picture>
+                <div class="cs-flex">
+                    <h3 class="cs-h3">Fast Turnaround</h3>
+                    <p class="cs-li-text">
+                        We know time is crucial. Get 24-hour delivery on vinyl banners from Midwest Custom Print with
+                        same-day shipping.
+                    </p>
+                </div>
+            </li>
+            <li class="cs-li">
+                <picture class="cs-li-picture">
+                    <img class="cs-li-icon" aria-hidden="true"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/target.svg" decoding="async"
+                        alt="icon" width="36" height="36" loading="lazy">
+                </picture>
+                <div class="cs-flex">
+                    <h3 class="cs-h3">Quality Assurance</h3>
+                    <p class="cs-li-text">
+                        Want to test out the quality first? Don’t worry, we offer 20pt artwork inspection so you have
+                        peace of mind before production begins.
+                    </p>
+                </div>
+            </li>
+            <li class="cs-li">
+                <picture class="cs-li-picture">
+                    <img class="cs-li-icon" aria-hidden="true"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/target.svg" decoding="async"
+                        alt="icon" width="36" height="36" loading="lazy">
+                </picture>
+                <div class="cs-flex">
+                    <h3 class="cs-h3">Excellent Customer Service</h3>
+                    <p class="cs-li-text">
+                        The dedicated team of experts is ready to assist you, throughout the printing process for a
+                        hassle-free and smooth experience.
+                    </p>
+                </div>
+            </li>
+        </ul>
+        <style>
+            @media only screen and (min-width: 0rem) {
+                #cs-list-1486 {
+                    width: 100%;
+                    max-width: 39.375rem;
+                    margin: 0 0 2rem 0;
+                    padding: 0;
+                    display: flex;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    /* 24px - 32px */
+                    gap: clamp(1.5rem, 3vw, 2rem);
+                }
+
+                #cs-list-1486 .cs-li {
+                    list-style: none;
+                    margin: 0;
+                    /* 24px - 32px */
+                    padding: 0 0 clamp(1.5rem, 3vw, 2rem);
+                    border-bottom: 1px solid #E8E8E8;
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    /* 16px - 20px */
+                    gap: clamp(1rem, 2.5vw, 1.25rem);
+                }
+
+                #cs-list-1486 .cs-li:last-of-type {
+                    padding: 0;
+                    border: none;
+                }
+
+                #cs-list-1486 .cs-li-picture {
+                    /* 60px - 80px */
+                    width: clamp(3.75rem, 6vw, 5rem);
+                    height: clamp(3.75rem, 6vw, 5rem);
+                    margin: 0;
+                    border-radius: 50%;
+                    border: 1px solid var(--primary);
+                    overflow: hidden;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    /* prevents flexbox from squishing it */
+                    flex: none;
+                    position: relative;
+                    z-index: 1;
+                }
+
+                #cs-list-1486 .cs-li-picture:before {
+                    /* background color */
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    background: var(--primary);
+                    opacity: .1;
+                    position: absolute;
+                    display: block;
+                    top: 0;
+                    left: 0;
+                }
+
+                #cs-list-1486 .cs-li-icon {
+                    /* 24px - 32px */
+                    width: clamp(1.5rem, 3vw, 2rem);
+                    height: auto;
+                    display: block;
+                }
+
+                #cs-list-1486 .cs-h3 {
+                    font-size: 1.25rem;
+                    line-height: 1.2em;
+                    font-weight: 700;
+                    text-align: left;
+                    margin: 0 0 0.5rem 0;
+                    color: var(--headerColor);
+                }
+
+                #cs-list-1486 .cs-li-text {
+                    font-size: 1rem;
+                    line-height: 1.5em;
+                    text-align: left;
+                    margin: 0;
+                    color: var(--bodyTextColor);
+                }
+            }
+        </style> -->
+
+
+
+
+
+        <!-- ============================================ -->
+        <!--            Side By Side Reverse              -->
+        <!-- ============================================ -->
+
+        <section id="sbsr-2202">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <span class="cs-topper">Custom Graphic Design in Chicago</span>
+                    <h3 class="cs-title">For Print & Branding Success</h3>
+                    <p class="cs-text">
+                        <em>We’re committed to delivering the best digital
+                            marketing for businesses</em>
+                    </p>
+                    <p class="cs-text">
+                        Here at Midwest Custom Print, we go a step further – to include expert graphic design solutions
+                        in our services. We offer <strong>custom graphic design</strong> to turn your ideas
+                        into a reality. We
+                        know, it’s important to stand out in the market, especially when you’re competing against
+                        industry giants.
+                    </p>
+                    <p class="cs-text">
+                        Let us help you create a new logo, a unique business branding style, and captivating marketing
+                        materials that will make you instantly recognizable. Our team will collaborate with your
+                        in-house pros, to create designs that match your brand identity – and engage your audience.
+                    </p>
+                    <span class="cs-weekdays">Mon - Fri: 9am - 5pm</span>
+                    <span class="cs-weekends">Saturday: 9am - 12pm</span>
+                    <a href="/graphic-design/" class="cs-button-solid">View Our
+                        Services</a>
+                </div>
+                <div class="cs-image-group">
+                    <!--Main Image-->
+                    <picture class="cs-picture cs-picture1">
+                        <!--Mobile Image-->
+
+                        <img loading="lazy" decoding="async" src="/assets/images/coffee-sign.jpg"
+                            alt="Coffee shop sign design">
+                    </picture>
+                    <!--Small Image-->
+                    <picture class="cs-picture cs-picture2" style="background: var(--primary)">
+
+                        <img loading="lazy" decoding="async" src="/assets/images/BusinessCardMockup.webp"
+                            alt="Custom print design for Business Cards">
+                    </picture>
+                </div>
+            </div>
+
+
+
+            <style>
+                /* Mobile - 360px */
+                @media only screen and (min-width: 0rem) {
+                    #sbsr-2202 {
+                        padding: var(--sectionPadding);
+                        background-color: #221f20;
+                        overflow: hidden;
+                        position: relative;
+                        z-index: 1;
+                    }
+
+                    #sbsr-2202 .cs-container {
+                        width: 100%;
+                        /* changes to 1280px at tablet */
+                        max-width: 44rem;
+                        margin: auto;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        /* 48px - 64px */
+                        gap: clamp(3rem, 6vw, 4rem);
+                    }
+
+                    #sbsr-2202 .cs-content {
+                        text-align: center;
+                        width: 100%;
+                        max-width: 36.625rem;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+
+                    #sbsr-2202 .cs-title {
+                        max-width: 30ch;
+                        color: var(--bodyTextColorWhite);
+                    }
+
+                    #sbsr-2202 .cs-text {
+                        margin-bottom: 1.5rem;
+                        color: var(--bodyTextColorWhite);
+                    }
+
+                    #sbsr-2202 .cs-weekdays,
+                    #sbsr-2202 .cs-weekends {
+                        font-size: 1rem;
+                        font-weight: 700;
+                        line-height: 1.2em;
+                        text-transform: uppercase;
+                        letter-spacing: 1.6px;
+                        color: var(--bodyTextColorWhite);
+                    }
+
+                    #sbsr-2202 .cs-weekdays {
+                        margin-bottom: 0.5rem;
+                    }
+
+                    #sbsr-2202 .cs-button-solid {
+                        font-size: 1rem;
+                        font-weight: 700;
+                        /* 46px - 56px */
+                        line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+                        text-align: center;
+                        text-decoration: none;
+                        min-width: 9.375rem;
+                        margin: 2rem 0 0 0;
+                        /* prevents padding from adding to the width */
+                        box-sizing: border-box;
+                        padding: 0 1.5rem;
+                        background-color: var(--primary);
+                        color: var(--bodyTextColor);
+                        display: inline-block;
+                        position: relative;
+                        z-index: 1;
+                    }
+
+                    #sbsr-2202 .cs-topper {
+                        color: var(--primary);
+                    }
+
+                    #sbsr-2202 .cs-button-solid:before {
+                        content: "";
+                        width: 0%;
+                        height: 100%;
+                        background: #000;
+                        opacity: 1;
+                        border-radius: 0.25rem;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: -1;
+                        transition: width 0.3s;
+                    }
+
+                    #sbsr-2202 .cs-button-solid:hover:before {
+                        width: 100%;
+                    }
+
+                    #sbsr-2202 .cs-image-group {
+                        font-size: min(2.3vw, .75rem);
+                        width: 39.375em;
+                        height: 39.1875em;
+                        order: -1;
+                        position: relative;
+                        flex: none;
+                    }
+
+                    #sbsr-2202 .cs-picture {
+                        overflow: hidden;
+                        border: 8px solid #fff;
+                        display: block;
+                        position: absolute;
+                    }
+
+                    #sbsr-2202 .cs-picture img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+
+                    #sbsr-2202 .cs-picture1 {
+                        width: 24em;
+                        height: 29.375em;
+                        top: 0;
+                        left: 0;
+                    }
+
+                    #sbsr-2202 .cs-picture2 {
+                        width: 21.5625em;
+                        height: 31.875em;
+                        right: 0;
+                        bottom: 0;
+                    }
+
+
+                }
+
+                /* Tablet - 768px */
+                @media only screen and (min-width: 48rem) {
+                    #sbsr-2202 .cs-container {
+                        max-width: 80rem;
+                    }
+
+                    #sbsr-2202 .cs-flower {
+                        right: 0;
+                        bottom: 0;
+                    }
+                }
+
+                /* Desktop - 1024px */
+                @media only screen and (min-width: 64rem) {
+                    #sbsr-2202 .cs-container {
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: stretch;
+                    }
+
+                    #sbsr-2202 .cs-content {
+                        text-align: left;
+                        padding: 3rem 0;
+                        align-self: center;
+                        align-items: flex-start;
+                    }
+
+                    #sbsr-2202 .cs-image-group {
+                        font-size: min(1.3vw, 1rem);
+                        height: auto;
+                        min-height: 39.1875em;
+                        order: 2;
+                    }
+
+                    #sbsr-2202 .cs-picture1 {
+                        height: 74.960128%;
+                    }
+
+                    #sbsr-2202 .cs-picture2 {
+                        height: 81.339719%;
+                    }
+                }
+            </style>
+        </section>
+
+
+        <section id="blog-2200">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <span class="cs-topper">Maximum Value, Maximum Impact</span>
+                    <h2 class="cs-title">Custom Printed Packages</h2>
+                    <p class="cs-text">
+                        Get more for less with our custom-printed product packages, each bundled with professional
+                        graphic design for maximum impact. Our <a href="/product/contractor-package/">Contractor
+                            Package</a>, <a href="/product/promoter-package/">
+                            Promoter
+                            Package
+                        </a>, <a href="/product/barber-salon-package/">Salon
+                            and Barber Shop Package</a>, and <a href="/product/entrepreneur-package/">Entrepreneur
+                            Package</a>
+                        include everything
+                        you need to
+                        stand out, plus professional graphic design for a polished look. Perfect for promoting your
+                        brand and driving results.
+                    </p>
+                </div>
+                <ul class="cs-card-group">
+                    <li class="cs-item">
+                        <picture class="cs-picture">
+
+                            <img loading="lazy" decoding="async" src="/assets/images/executive.webp"
+                                alt="Printing packages for small business" width="413" height="320">
+                        </picture>
+                        <div class="cs-flex">
+                            <div class="cs-info-wrapper">
+                                <a class="cs-category">Contractor Package</a>
+
+                            </div>
+                            <a class="cs-link" href="/product/contractor-package/">
+                                <p class="cs-h3">$399.00 <span>$499</span></p>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="cs-item">
+                        <picture class="cs-picture cs-large" style="background-color: #9ccacf;">
+
+                            <img loading="lazy" decoding="async" src="/assets/images/promoter.webp"
+                                alt="Nightclub Promo printed products">
+                        </picture>
+                        <div class="cs-flex">
+                            <div class="cs-info-wrapper">
+                                <span class="cs-category">Promoter Package<span>
+
+                            </div>
+                            <a class="cs-link" href="/product/contractor-package/">
+                                <p class="cs-h3">$499.00 <span>$599</span></p>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="cs-item">
+                        <picture class="cs-picture">
+
+                            <img loading="lazy" decoding="async" src="/assets/images/entrenpenuer.webp"
+                                alt="posters and cards" width="413" height="320">
+                        </picture>
+                        <div class="cs-flex">
+                            <div class="cs-info-wrapper">
+                                <span class="cs-category">The Entrepreneur Package</span>
+
+                            </div>
+                            <a class="cs-link" href="/product/contractor-package/">
+                                <p class="cs-h3">$299.00 <span>$399</span></p>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <style>
+                /*-- -------------------------- -->
+<---           Blog             -->
+<--- -------------------------- -*/
+
+                /* Mobile - 360px */
+                @media only screen and (min-width: 0rem) {
+                    #blog-2200 {
+                        padding: var(--sectionPadding);
+                        background-color: #ffffe3;
+                        overflow: hidden;
+                        position: relative;
+                        z-index: 1;
+                    }
+
+                    #blog-2200 .cs-container {
+                        width: 100%;
+                        max-width: 80rem;
+                        margin: auto;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        /* 48px - 64px */
+                        gap: clamp(3rem, 6vw, 4rem);
+                    }
+
+                    #blog-2200 .cs-content {
+                        /* set text align to left if content needs to be left aligned */
+                        text-align: center;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        /* centers content horizontally, set to flex-start to left align */
+                        align-items: center;
+                    }
+
+                    #blog-2200 .cs-title {
+                        max-width: 25ch;
+                    }
+
+                    #blog-2200 .cs-card-group {
+                        width: 100%;
+                        margin: 0;
+                        padding: 0;
+                        display: grid;
+                        grid-template-columns: repeat(12, 1fr);
+                        row-gap: 1rem;
+                    }
+
+                    #blog-2200 .cs-item {
+                        text-align: left;
+                        list-style: none;
+                        overflow: hidden;
+                        grid-column: span 12;
+                        position: relative;
+                        z-index: 1;
+                        transition: box-shadow 0.3s, transform 0.3s;
+                    }
+
+                    #blog-2200 .cs-item:hover .cs-h3 {
+                        color: var(--primary);
+                    }
+
+                    #blog-2200 .cs-h3 span {
+                        text-decoration: line-through;
+                        padding-left: 20px;
+                    }
+
+                    #blog-2200 .cs-item:hover .cs-picture img {
+                        transform: scale(1.1);
+                    }
+
+                    #blog-2200 .cs-picture {
+                        width: 100%;
+                        /* 220px - 320px */
+                        height: clamp(13.75rem, 27.5vw, 20rem);
+                        overflow: hidden;
+                        display: block;
+                        position: relative;
+                        z-index: 1;
+                    }
+
+                    #blog-2200 .cs-picture img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        transition: transform 0.3s;
+                    }
+
+                    #blog-2200 .cs-large {
+                        /* 280px - 400px */
+                        height: clamp(17.5rem, 35vw, 25rem);
+                    }
+
+                    #blog-2200 .cs-flex {
+                        /* prevents padding and border from affecting height and width */
+                        box-sizing: border-box;
+                        padding: 1rem;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 0.75rem;
+                        position: relative;
+                        z-index: 2;
+                    }
+
+                    #blog-2200 .cs-info-wrapper {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.25rem;
+                    }
+
+                    #blog-2200 .cs-category {
+                        font-size: 1rem;
+                        font-weight: 700;
+                        line-height: 1.2em;
+                        margin: 0;
+                        color: var(--headerColor);
+                        display: flex;
+                        align-items: center;
+                        gap: 0.5rem;
+                    }
+
+                    #blog-2200 .cs-category::before {
+                        content: "";
+                        /* 16px - 32px */
+                        width: clamp(1rem, 2vw, 2rem);
+                        height: 2px;
+                        background: var(--primary);
+                        opacity: 1;
+                        display: block;
+                        position: relative;
+                    }
+
+                    #blog-2200 .cs-date-wrapper {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 0.5rem;
+                    }
+
+                    #blog-2200 .cs-date,
+                    #blog-2200 .cs-comments {
+                        /* 14px - 16px */
+                        font-size: clamp(0.875rem, 1.5vw, 1rem);
+                        font-weight: 400;
+                        line-height: 1.5em;
+                        margin: 0;
+                        color: var(--bodyTextColor);
+                        display: flex;
+                        align-items: center;
+                        gap: 0.625rem;
+                    }
+
+                    #blog-2200 .cs-date::before,
+                    #blog-2200 .cs-comments::before {
+                        content: "";
+                        width: 0.25rem;
+                        height: 0.25rem;
+                        background: #BABABA;
+                        border-radius: 50%;
+                    }
+
+                    #blog-2200 .cs-link {
+                        text-decoration: none;
+                        display: flex;
+                    }
+
+                    #blog-2200 .cs-h3 {
+                        /* 20px - 25px */
+                        font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
+                        font-weight: 700;
+                        line-height: 1.2em;
+                        text-align: inherit;
+                        margin: 0;
+                        color: var(--headerColor);
+                        transition: color 0.3s;
+                    }
+                }
+
+                /* Tablet - 768px */
+                @media only screen and (min-width: 48rem) {
+                    #blog-2200 .cs-card-group {
+                        /* 16px - 20px */
+                        column-gap: clamp(1rem, 2vw, 1.25rem);
+                    }
+
+                    #blog-2200 .cs-item {
+                        grid-column: span 4;
+                    }
+                }
+
+                /* Large Desktop - 1300x */
+                @media only screen and (min-width: 81.25rem) {
+                    #blog-2200 .cs-info-wrapper {
+                        flex-direction: row;
+                    }
+                }
+            </style>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- ============================================ -->
+        <!--                   About Us                   -->
+        <!-- ============================================ -->
+
+        <section id="RPsbs-580">
+            <div class="cs-container">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="/assets/images/chicago.webp">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="assets/images/chicago.webp">
+                    <img loading="lazy" decoding="async" src="assets/images/chicago.webp" alt="room" width="494"
+                        height="700">
+                </picture>
+                <div class="cs-content">
+                    <span class="cs-topper">Who We Are</span>
+                    <h3 class="cs-title">Industries We Serve</h3>
+                    <p class="cs-text">
+                        Our company proudly serves every client, with individualized attention and a
+                        satisfaction-oriented strategy. Whether you’re planning an event, a political campaign, or a
+                        real estate offer – Midwest Custom Print will take care of your print branding needs.
+                    </p>
+                    <p class="cs-text">
+                    <ul>
+                        <li><strong>Small Businesses</strong> Midwest specializes in business card printing in
+                            Chicago. We create cards that show your business profile with a subtle, yet captivating
+                            appeal to support your growth.
+                        </li>
+                        <li><strong>Event Planners</strong> Looking for custom banner printing near me? Midwest offers
+                            custom backdrop printing, flyers, banners, and more. We design printing material and rely on
+                            a collaborative graphic design approach to make your events memorable.
+                        </li>
+                        <li><strong>Political Campaigns</strong> Leave a lasting impression on the locals, let your
+                            efforts align with a unique identity through our custom badge printing service. We create
+                            banners in Chicago that depict your political efforts and spread your message!
+                        </li>
+                        <li><strong>Real Estate Professionals</strong> Opt for custom yard signage and marketing
+                            materials for your next properties. Let us bring your listings and properties into light
+                            with personalized material that sells.
+                        </li>
+                        <li><strong>Nonprofits & Schools</strong> Check out the affordable custom printing solutions
+                            in Chicago. Our services include affordable, impactful printing services for your
+                            organization's needs year-round.
+                        </li>
+                    </ul>
+                    </p>
+                    <p class="cs-text">
+
+                    </p>
+                    <a href="" class="cs-button-solid">Get a Quote</a>
+                </div>
+            </div>
+        </section>
+
+        <style>
+            #RPsbs-580 {
+                background: white;
+            }
+
+            #RPsbs-580 .cs-container,
+            #RPsbsr-580 .cs-container {
+                width: 100%;
+                max-width: 80rem;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                /* 48px - 64px */
+                gap: clamp(3rem, 7vw, 4rem);
+            }
+
+            #RPsbs-580 .cs-content,
+            #RPsbsr-580 .cs-content {
+                /* set text aling to left if content needs to be left aligned */
+                text-align: left;
+                width: 100%;
+                max-width: 32.625rem;
+                /* moved section padding to the .cs-content so we can have the cs-picture be full width on mobile without the padding preventing it from doing so */
+                padding: var(--sectionPadding);
+                padding-top: 0;
+                /* prevents padding from affecting width and height */
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                /* centers content horizontally, set to flex-start to left align */
+                align-items: flex-start;
+            }
+
+            .cs-content li {
+                margin-bottom: 1rem;
+            }
+
+            #RPsbs-580 .cs-text,
+            #RPsbsr-580 .cs-text {
+                /* Override. */
+                margin-bottom: 1rem;
+            }
+
+            #RPsbs-580 .cs-text:last-of-type,
+            #RPsbsr-580 .cs-text:last-of-type {
+                margin-bottom: 2rem;
+            }
+
+            #RPsbs-580 .cs-picture,
+            #RPsbsr-580 .cs-picture {
+                display: block;
+                position: relative;
+                width: 100%;
+                height: 18.75rem;
+            }
+
+            #RPsbs-580 .cs-picture img,
+            #RPsbsr-580 .cs-picture img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+
+            /* Tablet - 768px */
+            @media only screen and (min-width: 48rem) {
+
+                #RPsbs-580,
+                #RPsbsr-580 {
+                    padding: var(--sectionPadding);
+                }
+
+                #RPsbs-580 .cs-container,
+                #RPsbsr-580 .cs-container {
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    /* 60px - 128px */
+                    gap: clamp(3.75rem, 10vw, 8rem);
+                }
+
+                #RPsbs-580 .cs-content,
+                #RPsbsr-580 .cs-content {
+                    width: 53%;
+                    /* reset the padding, add the section padding back to the section container */
+                    padding: 0;
+                }
+
+                #RPsbs-580 .cs-picture,
+                #RPsbsr-580 .cs-picture {
+                    width: 47vw;
+                    max-width: 30.875rem;
+                    /* 518px - 700px */
+                    height: clamp(32.375rem, 63vw, 43.75rem);
+                    /* 16px - 28px, added margin left and bottom to cs-picture so it pushes away by the same amount the yellow box element overlaps it left and bottom. This maintains consistent spacing left and bottom */
+                    margin: 0 0 clamp(1rem, 2.4vw, 1.75rem) clamp(1rem, 2.4vw, 1.75rem);
+                    position: relative;
+                }
+
+                #RPsbs-580 .cs-picture:before,
+                #RPsbsr-580 .cs-picture:before {
+                    /* yellow box */
+                    content: '';
+                    width: 50%;
+                    height: 60%;
+                    background: var(--secondary);
+                    opacity: 1;
+                    display: block;
+                    position: absolute;
+                    /* 16px - 28px, wrapped in calc function to multiple by negative 1 and get a negative clamp value */
+                    bottom: calc(clamp(1rem, 2.4vw, 1.75rem)*-1);
+                    left: calc(clamp(1rem, 2.4vw, 1.75rem)*-1);
+                }
+            }
+
+            /*-- -------------------------- -->
+<---     Service Highlight      -->
+<--- -------------------------- -*/
+            /* Mobile - 360px */
+            @media only screen and (min-width: 0rem) {
+                #RPsbsr-580 {
+                    background-color: #f7f7f7;
+                }
+            }
+
+            /* Tablet - 768px */
+            @media only screen and (min-width: 48rem) {
+                #RPsbsr-580 .cs-container {
+                    justify-content: flex-end;
+                }
+
+                #RPsbsr-580 .cs-content {
+                    /* sends it to the left in the first position */
+                    order: -1;
+                }
+
+                #RPsbsr-580 .cs-picture {
+                    /* 16px - 28px, added margin left and bottom to cs-picture so it pushes away by the same amount the yellow box element overlaps it left and bottom. This maintains consistent spacing left and bottom */
+                    margin: 0 clamp(1rem, 2.4vw, 1.75rem) clamp(1rem, 2.4vw, 1.75rem) 0;
+                }
+
+                #RPsbsr-580 .cs-picture:before {
+                    /* yellow box */
+                    content: '';
+                    width: 50%;
+                    height: 60%;
+                    background: var(--secondary);
+                    opacity: 1;
+                    display: block;
+                    position: absolute;
+                    left: auto;
+                    /* 16px - 28px, wrapped in calc function to multiple by negative 1 and get a negative clamp value */
+                    bottom: calc(clamp(1rem, 2.4vw, 1.75rem)*-1);
+                    right: calc(clamp(1rem, 2.4vw, 1.75rem)*-1);
+                }
+            }
+
+            /* Dark Mode */
+            @media only screen and (min-width: 0rem) {
+                body.dark-mode #RPsbsr-580 {
+                    background-color: rgba(0, 0, 0, 0.2);
+                }
+            }
+        </style>
+
+        <!-- ============================================ -->
+        <!--             Service Highlight                -->
+        <!-- ============================================ -->
+
+        <!-- <section id="RPsbsr-580">
+            <div class="cs-container">
+                <picture class="cs-picture">
+                    
+        <source media="(max-width: 600px)" srcset="/assets/images/pexels-george-milton-7015034.jpg">
+      
+        <source media="(min-width: 601px)" srcset="/assets/images/pexels-george-milton-7015034.jpg">
+        <img loading="lazy" decoding="async" src="/assets/images/pexels-george-milton-7015034.jpg" alt="room"
+            width="494" height="700">
+        </picture>
+        <div class="cs-content">
+            <span class="cs-topper">Custom Graphic Design in Chicago </span>
+            <h3 class="cs-title">For Print & Branding Success</h3>
+            <p class="cs-text">
+                Here at Midwest Custom Print, we go a step further – to include expert graphic design solutions
+                in our services. We offer <strong>custom graphic design</strong> to turn your ideas
+                into a reality. We
+                know, it’s important to stand out in the market, especially when you’re competing against
+                industry giants.
+            </p>
+            <p class="cs-text">
+                Let us help you create a new logo, a unique business branding style, and captivating marketing
+                materials that will make you instantly recognizable. Our team will collaborate with your
+                in-house pros, to create designs that match your brand identity – and engage your audience.
+            </p>
+            <a href="/graphic-design/" class="cs-button-solid">View Our
+                Services</a>
+        </div>
+        </div> 
+        </section>-->
+
+
+
+
+
+        <!-- ============================================ -->
+        <!--                   Reviews                    -->
+        <!-- ============================================ -->
+
+        <section id="reviews-727">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <span class="cs-topper">Customer Testimonials</span>
+                    <h2 class="cs-title">Trusted by Thousand of People & Companies</h2>
+                    <p class="cs-text">
+
+                    </p>
+                </div>
+                <ul class="cs-card-group">
+                    <li class="cs-item">
+                        <img class="cs-icon"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/yellow-quote.svg"
+                            alt="quote icon" aria-hidden="true" width="40" height="38" loading="lazy" decoding="async">
+                        <h3 class="cs-h3">Loving the color!</h3>
+                        <p class="cs-item-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores iste vitae, aliquam
+                            temporibus modi libero dolorem rerum? Dolore soluta eligendi mollitia. Doloribus et
+                            exercitationem cupiditate?
+                        </p>
+                        <span class="cs-name">Daniel</span>
+                    </li>
+                    <li class="cs-item">
+                        <img class="cs-icon"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/yellow-quote.svg"
+                            alt="quote icon" aria-hidden="true" width="40" height="38" loading="lazy" decoding="async">
+                        <h3 class="cs-h3">Affordable</h3>
+                        <p class="cs-item-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores iste vitae, aliquam
+                            temporibus modi libero dolorem rerum? Dolore soluta eligendi mollitia. Doloribus et
+                            exercitationem cupiditate?
+                        </p>
+                        <span class="cs-name">Daniel</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <style>
+            #reviews-727 {
+                padding: var(--sectionPadding);
+                background-color: var(--primary);
+            }
+
+            #reviews-727 .cs-container {
+                width: 100%;
+                /* changes to 1280px at tablet */
+                max-width: 34.375rem;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                /* 48px - 64px */
+                gap: clamp(3rem, 6vw, 4rem);
+            }
+
+            #reviews-727 .cs-content {
+                /* set text align to left if content needs to be left aligned */
+                text-align: center;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                /* centers content horizontally, set to flex-start to left align */
+                align-items: center;
+            }
+
+            #reviews-727 .cs-title {
+                /* cs-title override */
+                max-width: 20ch;
+            }
+
+            #reviews-727 .cs-card-group {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1.25rem;
+            }
+
+            #reviews-727 .cs-item {
+                list-style: none;
+                width: 100%;
+                margin: 0;
+                /* 32px - 48px top & bottom */
+                /* 16px - 32px left & right */
+                padding: clamp(2rem, 7vw, 3rem) clamp(1rem, 4vw, 2rem);
+                /* makes padding not affect height and width */
+                box-sizing: border-box;
+                background-color: #F0F0F0;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            #reviews-727 .cs-icon {
+                /* 30px - 40px */
+                width: clamp(1.875rem, 4vw, 2.5rem);
+                height: auto;
+                margin: 0 0 2rem 0;
+                display: block;
+            }
+
+            #reviews-727 .cs-h3 {
+                /* 20px - 25px */
+                font-size: clamp(1.25rem, 4vw, 1.5625rem);
+                line-height: 1.2em;
+                font-weight: 700;
+                margin: 0 0 1.5rem 0;
+                color: var(--headerColor);
+            }
+
+            #reviews-727 .cs-item-text {
+                /* 14px - 16px */
+                font-size: clamp(0.875rem, 4vw, 1rem);
+                line-height: 1.5em;
+                margin: 0 0 3rem 0;
+                color: var(--bodyTextColor);
+            }
+
+            #reviews-727 .cs-name {
+                font-size: 1.25rem;
+                line-height: 1.2em;
+                font-weight: 500;
+                margin: auto 0 0 0;
+                color: var(--headerColor);
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 0.5rem;
+                position: relative;
+            }
+
+            #reviews-727 .cs-name:before {
+                content: '';
+                width: 0.5rem;
+                height: 1px;
+                background: currentColor;
+                display: block;
+                position: relative;
+            }
+
+            /* Tablet - 768px */
+            @media only screen and (min-width: 48rem) {
+                #reviews-727 .cs-container {
+                    max-width: 80rem;
+                }
+
+                #reviews-727 .cs-card-group {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+
+                #reviews-727 .cs-item {
+                    width: 48.5%;
+                }
+            }
+        </style>
+
+        <!-- ============================================ -->
+        <!--                     FAQ                      -->
+        <!-- ============================================ -->
+
+        <section id="faq-1261">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <span class="cs-topper">Asked questions</span>
+                    <h2 class="cs-title">Frequently Asked Questions</h2>
+                </div>
+                <!--We made two lists so when you open an FAQ item, they behave properly and separate from each other, wrapped in a wrapper div for better flexboxxing -->
+                <div class="cs-wrapper">
+                    <ul class="cs-faq-group">
+                        <!-- Active class added as default -->
+                        <li class="cs-faq-item active">
+                            <button class="cs-button">
+                                <span class="cs-button-text">
+                                    Do you have a minimum order quantity?
+                                </span>
+                            </button>
+                            <p class="cs-item-p">
+                                Some cleaning plans require a minimum commitment term. Cancelling your plan before the
+                                minimum term is complete will result in a $99 fee. If you want to learn more information
+                                about how to cancel, please inbox us.
+                            </p>
+                        </li>
+                        <li class="cs-faq-item">
+                            <button class="cs-button">
+                                <span class="cs-button-text">
+                                    What is your plan cancellation policy?
+                                </span>
+                            </button>
+                            <p class="cs-item-p">
+                                Depends on the product. For example, you can purchase one table cover, but the minimum
+                                order for postcards is 50.
+                            </p>
+                        </li>
+                        <li class="cs-faq-item">
+                            <button class="cs-button">
+                                <span class="cs-button-text">
+                                    Do you have a minimum order quantity?
+                                </span>
+                            </button>
+                            <p class="cs-item-p">
+                                Depends on the product. For example, you can purchase one table cover, but the minimum
+                                order for postcards is 50.
+                            </p>
+                        </li>
+                        <li class="cs-faq-item">
+                            <button class="cs-button">
+                                <span class="cs-button-text">
+                                    Do you have a minimum order quantity?
+                                </span>
+                            </button>
+                            <p class="cs-item-p">
+                                Depends on the product. For example, you can purchase one table cover, but the minimum
+                                order for postcards is 50.
+                            </p>
+                        </li>
+                        <li class="cs-faq-item">
+                            <button class="cs-button">
+                                <span class="cs-button-text">
+                                    Do you have a minimum order quantity?
+                                </span>
+                            </button>
+                            <p class="cs-item-p">
+                                Depends on the product. For example, you can purchase one table cover, but the minimum
+                                order for postcards is 50.
+                            </p>
+                        </li>
+                    </ul>
+                    <ul class="cs-faq-group">
+                        <!-- Active class added as default -->
+                        <li class="cs-faq-item active">
+                            <button class="cs-button">
+                                <span class="cs-button-text">
+                                    Do you have a minimum order quantity?
+                                </span>
+                            </button>
+                            <p class="cs-item-p">
+                                Some cleaning plans require a minimum commitment term. Cancelling your plan before the
+                                minimum term is complete will result in a $99 fee. If you want to learn more information
+                                about how to cancel, please inbox us.
+                            </p>
+                        </li>
+                        <li class="cs-faq-item">
+                            <button class="cs-button">
+                                <span class="cs-button-text">
+                                    What is your plan cancellation policy?
+                                </span>
+                            </button>
+                            <p class="cs-item-p">
+                                Depends on the product. For example, you can purchase one table cover, but the minimum
+                                order for postcards is 50.
+                            </p>
+                        </li>
+                        <li class="cs-faq-item">
+                            <button class="cs-button">
+                                <span class="cs-button-text">
+                                    Do you have a minimum order quantity?
+                                </span>
+                            </button>
+                            <p class="cs-item-p">
+                                Depends on the product. For example, you can purchase one table cover, but the minimum
+                                order for postcards is 50.
+                            </p>
+                        </li>
+                        <li class="cs-faq-item">
+                            <button class="cs-button">
+                                <span class="cs-button-text">
+                                    Do you have a minimum order quantity?
+                                </span>
+                            </button>
+                            <p class="cs-item-p">
+                                Depends on the product. For example, you can purchase one table cover, but the minimum
+                                order for postcards is 50.
+                            </p>
+                        </li>
+                        <li class="cs-faq-item">
+                            <button class="cs-button">
+                                <span class="cs-button-text">
+                                    Do you have a minimum order quantity?
+                                </span>
+                            </button>
+                            <p class="cs-item-p">
+                                Depends on the product. For example, you can purchase one table cover, but the minimum
+                                order for postcards is 50.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--SVG Waves-->
+            <picture class="cs-background">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="/assets/images/bokeh.jpg">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="/assets/images/bokeh.jpg">
+                <img aria-hidden="true" src="/assets/images/bokeh.jpg" loading="lazy" decoding="async" alt="moon"
+                    width="1920" height="647">
+            </picture>
+        </section>
+
+
+        <style>
+            /*-- -------------------------- -->
+<---            FAQ             -->
+<--- -------------------------- -*/
+
+            /* Mobile - 360px */
+            @media only screen and (min-width: 0rem) {
+                #faq-1261 {
+                    padding: var(--sectionPadding);
+                    background-color: #14142b;
+                    position: relative;
+                    overflow: hidden;
+                    z-index: 1;
+                }
+
+                #faq-1261 .cs-container {
+                    width: 100%;
+                    /* chnages to 1280px at desktop */
+                    max-width: 36.5rem;
+                    margin: auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    /* 40px - 48px */
+                    gap: clamp(2.5rem, 5vw, 3rem);
+                }
+
+                #faq-1261 .cs-content {
+                    /* set text align to left if content needs to be left aligned */
+                    text-align: center;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    /* centers content horizontally, set to flex-start to left align */
+                    align-items: center;
+                }
+
+                #faq-1261 .cs-title {
+                    margin: 0;
+                    color: var(--bodyTextColorWhite);
+                }
+
+                #faq-1261 .cs-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    /* 16px - 20px */
+                    gap: clamp(1rem, 2.4vw, 1.25rem);
+                }
+
+                #faq-1261 .cs-faq-group {
+                    padding: 0;
+                    margin: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    /* 16px - 20px */
+                    gap: clamp(1rem, 2.4vw, 1.25rem);
+                }
+
+                #faq-1261 .cs-faq-item {
+                    list-style: none;
+                    width: 100%;
+                    background-color: #303044;
+                    border-radius: 0.5rem;
+                    padding: 0;
+                    box-sizing: border-box;
+                    transition: border-bottom 0.3s;
+                }
+
+                #faq-1261 .cs-faq-item:hover .cs-button-text {
+                    color: var(--primary)
+                }
+
+                #faq-1261 .cs-faq-item.active .cs-button {
+                    color: var(--primary);
+                }
+
+                #faq-1261 .cs-faq-item.active .cs-button:before {
+                    background-color: var(--primary);
+                    transform: rotate(315deg);
+                }
+
+                #faq-1261 .cs-faq-item.active .cs-button:after {
+                    background-color: var(--primary);
+                    transform: rotate(-315deg);
+                }
+
+                #faq-1261 .cs-faq-item.active .cs-item-p {
+                    height: auto;
+                    margin-top: 0.75rem;
+                    /* 16px - 24px */
+                    padding-top: 0.75rem;
+                    padding-bottom: 1.5rem;
+                    color: var(--bodyTextColorWhite);
+                    opacity: 0.8;
+                }
+
+                #faq-1261 .cs-faq-item.active .cs-item-p:before {
+                    /* border top */
+                    content: "";
+                    height: 1px;
+                    background: #7d799c;
+                    opacity: 1;
+                    position: absolute;
+                    display: block;
+                    top: 0;
+                    left: 1.5rem;
+                    right: 1.5rem;
+                }
+
+                #faq-1261 .cs-button {
+                    /* 16px - 20px */
+                    font-size: clamp(1rem, 2vw, 1.25rem);
+                    line-height: 1.2em;
+                    text-align: left;
+                    font-weight: bold;
+                    width: 100%;
+                    padding: 1.5rem 1.5rem 0;
+                    border: none;
+                    background: transparent;
+                    color: var(--bodyTextColorWhite);
+                    overflow: hidden;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: stretch;
+                    /* 16px - 24px */
+                    gap: clamp(1rem, 2.5vw, 1.5rem);
+                    position: relative;
+                    transition:
+                        background-color 0.3s,
+                        color 0.3s;
+                }
+
+                #faq-1261 .cs-button:hover {
+                    cursor: pointer;
+                }
+
+                #faq-1261 .cs-button:before {
+                    /* left line */
+                    content: "";
+                    width: 0.5rem;
+                    height: 0.125rem;
+                    background-color: var(--bodyTextColorWhite);
+                    opacity: 1;
+                    border-radius: 50%;
+                    position: absolute;
+                    display: block;
+                    top: 67%;
+                    right: 1.1875rem;
+                    transform: rotate(45deg);
+                    /* animate the transform from the left side of the x axis, and the center of the y */
+                    transform-origin: left center;
+                    transition: transform 0.5s;
+                }
+
+                #faq-1261 .cs-button:after {
+                    /* right line */
+                    content: "";
+                    width: 0.5rem;
+                    height: 0.125rem;
+                    background-color: var(--bodyTextColorWhite);
+                    opacity: 1;
+                    border-radius: 50%;
+                    position: absolute;
+                    display: block;
+                    top: 67%;
+                    right: 1rem;
+                    transform: rotate(-45deg);
+                    /* animate the transform from the right side of the x axis, and the center of the y */
+                    transform-origin: right center;
+                    transition: transform 0.5s;
+                }
+
+                #faq-1261 .cs-button-text {
+                    width: 90%;
+                    padding: 0;
+                    display: block;
+                }
+
+                #faq-1261 .cs-item-p {
+                    /* 14px - 16px */
+                    font-size: clamp(0.875rem, 1.5vw, 1rem);
+                    line-height: 1.5em;
+                    width: 100%;
+                    max-width: 33.8125rem;
+                    height: 0;
+                    margin: 0;
+                    /* 16px - 24px */
+                    padding: 0 1.5rem 1.5rem;
+                    /* prevents padding and border from affecting height and width */
+                    box-sizing: border-box;
+                    opacity: 0;
+                    color: var(--bodyTextColor);
+                    /* clips the text so it doesn't show up */
+                    overflow: hidden;
+                    position: relative;
+                    transition:
+                        opacity 0.3s,
+                        padding-bottom 0.3s,
+                        padding-top 0.3s;
+                }
+
+                #faq-1261 .cs-background {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: -1;
+                    opacity: .4;
+                }
+
+                #faq-1261 .cs-background img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+            }
+
+            /* tablet - 768px */
+            @media only screen and (min-width: 48rem) {
+                #faq-1261 .cs-container {
+                    max-width: 80rem;
+                }
+
+                #faq-1261 .cs-wrapper {
+                    flex-direction: row;
+                    align-items: flex-start;
+                }
+            }
+        </style>
+
+        <script>
+            const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
+            for (const item of faqItems) {
+                const onClick = () => {
+                    item.classList.toggle('active')
+                }
+                item.addEventListener('click', onClick)
+            }
+
+
+        </script>
+
+        <section id="collection-1596">
+            <div class="cs-container">
+                <div class="cs-content">
+
+                    <h3 class="cs-title">Our Custom Printing Services in Chicago</h3>
+                    <p class="cs-text">
+                        We offer you a range of custom printing services in Chicago. Our offerings include high-quality
+                        printed media that center on captivating storytelling – to help you set your brand apart.</p>
+                    <p class="cs-text">
+                        Whether you’re promoting at a networking event, business conference, or celebrating a milestone
+                        in-house, we’ve got the printing solution you need. Call us for fast, reliable, and affordable
+                        printing solutions.
+
+                    </p>
+
+                    <ul>
+                        <li class="cs-text">
+                            <i class="fas fa-shipping-fast"></i>
+                            <span>
+                                <strong>Fast Turnaround</strong> We know time is crucial. Get 24-hour delivery on vinyl
+                                banners in Chicago from Midwest Custom Print with same-day shipping.
+                            </span>
+                        </li>
+                        <li class="cs-text">
+                            <i class="fas fa-check-circle"></i>
+                            <span>
+                                <strong>Quality Assurance</strong> Want to test out the quality first? Don’t worry, we
+                                offer
+                                20pt artwork inspection so you have peace of mind before production begins.
+                            </span>
+                        </li>
+                        <li class="cs-text">
+                            <i class="fas fa-headset"></i>
+                            <span>
+                                <strong>Excellent Customer Service</strong> The dedicated team of experts is ready to
+                                assist
+                                you throughout the printing process for a hassle-free and smooth experience.
+                            </span>
+                        </li>
+                    </ul>
+
+                    <p class="cs-text">Give us a call<br /><strong>(844) 928-7866</strong></p>
+                    <a href="" class="cs-button-solid">Shop Now</a>
+                </div>
+
+            </div>
+        </section>
+        <style>
+            #collection-1596 {
+                padding: var(--sectionPadding);
+                background: var(--secondary);
+            }
+
+            #collection-1596 .cs-container {
+                width: 100%;
+                max-width: 80rem;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                /* 48px - 64px */
+                gap: clamp(3rem, 6vw, 4rem);
+            }
+
+            #collection-1596 .cs-content {
+                /* set text align to left if content needs to be left aligned */
+                text-align: left;
+                width: 100%;
+                max-width: 100%;
+                /* pushes it to the left */
+                margin-right: auto;
+                display: flex;
+                flex-direction: column;
+                /* centers content horizontally, set to flex-start to left align */
+                align-items: flex-start;
+            }
+
+            #collection-1596 .cs-content ul {
+                margin-top: 1rem;
+
+            }
+
+            #collection-1596 .cs-tag {
+                font-size: 0.8125rem;
+                line-height: 1.5rem;
+                font-weight: 700;
+                letter-spacing: .1em;
+                margin: 0 0 1rem 0;
+                padding: 0 0.5rem;
+                color: var(--bodyTextColorWhite);
+                background-color: var(--secondary);
+                display: block;
+            }
+
+            #collection-1596 .cs-title {
+                max-width: 100%;
+                color: var(--bodyTextColorWhite);
+            }
+
+            #collection-1596 .cs-text {
+                margin-bottom: 1rem;
+                color: var(--bodyTextColorWhite);
+                max-width: 100%;
+            }
+
+            #collection-1596 .cs-text:last-of-type {
+                margin-bottom: 2rem;
+            }
+
+            #collection-1596 .cs-button-solid {
+                font-size: 1rem;
+                /* 46px - 56px */
+                line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+                text-decoration: none;
+                font-weight: 700;
+                text-align: center;
+                margin: 0;
+                color: var(--bodyTextColor);
+                min-width: 9.375rem;
+                padding: 0 1.5rem;
+                background-color: var(--primary);
+                display: inline-block;
+                position: relative;
+                z-index: 1;
+                /* prevents padding from adding to the width */
+                box-sizing: border-box;
+            }
+
+            #collection-1596 .cs-button-solid:hover {
+                color: #fff;
+            }
+
+            #collection-1596 .cs-button-solid:before {
+                content: '';
+                position: absolute;
+                height: 100%;
+                width: 0%;
+                background: #000;
+                opacity: 1;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                transition: width .3s;
+            }
+
+            #collection-1596 .cs-button-solid:hover:before {
+                width: 100%;
+            }
+
+
+            #collection-1596 .cs-text {
+                display: flex;
+                align-items: flex-start;
+                margin-bottom: 1rem;
+            }
+
+            #collection-1596 .cs-text i {
+                color: #fff;
+                font-size: 2rem;
+                margin-right: 16px;
+                flex-shrink: 0;
+                margin-right: 8px;
+                line-height: 2;
+
+            }
+
+            #collection-1596 .cs-text span {
+                padding-left: 1rem;
+            }
+
+            #collection-1596 .cs-content li {
+                list-style-type: none;
+                line-height: 1.5;
+            }
+
+            /* Tablet - 768px */
+            @media only screen and (min-width: 48rem) {
+                #collection-1596 .cs-container {
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                #collection-1596 .cs-content {
+                    max-width: 70%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
+                #collection-1596 .cs-content ul {
+                    margin-top: 2rem;
+                }
+            }
+        </style>
+
+
+
+
+        <!-- ============================================ -->
+        <!--                     CTA                      -->
+        <!-- ============================================ -->
+
+        <section id="cta-51">
+            <div class="cs-container">
+                <div class="cs-content">
+
+                    <h2 class="cs-title">Ready to Start Your Project?</h2>
+                    <p class="cs-text">
+                        Get your custom prints in Chicago delivered quickly and efficiently – with quality assurance –
+                        from Midwest Custom Print. Get in touch with our dedicated experts to request a quote, or tell
+                        us your unique idea!
+                    </p>
+                    <a href="/contact/" class="cs-button-solid">Talk to Us Today</a>
+                </div>
+            </div>
+            <!-- Background Image-->
+            <picture class="cs-picture">
+                <source media="(max-width: 600px)" srcset="/assets/images/office.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/office.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/office.jpg" alt="cabinets" width="1920"
+                    height="1280" aria-hidden="true">
+            </picture>
+        </section>
+
+        <style>
+            #cta-51 {
+                padding: var(--sectionPadding);
+                position: relative;
+            }
+
+            #cta-51 .cs-container {
+                width: 100%;
+                max-width: 80rem;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                /* 48px - 64px */
+                gap: clamp(3rem, 6vw, 4rem);
+            }
+
+            #cta-51 .cs-content {
+                /* set text align to left if content needs to be left aligned */
+                text-align: center;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                /* centers content horizontally, set to flex-start to left align */
+                align-items: center;
+            }
+
+            #cta-51 .cs-topper {
+                color: var(--secondary);
+            }
+
+            #cta-51 .cs-title,
+            #cta-51 .cs-text {
+                color: var(--bodyTextColorWhite);
+            }
+
+            #cta-51 .cs-text {
+                /* Override.  cs-topper cs-title and first cs-text should be removed and put into your global css sheet so it can control every instance of them on your site and is consistent. This selector is a section specific override that stays inside this stitch */
+                margin-bottom: 1rem;
+                opacity: .8;
+            }
+
+            #cta-51 .cs-text:last-of-type {
+                margin-bottom: 2rem;
+            }
+
+            #cta-51 .cs-picture {
+                height: 100%;
+                width: 100%;
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+            }
+
+            #cta-51 .cs-picture:before {
+                /* black color overlay */
+                content: '';
+                position: absolute;
+                display: block;
+                height: 100%;
+                width: 100%;
+                background: #000;
+                opacity: .8;
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+
+            #cta-51 .cs-picture img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        </style>
+    </main>
+
+    <!-- ============================================ -->
+    <!--                   Footer                     -->
+    <!-- ============================================ -->
+
+    <footer id="containerfooter" class="footerclass">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3 col-sm-6 footercol1">
+                    <div class="widget-1 widget-first footer-widget widget">
+                        <aside id="nav_menu-3" class="widget_nav_menu">
+                            <div class="footer-widget-title"><span>Information</span></div>
+                            <ul id="menu-footer-menu" class="menu">
+                                <li
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-290">
+                                    <a rel="privacy-policy"
+                                        href="https://midwestcustomprint.com/privacy-policy/">Privacy Policy</a>
+                                </li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-291"><a
+                                        href="https://midwestcustomprint.com/conditions-of-sale/">Terms of
+                                        Sale&nbsp;</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-665"><a
+                                        href="https://midwestcustomprint.com/terms-of-use/">Terms Of Use</a></li>
+                            </ul>
+                        </aside>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 footercol3">
+                    <div class="widget-1 widget-first footer-widget widget">
+                        <aside id="nav_menu-4" class="widget_nav_menu">
+                            <div class="footer-widget-title"><span>Customer Service</span></div>
+                            <ul id="menu-customer-service-02" class="menu">
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-394"><a
+                                        href="https://midwestcustomprint.com/let-us-know-what-you-think/">Let us know
+                                        what you think</a></li>
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4681"><a
+                                        href="https://midwestcustomprint.com/contact">Contact Us</a></li>
+                            </ul>
+                        </aside>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 footercol4">
+                    <div class="widget-1 widget-first footer-widget widget">
+                        <aside id="widget_kadence_social-3" class="widget_kadence_social">
+                            <div class="footer-widget-title"><span>Follow Us</span></div>
+                            <div class="kadence_social_widget  clearfix"><a href="https://www.facebook.com/mcpchicago/"
+                                    class="facebook_link" rel="noopener" target="_blank" data-toggle="tooltip"
+                                    data-placement="top" data-original-title="Facebook" aria-label="Facebook"><i
+                                        class="kt-icon-facebook"></i></a><a href="https://twitter.com/MWCUSTOMPRINT"
+                                    class="twitter_link" rel="noopener" target="_blank" data-toggle="tooltip"
+                                    data-placement="top" data-original-title="X" aria-label="X"><i
+                                        class="kt-icon-twitter"></i></a><a
+                                    href="https://www.instagram.com/midwestcustomprint/" class="instagram_link"
+                                    rel="noopener" target="_blank" data-toggle="tooltip" data-placement="top"
+                                    data-original-title="Instagram" aria-label="Instagram"><i
+                                        class="kt-icon-instagram"></i></a><a
+                                    href="https://www.youtube.com/channel/UCXQ8Ovsv6Ar_5sD-88NC2cw" class="youtube_link"
+                                    rel="noopener" target="_blank" data-toggle="tooltip" data-placement="top"
+                                    data-original-title="YouTube"><i class="kt-icon-youtube"></i></a><a
+                                    href="https://www.linkedin.com/company/midwest-custom-print/" class="linkedin_link"
+                                    rel="noopener" target="_blank" data-toggle="tooltip" data-placement="top"
+                                    data-original-title="LinkedIn"><i class="kt-icon-linkedin"></i></a></div>
+                        </aside>
+                    </div>
+                    <div class="widget-2 widget-last footer-widget widget">
+                        <aside id="kadence_payment_method_widget-1" class="kadence_payment_method_widget">
+                            <div class="footer-widget-title"><span>We Accept</span></div>
+                            <div class="kt-payment-methods" style="color:#ffffff;">
+                                <div class="payment-method-icon pm-visa-icon"><i class="kt-icon-cc-visa"></i></div>
+                                <div class="payment-method-icon pm-mastercard-icon"><i
+                                        class="kt-icon-cc-mastercard"></i></div>
+                                <div class="payment-method-icon pm-amex-icon"><i class="kt-icon-cc-amex"></i></div>
+                                <div class="payment-method-icon pm-discover-icon"><i class="kt-icon-cc-discover"></i>
+                                </div>
+                                <div class="payment-method-icon pm-paypal-icon"><i class="kt-icon-cc-paypal"></i></div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div> <!-- Row -->
+        </div>
+        <div class="footerbase">
+            <div class="container">
+                <div class="footercredits clearfix">
+
+                    <p>
+                        © 2024 Midwest Custom Print </p>
+
+                </div><!-- credits -->
+            </div><!-- container -->
+        </div><!-- footerbase -->
+    </footer>
+    <style type="text/css" title="dynamic-css" class="options-output">
+        .topbarclass {
+            font-size: 16px;
+        }
+
+        .titleclass {
+            background-color: #f9f9f9;
+        }
+
+        .titleclass .top-contain-title {
+            color: #444444;
+        }
+
+        .titleclass .subtitle,
+        .titleclass .page-header-inner #kadbreadcrumbs,
+        .titleclass .page-header-inner #kadbreadcrumbs a {
+            color: #444444;
+        }
+
+        .product_item .product_archive_title {
+            font-family: "Source Sans Pro";
+            text-transform: uppercase;
+            line-height: 20px;
+            letter-spacing: 2px;
+            font-weight: 600;
+            font-style: normal;
+            color: #444444;
+            font-size: 15px;
+        }
+
+        .kad-topbar-flex-item,
+        .kad-topbar-flex-item a,
+        .kad-topbar-flex-item .kadence_social_widget a,
+        .topbarclass .kt-woo-account-nav .kad-customer-name h5,
+        .topbarclass .kt-mini-cart-refreash .total,
+        #topbar .kt-header-extras p.woocommerce-mini-cart__empty-message {
+            color: #272727;
+        }
+
+        .footerclass a,
+        .footerclass,
+        .footerclass h4,
+        .footerclass h3,
+        .footerclass h5 {
+            color: #272727;
+        }
+
+        .footerclass a:hover {
+            color: #ffffff;
+        }
+
+        .footerclass .menu li a:hover {
+            border-color: #ffffff;
+        }
+
+        .contentclass,
+        .above-footer-widgets .widget-title span,
+        .footer-widget-title span,
+        .kt-title span,
+        .sidebar .widget-title span {
+            background-color: #ffffff;
+        }
+
+        .topbarclass,
+        .topbarclass .sf-menu ul {
+            background-color: #f4d400;
+        }
+
+        .footerclass,
+        .footerclass .footer-widget-title span,
+        body.body-style-bubbled .footerclass .footer-widget-title span {
+            background-color: #ffdc00;
+        }
+
+        h1,
+        .h1class {
+            font-family: Poppins;
+            line-height: 40px;
+            letter-spacing: 1.8px;
+            font-weight: 700;
+            font-style: normal;
+            color: #444444;
+            font-size: 40px;
+        }
+
+        h2,
+        .h2class {
+            font-family: Poppins;
+            line-height: 40px;
+            letter-spacing: 1.2px;
+            font-weight: 600;
+            font-style: normal;
+            color: #444444;
+            font-size: 32px;
+        }
+
+        h3 {
+            font-family: Poppins;
+            line-height: 40px;
+            letter-spacing: 1.2px;
+            font-weight: 400;
+            font-style: normal;
+            color: #ff652f;
+            font-size: 28px;
+        }
+
+        h4 {
+            font-family: Poppins;
+            line-height: 40px;
+            letter-spacing: 1.2px;
+            font-weight: 400;
+            font-style: normal;
+            color: #ff652f;
+            font-size: 24px;
+        }
+
+        h5 {
+            font-family: Poppins;
+            line-height: 24px;
+            letter-spacing: 1.2px;
+            font-weight: normal;
+            font-style: normal;
+            color: #555555;
+            font-size: 18px;
+        }
+
+        .titleclass .subtitle {
+            font-family: Poppins;
+            letter-spacing: 1.2px;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        body {
+            font-family: "Source Sans Pro";
+            line-height: 24px;
+            letter-spacing: 0px;
+            font-weight: 400;
+            font-style: normal;
+            color: #444;
+            font-size: 16px;
+        }
+
+        .nav-main ul.sf-menu>li>a,
+        .kad-header-menu-inner .kt-header-extras ul.sf-menu>li>a,
+        .kad-header-menu-inner .kt-header-extras .kt-extras-label [class*="kt-icon-"],
+        .kt-header-extras .sf-vertical>li>a {
+            font-family: Poppins;
+            line-height: 24px;
+            letter-spacing: .2px;
+            font-weight: 400;
+            font-style: normal;
+            color: #272727;
+            font-size: 14px;
+        }
+
+        .nav-main ul.sf-menu>li>a:hover,
+        .nav-main ul.sf-menu>li.sfHover>a,
+        .kt-header-extras .sf-vertical>li>a:hover {
+            color: #000000;
+        }
+
+        button.mobile-navigation-toggle:hover .kt-mnt span {
+            background: #000000;
+        }
+
+        .nav-main ul.sf-menu>li.current-menu-item>a {
+            color: #000000;
+        }
+
+        .second-navclass {
+            background-color: #ffffff;
+        }
+
+        .second-navclass .sf-menu>li>a {
+            font-family: Poppins;
+            line-height: 24px;
+            letter-spacing: .2px;
+            font-weight: 400;
+            font-style: normal;
+            color: #272727;
+            font-size: 18px;
+        }
+
+        .second-navclass ul.sf-menu>li>a:hover,
+        .second-navclass ul.sf-menu>li.sfHover>a,
+        body.trans-header #wrapper .second-navclass ul.sf-menu>li>a:hover,
+        body.trans-header #wrapper .second-navclass ul.sf-menu>li.sfHover>a {
+            color: #ff652f;
+        }
+
+        .second-navclass ul.sf-menu>li.current-menu-item>a,
+        body.trans-header #wrapper .second-navclass ul.sf-menu>li.current-menu-item>a {
+            color: #ff652f;
+        }
+
+        .nav-main ul.sf-menu ul,
+        .nav-main ul.sf-menu ul a,
+        .second-navclass ul.sf-menu ul a,
+        .kad-header-menu-inner .kt-header-extras ul.sf-menu ul,
+        .kad-relative-vertical-content .kt-header-extras ul.sf-menu ul,
+        .second-navclass .sf-menu>li.kt-lgmenu>ul,
+        .nav-main .sf-menu>li.kt-lgmenu>ul {
+            background: #ffffff;
+        }
+
+        .nav-main ul.sf-menu ul a,
+        .second-navclass ul.sf-menu ul a,
+        .kad-header-menu-inner .kt-header-extras .kt-woo-account-nav a,
+        .kad-relative-vertical-content .kt-header-extras .kt-woo-account-nav a,
+        .kt-header-extras p.woocommerce-mini-cart__empty-message {
+            font-family: Poppins;
+            line-height: 24px;
+            letter-spacing: .2px;
+            font-weight: normal;
+            color: #272727;
+            font-size: 16px;
+        }
+
+        .nav-main ul.sf-menu ul a:hover,
+        .nav-main ul.sf-menu>li:not(.kt-lgmenu) ul li.sfHover>a,
+        .nav-main ul.sf-menu ul li.current-menu-item>a,
+        .second-navclass ul.sf-menu ul a:hover,
+        .second-navclass ul.sf-menu li:not(.kt-lgmenu) ul li.sfHover>a,
+        .second-navclass ul.sf-menu ul li.current-menu-item>a,
+        .kad-header-menu-inner .kt-header-extras .kt-woo-account-nav a:hover,
+        body.woocommerce-account .kad-header-menu-inner .kt-header-extras .kt-woo-account-nav li.is-active a,
+        .kad-relative-vertical-content .kt-header-extras .kt-woo-account-nav a:hover,
+        body.woocommerce-account .kad-relative-vertical-content .kt-header-extras .kt-woo-account-nav li.is-active a {
+            color: #ff652f;
+        }
+
+        .kad-mobile-nav li a,
+        .kad-mobile-nav li,
+        .kt-mobile-menu form.search-form input[type="search"].search-field,
+        .kt-mobile-menu form.search-form .search-submit,
+        .mfp-slide #kt-mobile-account,
+        .mfp-slide #kt-mobile-cart {
+            font-family: Poppins;
+            line-height: 20px;
+            letter-spacing: .2px;
+            font-weight: 400;
+            font-style: normal;
+            color: #fff;
+            font-size: 16px;
+        }
+    </style>
+
+    <script defer src="/assets/js/nav.js"></script>
+
+    <!--Gallery JS-->
+    <script>
+        class CS_GalleryFilter {
+            filtersSelector = '.cs-button'
+            galleriesSelector = '.cs-gallery'
+            activeClass = 'cs-active'
+            hiddenClass = 'cs-hidden'
+
+            constructor() {
+                this.$galleries = document.querySelectorAll(this.galleriesSelector)
+                const $filters = document.querySelectorAll(this.filtersSelector)
+
+                this.onClick($filters[0])
+
+                for (const $filter of $filters) {
+                    $filter.addEventListener('click', () => this.onClick($filter))
+                }
+            }
+
+            onClick($filter) {
+                this.filter($filter.dataset.filter)
+
+                const { activeClass } = this
+
+                this.$activeFilter?.classList.remove(activeClass)
+                $filter.classList.add(activeClass)
+
+                this.$activeFilter = $filter
+            }
+
+            filter(filter) {
+                const showAll = filter == 'all'
+                const { hiddenClass } = this
+
+                for (const $gallery of this.$galleries) {
+                    const show = showAll || $gallery.dataset.category == filter
+                    $gallery.classList.toggle(hiddenClass, !show)
+                }
+            }
+        }
+
+        new CS_GalleryFilter()
+
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const toggles = document.querySelectorAll(".accordion-toggle");
+            const toggleMenu = document.querySelector(".js-all-products");
+            const printMenu = document.querySelector(".print-products-menu");
+            const closeMenu = document.querySelector(".menu-toggle-close");
+
+            toggleMenu.addEventListener("click", () => {
+                printMenu.classList.toggle("toggle-active");
+            });
+
+            closeMenu.addEventListener("click", () => {
+                printMenu.classList.remove("toggle-active");
+            });
+
+            toggles.forEach((toggle) => {
+                toggle.addEventListener("click", () => {
+                    const parent = toggle.closest(".menu-item");
+                    const submenu = parent.querySelector(".sub-menu");
+
+
+                    document.querySelectorAll(".sub-menu.toggle-active").forEach((menu) => {
+                        if (menu !== submenu) {
+                            menu.classList.remove("toggle-active");
+                            menu.style.maxHeight = null;
+                        }
+                    });
+
+                    if (submenu.classList.contains("toggle-active")) {
+                        submenu.classList.remove("toggle-active");
+                        submenu.style.maxHeight = null;
+                    } else {
+                        submenu.classList.add("toggle-active");
+                        submenu.style.maxHeight = submenu.scrollHeight + "px";
+                    }
+                });
+            });
+
+
+            document.addEventListener("click", (event) => {
+
+                if (
+                    !printMenu.contains(event.target) &&
+                    !toggleMenu.contains(event.target)
+                ) {
+                    printMenu.classList.remove("toggle-active");
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>

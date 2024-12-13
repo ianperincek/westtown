@@ -1,0 +1,402 @@
+<section class="pricing panel">
+  <div class="pricing__description">
+    <h3 class="pricing__title">
+      Flexible Pricing<br /> Scaled to Your Business
+    </h3>
+    <p class="pricing__text">
+      Invest in your online presence with our flexible pricing options. Start
+      with our affordable $175/month plan for a custom five-page website. As
+      your business grows, we'll scale with you.
+    </p>
+    <ul class="pricing__benefits">
+      <li class="pricing__benefit">Custom web design unique to your brand</li>
+      <li class="pricing__benefit">
+        Inclusive hosting, on-page SEO, and maintenance
+      </li>
+      <li class="pricing__benefit">
+        Domain registration and Google Business listing
+      </li>
+      <li class="pricing__benefit">SEO enhancements with schema markup</li>
+      <li class="pricing__benefit">Core Web Vitals optimization for speed</li>
+      <li class="pricing__benefit">Google Analytics integration</li>
+      <li class="pricing__benefit">
+        Additional services available as your needs grow
+      </li>
+    </ul>
+  </div>
+
+  <div class="pricing__tiers">
+    <article class="pricing__option pricing__option--monthly">
+      <h3 class="pricing__plan-title">$175/month</h3>
+      <p class="pricing__plan-subtitle">Perfect for Small Businesses</p>
+      <ul class="pricing__features">
+        <li class="pricing__feature">Up to 5 custom-designed pages</li>
+        <li class="pricing__feature">Unlimited content updates</li>
+        <li class="pricing__feature">Hosting and on-page SEO included</li>
+        <li class="pricing__feature">24/7 uptime monitoring</li>
+        <li class="pricing__feature">DNS management</li>
+      </ul>
+      <a href="/contact" class="button button--primary">Sign Up Now</a>
+      <p class="pricing__note">Need more pages or services?</p>
+    </article>
+    <!-- One-Time Payment Plan -->
+    <article class="pricing__option pricing__option--one-time">
+      <h3 class="pricing__plan-title">One-Time Payment</h3>
+
+      <ul class="pricing__features">
+        <li class="pricing__feature">Full ownership of your website</li>
+        <li class="pricing__feature">Custom design and complete control</li>
+        <li class="pricing__feature">Starting at $1,900</li>
+      </ul>
+      <a href="/contact" class="button button--secondary">Get a Quote</a>
+      <p class="pricing__note">Let's discuss your project and pricing.</p>
+    </article>
+    <!-- E-commerce Solutions -->
+    <article class="pricing__option pricing__option--ecommerce">
+      <h3 class="pricing__plan-title">E-commerce Solutions</h3>
+
+      <ul class="pricing__features">
+        <li class="pricing__feature">Custom online store design</li>
+        <li class="pricing__feature">Secure payment gateway integration</li>
+        <li class="pricing__feature">Optimized for conversions</li>
+      </ul>
+      <a href="/contact" class="button button--secondary"
+        >Request a Custom Quote</a
+      >
+      <p class="pricing__note">
+        Contact us to start building your online store.
+      </p>
+    </article>
+  </div>
+</section>
+
+<style lang="scss">
+  :global(body.dark-mode .pricing) {
+    background: var(--accent);
+  }
+  .pricing {
+    padding: var(--sectionPadding);
+    position: relative;
+    z-index: 6;
+    background: #fff;
+
+    @media (min-width: 768px) {
+    }
+
+    @media (min-width: 1024px) {
+      display: grid;
+      grid-template-columns: auto 31rem;
+      align-items: center;
+      justify-content: space-around;
+
+      // max-width: 1280px;
+      // margin: 0 auto;
+    }
+
+    @media (min-width: 1324px) {
+      display: grid;
+      grid-template-columns: auto 37rem;
+    }
+  }
+
+  .pricing__note,
+  .pricing__note a {
+    font-size: 1.2rem;
+  }
+
+  .pricing-description {
+    flex: 1;
+    padding-right: 2rem;
+  }
+
+  .pricing__feature {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 0.5rem;
+  }
+
+  .pricing__feature::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>')
+      no-repeat center;
+    background-size: contain !important;
+  }
+
+  .pricing__option .button {
+    text-decoration: none;
+    padding: 0.8rem;
+    padding: 12px 30px;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0.8rem 0 1rem;
+    display: inline-block;
+  }
+
+  .button.button--primary {
+    background-color: #073243;
+    color: var(--accent-orange);
+
+    &:hover {
+      background-color: #000;
+    }
+  }
+
+  .button.button--secondary {
+    background: #5b6f73;
+
+    &:hover {
+      background-color: #37484c;
+    }
+  }
+
+  .pricing__option.pricing__option--ecommerce {
+    background: var(--secondaryBgLight);
+  }
+
+  .pricing__option--ecommerce .button.button--secondary {
+    background: #fff;
+    &:hover {
+      background: #bdbbbb;
+    }
+  }
+
+  /* Customize checkmark color per pricing option */
+  .pricing__option--monthly .pricing__feature::before {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>')
+      no-repeat center;
+  }
+
+  .pricing__option--one-time .pricing__feature::before {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>')
+      no-repeat center;
+  }
+
+  .pricing__option--ecommerce .pricing__feature::before {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23093c72" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>')
+      no-repeat center;
+  }
+
+  // .pricing__option--monthly .pricing__feature::before {
+  //   background-image: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox='0 0 1913 1613'><path fill='%23ffffff' d=\"M838 0c6.6.6 13.2 1.3 19.8 1.7 80.5 5.2 158.5 22 234 50.4 32.9 12.4 64.9 26.9 95.8 43.6 1.1.6 2.2 1.4 3.7 2.3-20.8 49.3-41.6 98.5-62.4 147.8-147.9-81.3-304.1-107-468.6-68.5-164.4 38.4-295.2 128.6-389.7 268.4-159.5 236-145.8 548.6 36.6 770.9 185.2 225.7 494.2 295.7 752.7 184.1 147.2-63.5 257.3-167.7 327.4-312 70-144.3 82.6-295 43.2-450.8 52.2-10.4 104.4-20.8 157.2-31.3 3 13.4 6.2 26.3 8.8 39.3 11.7 57.7 17.4 116 16 174.8-3.9 158.2-48.5 303.7-136.8 435.3-72.7 108.4-166.6 193.8-280.8 257-76.1 42.1-157.1 70.8-242.5 86.8-36.4 6.8-73.1 11-110.1 12.5-2.1 0-4.2.6-6.4.9h-56c-2-.3-3.9-.7-5.9-.8-32.5-1.3-64.8-4.6-96.9-9.9-73.2-11.9-143.6-33.2-210.8-64.6-92.9-43.3-174.5-102.2-245-176.5-53.7-56.6-98.2-119.6-133.5-189.2-50.1-98.9-79-203.7-86.1-314.4C1.2 850.5.5 843.2 0 836v-56c.3-2.3.6-4.6.8-6.9 2.1-24.4 3.4-48.9 6.5-73.1 7.7-60.1 22.4-118.6 43.6-175.5 42.9-114.9 108.6-214.7 196.9-299.7 72.9-70.1 156.3-124.6 249.8-163.4C579.1 27.7 663.7 7.7 751.7 1.8 759.1 1.3 766.6.6 774 0h64Z\"/></svg>");
+  // }
+
+  // /* One-time pricing section with a different color */
+  // .pricing__option--one-time .pricing__feature::before {
+  //   background-image: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox='0 0 1913 1613'><path fill='%23b0b0b0' d=\"M838 0c6.6.6 13.2 1.3 19.8 1.7 80.5 5.2 158.5 22 234 50.4 32.9 12.4 64.9 26.9 95.8 43.6 1.1.6 2.2 1.4 3.7 2.3-20.8 49.3-41.6 98.5-62.4 147.8-147.9-81.3-304.1-107-468.6-68.5-164.4 38.4-295.2 128.6-389.7 268.4-159.5 236-145.8 548.6 36.6 770.9 185.2 225.7 494.2 295.7 752.7 184.1 147.2-63.5 257.3-167.7 327.4-312 70-144.3 82.6-295 43.2-450.8 52.2-10.4 104.4-20.8 157.2-31.3 3 13.4 6.2 26.3 8.8 39.3 11.7 57.7 17.4 116 16 174.8-3.9 158.2-48.5 303.7-136.8 435.3-72.7 108.4-166.6 193.8-280.8 257-76.1 42.1-157.1 70.8-242.5 86.8-36.4 6.8-73.1 11-110.1 12.5-2.1 0-4.2.6-6.4.9h-56c-2-.3-3.9-.7-5.9-.8-32.5-1.3-64.8-4.6-96.9-9.9-73.2-11.9-143.6-33.2-210.8-64.6-92.9-43.3-174.5-102.2-245-176.5-53.7-56.6-98.2-119.6-133.5-189.2-50.1-98.9-79-203.7-86.1-314.4C1.2 850.5.5 843.2 0 836v-56c.3-2.3.6-4.6.8-6.9 2.1-24.4 3.4-48.9 6.5-73.1 7.7-60.1 22.4-118.6 43.6-175.5 42.9-114.9 108.6-214.7 196.9-299.7 72.9-70.1 156.3-124.6 249.8-163.4C579.1 27.7 663.7 7.7 751.7 1.8 759.1 1.3 766.6.6 774 0h64Z\"/></svg>");
+  // }
+
+  // /* E-commerce section with its specific color */
+  // .pricing__option--ecommerce .pricing__feature::before {
+  //   background-image: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox='0 0 1913 1613'><path fill='%23093c72' d=\"M838 0c6.6.6 13.2 1.3 19.8 1.7 80.5 5.2 158.5 22 234 50.4 32.9 12.4 64.9 26.9 95.8 43.6 1.1.6 2.2 1.4 3.7 2.3-20.8 49.3-41.6 98.5-62.4 147.8-147.9-81.3-304.1-107-468.6-68.5-164.4 38.4-295.2 128.6-389.7 268.4-159.5 236-145.8 548.6 36.6 770.9 185.2 225.7 494.2 295.7 752.7 184.1 147.2-63.5 257.3-167.7 327.4-312 70-144.3 82.6-295 43.2-450.8 52.2-10.4 104.4-20.8 157.2-31.3 3 13.4 6.2 26.3 8.8 39.3 11.7 57.7 17.4 116 16 174.8-3.9 158.2-48.5 303.7-136.8 435.3-72.7 108.4-166.6 193.8-280.8 257-76.1 42.1-157.1 70.8-242.5 86.8-36.4 6.8-73.1 11-110.1 12.5-2.1 0-4.2.6-6.4.9h-56c-2-.3-3.9-.7-5.9-.8-32.5-1.3-64.8-4.6-96.9-9.9-73.2-11.9-143.6-33.2-210.8-64.6-92.9-43.3-174.5-102.2-245-176.5-53.7-56.6-98.2-119.6-133.5-189.2-50.1-98.9-79-203.7-86.1-314.4C1.2 850.5.5 843.2 0 836v-56c.3-2.3.6-4.6.8-6.9 2.1-24.4 3.4-48.9 6.5-73.1 7.7-60.1 22.4-118.6 43.6-175.5 42.9-114.9 108.6-214.7 196.9-299.7 72.9-70.1 156.3-124.6 249.8-163.4C579.1 27.7 663.7 7.7 751.7 1.8 759.1 1.3 766.6.6 774 0h64Z\"/></svg>");
+  // }
+
+  .pricing__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+
+    @media (min-width: 48rem) {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .pricing__text {
+    border-top: 1px solid var(--bodyTextColorWhite);
+    border-bottom: 1px solid var(--bodyTextColorWhite);
+    padding: 2rem 1rem;
+  }
+
+  .pricing__benefits {
+    margin-left: 2rem;
+    margin-top: 2rem;
+
+    @media (min-width: 48rem) {
+      margin-left: 2rem;
+    }
+  }
+
+  .pricing__benefit {
+    margin-bottom: 1rem;
+    font-size: 1.125rem;
+    line-height: 1;
+  }
+
+  .pricing-description h3 {
+    font-size: 2rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .pricing-description p {
+    margin-bottom: 1.5rempx;
+    color: var(--primary);
+  }
+
+  .pricing-description ul {
+    // list-style: none;
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+    margin: 2rem 0 3rem 2rem;
+  }
+
+  .pricing-description ul li {
+    margin-bottom: 0.9rem;
+  }
+
+  .pricing-options {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    .cs-button {
+      position: absolute;
+      right: 1rem;
+      top: 2rem;
+    }
+  }
+
+  .pricing__option {
+    background-color: #333;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+    position: relative;
+  }
+
+  .pricing__option h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+
+    @media screen and (min-width: 48rem) {
+      font-size: 2rem;
+    }
+  }
+
+  .pricing__option p {
+    color: #b0b0b0;
+    margin-bottom: 20px;
+  }
+
+  .pricing__option ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .pricing__option ul li {
+    font-size: 1rem;
+  }
+
+  button {
+    border: none;
+  }
+
+  .pricing__description {
+    padding: 0 2rem 0 0;
+
+    @media screen and (min-width: 48rem) {
+      padding: 0 3rem 0 0;
+      max-width: 660px;
+    }
+  }
+
+  /* Specific styling for each option */
+  .pricing__option--monthly {
+    background-color: var(--primary);
+
+    .cls-1 {
+      fill: var(--bodyTextColorWhite);
+    }
+
+    p,
+    li {
+      color: var(--bodyTextColorWhite);
+    }
+
+    h3,
+    a {
+      color: var(--accent-orange);
+    }
+
+    h3 {
+      font-size: 2rem;
+    }
+  }
+
+  .pricing__option--one-time {
+    background-color: var(--secondaryLight);
+
+    p,
+    li {
+      color: #fff;
+    }
+
+    h3,
+    a {
+      color: var(--secondaryBgLight);
+    }
+  }
+
+  .pricing__option--ecommerce {
+    background-color: #fff;
+
+    p,
+    li {
+      color: var(--bodyTextColor);
+    }
+
+    h3,
+    a {
+      color: #093c72;
+    }
+  }
+
+  .pricing__tiers {
+    @media screen and (max-width: 47.99rem) {
+      margin-top: 3rem;
+    }
+  }
+</style>
+
+<script is:inline defer>
+  document.addEventListener("DOMContentLoaded", () => {
+    // Register ScrollTrigger plugin (make sure ScrollTrigger is included in GSAP bundle)
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Animate .pricing__description from the left
+    const pricingDescriptionAnimation = gsap.from(".pricing__description", {
+      x: -300, // Move from the left
+      opacity: 0, // Start invisible
+      duration: 1.5, // Duration of animation
+      ease: "power2.out", // Easing for smooth animation
+      scrollTrigger: {
+        trigger: ".pricing", // Start animation when .pricing section is in view
+        start: "top 80%", // Start animation when 80% of the section is in view
+        end: "top 30%", // End when 30% of the section is in view
+        toggleActions: "play none none reverse", // Replay the animation when scrolling back up
+      },
+    });
+
+    gsap.from(".pricing__tiers", {
+      x: 300, // Move from the right
+      opacity: 0, // Start invisible
+      duration: 1.5, // Duration of animation
+      ease: "power2.out", // Easing for smooth animation
+      delay: 0.5, // Start animation just before the previous one completes
+      scrollTrigger: {
+        trigger: ".pricing", // Start animation when .pricing section is in view
+        start: "top 80%", // Start animation when 80% of the section is in view
+        end: "top 30%", // End when 30% of the section is in view
+        toggleActions: "play none none reverse", // Replay the animation when scrolling back up
+      },
+    });
+  });
+</script>
