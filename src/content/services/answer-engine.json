@@ -1,0 +1,64 @@
+{
+  "title": "Answer Engine Optimization (AEO) Services | Dominate AI Search Results",
+  "description": "Position your business as the go-to authority in AI-driven search results with our Answer Engine Optimization services. Learn how we optimize for ChatGPT, Bard AI, and other answer engines.",
+  
+  
+
+  "aboutSection": {
+    "heading": "Transform Your Online Presence with <span class='abMark'>Answer Engine Optimization</span>.",
+    "subHeading": "<h2>Our Custom Web Design Services Focus On:</h2> ",
+    "content": "<p>The future of search is here. Answer engines like ChatGPT, Bard, and Bing AI are revolutionizing how users find information, prioritizing concise, authoritative answers over traditional search results. To stay competitive, your business needs to adapt to this shift.</p><h2>Our AEO strategies are designed to position your content at the top of AI-driven platforms, ensuring your business stands out in the rapidly evolving digital landscape. From technical optimization to engaging content strategies, we help you dominate AI-powered search.</h2>",
+    "img": "/assets/images/services/aeo-1.webp",
+    "alt": "Answer Engine Optimization",
+    "headerImg": "answer-engine-header.webp"
+  },
+  "masonryLayout": [
+    {
+      "title": "Technical Optimization for AI Platforms",
+      "description": "Ensure your website is ready for AI-driven search engines. From implementing structured data to optimizing site performance, we make sure your digital presence aligns with the requirements of answer engines like ChatGPT and Bard.",
+      "img": "/assets/images/services/aeo-2.webp",
+      "alt": "Technical Optimization"
+    },
+    {
+      "title": "Content Strategies for AI Visibility",
+      "description": "Create content that resonates with AI-driven platforms and delivers the answers users are searching for. Our strategies focus on clear, concise, and engaging content optimized for visibility on generative AI tools.",
+      "img": "/assets/images/services/aeo-3.webp",
+      "alt": "Content Strategies"
+    },
+    {
+      "title": "Reputation and Authority Building",
+      "description": "Expand your digital footprint beyond your website. We help build your authority across trusted platforms, ensuring your content ranks highly on AI-driven search engines like Bing AI and Perplexity.",
+      "img": "/assets/images/services/aeo-4.webp",
+      "alt": "Reputation Building"
+    }
+  ],
+
+  "faqItems": [
+    {
+      "question": "What is Answer Engine Optimization (AEO)?",
+      "answer": "AEO is the process of optimizing your digital content to rank as a top answer on AI-driven platforms like ChatGPT, Bard AI, and Bing AI."
+    },
+    {
+      "question": "How does AEO benefit my business?",
+      "answer": "AEO positions your content as a trusted, authoritative answer to user queries, increasing visibility and engagement in AI-driven search results."
+    },
+    {
+      "question": "Can AEO work with traditional SEO strategies?",
+      "answer": "Yes, AEO complements traditional SEO by optimizing your content for AI-driven answer engines while maintaining visibility in standard search results."
+    },
+    {
+      "question": "What types of businesses can benefit from AEO?",
+      "answer": "Any business looking to improve its digital visibility and adapt to the future of search can benefit from AEO, especially those in competitive industries."
+    },
+    {
+      "question": "How long does it take to see AEO results?",
+      "answer": "Timelines vary based on your industry and strategy, but most businesses start seeing improvements within a few months of implementation."
+    }
+  ],
+  "cta": {
+    "title": "Ready to Lead in AI Search?",
+    "description": "Contact us today to learn how Answer Engine Optimization can transform your digital strategy and position your business as a leader in the AI-driven future of search.",
+    "buttonText": "Get a Free Consultation",
+    "buttonLink": "/contact"
+  }
+}

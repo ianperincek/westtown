@@ -1,0 +1,230 @@
+---
+import BaseLayout from "src/layouts/BaseLayout.astro";
+import CTA from "@components/CTA.astro";
+import "src/styles/services.scss";
+
+// import TabbedScroll from "@components/TemplateComponents/TabbedScroll.astro";
+
+interface Props {
+title: string;
+details: string;
+}
+
+const { title, details } = Astro.props as Props;
+
+import FaqPage from "@components/TemplateComponents/FaqPage.astro";
+import type { FAQItem } from "@components/TemplateComponents/FaqPage.astro";
+const faqItems: FAQItem[] = [
+{
+question: "What is SEO and why is it important?",
+answer:
+"SEO, or Search Engine Optimization, is the process of improving your website to increase its visibility on search
+engines like Google. Effective SEO helps your website rank higher in search results, driving more traffic to your
+business. For businesses in Chicago, SEO is especially important for attracting local customers and staying ahead of
+competitors.",
+},
+{
+question: "How long does it take to see SEO results?",
+answer:
+"SEO is a long-term strategy, and results typically start to show within 3 to 6 months. However, the timeline can vary
+depending on factors like the competitiveness of your industry, your target audience, and the current state of your
+website. Local SEO efforts in Chicago can sometimes yield quicker results for businesses targeting specific
+neighborhoods.",
+},
+{
+question: "What are Core Web Vitals, and how do they impact SEO?",
+answer:
+"Core Web Vitals are a set of metrics that measure your website's loading speed, interactivity, and visual stability.
+These factors directly affect both user experience and SEO performance. Google considers Core Web Vitals when ranking
+websites, making them crucial for businesses aiming to improve their search visibility, especially in competitive areas
+like Chicago.",
+},
+{
+question: "Do you offer technical SEO services?",
+answer:
+"Yes, we provide comprehensive technical SEO services tailored to your needs. This includes optimizing your site's
+architecture, improving crawlability, resolving errors, and implementing schema markup to enhance search visibility. As
+a Chicago-based SEO agency, we specialize in helping local businesses gain a competitive edge in search rankings.",
+},
+{
+question: "Will you optimize my site for mobile?",
+answer:
+"Absolutely! Mobile optimization is critical for SEO, especially with Google's mobile-first indexing. We ensure your
+website is responsive, fast-loading, and user-friendly across all devices, making it easier for Chicago customers to
+engage with your site on the go.",
+},
+{
+question: "How do you track SEO performance?",
+answer:
+"We use industry-leading tools like Google Analytics and Google Search Console to monitor your website's traffic,
+rankings, and performance. Additionally, we provide detailed reports, allowing Chicago businesses to see measurable
+improvements over time and track their ROI on SEO efforts.",
+},
+];
+
+---
+
+<!-- <img
+src="/assets/images/services/pexels-photo-3861958.webp"
+alt="Design word cloud"
+/> -->
+<BaseLayout title="Chicago SEO, SEM & Performance Optimization Services | Westtown Websites"
+  description="Boost your website’s visibility and performance with Westtown Websites. As a Chicago-based SEO, SEM, and PPC agency, we specialize in keyword optimization, Core Web Vitals audits, and technical SEO consulting to help your business succeed.">
+  <section class="serviceAboutSection">
+    <div class="container">
+      <div class="serviceAboutSection__row">
+        <div class="aboutContent">
+          <h1>
+            Chicago SEO & <span class="abMark">Performance Optimization Services</span>
+          </h1>
+          <article class="service-section">
+            <p>
+              Are you searching for expert SEO services in Chicago to increase your website's traffic and drive business
+              growth?
+              At Westtown Websites, we specialize in building fast, high-performing websites that not only rank higher
+              on search
+              engines like Google but also provide a seamless experience for your audience.
+            </p>
+            <p>
+              With tailored SEO and performance optimization strategies, we transform your website into a powerful asset
+              that supports
+              your business goals. Whether you need local SEO for Chicago, technical SEO consulting, or help with Core
+              Web Vitals,
+              our team is here to help. Ready to elevate your online presence? Let’s collaborate to make it happen!
+            </p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="masonry-layout">
+    <div class="masonry-layout__grid">
+      <article class="masonry-layout__card masonry-layout__card--1">
+        <header>
+          <h3 class="masonry-layout__card-title">Technical SEO</h3>
+        </header>
+        <p class="masonry-layout__card-description">
+          We ensure your website's architecture is SEO-friendly, covering crawlability, sitemaps, and schema markup.
+          As a leading technical SEO consultant in Chicago, we help search engines easily index and rank your website,
+          giving you a competitive edge in search results.
+        </p>
+      </article>
+
+      <article class="masonry-layout__card masonry-layout__card--2">
+        <header>
+          <h3 class="masonry-layout__card-title">Core Web Vitals</h3>
+        </header>
+        <p class="masonry-layout__card-description">
+          We optimize for Google's Core Web Vitals, focusing on key metrics like site speed, responsiveness, and visual
+          stability. These enhancements not only improve user experience but also boost your SEO rankings, ensuring your
+          website performs exceptionally well in competitive markets like Chicago.
+        </p>
+      </article>
+
+      <article class="masonry-layout__card masonry-layout__card--3">
+        <header>
+          <h3 class="masonry-layout__card-title">Mobile Optimization</h3>
+        </header>
+        <p class="masonry-layout__card-description">
+          With mobile-first indexing as the standard, we make sure your website is fully optimized for mobile devices.
+          This includes fast loading times, responsive design, and a seamless experience, enabling you to capture the
+          growing audience of mobile users in Chicago and beyond.
+        </p>
+      </article>
+
+      <article class="masonry-layout__card masonry-layout__card--4">
+        <header>
+          <h3 class="masonry-layout__card-title">On-Page SEO</h3>
+        </header>
+        <p class="masonry-layout__card-description">
+          We enhance your website's content, metadata, and keyword structure to ensure high rankings for relevant
+          searches.
+          Our on-page SEO approach is designed to help both search engines and users easily find and engage with your
+          content.
+        </p>
+      </article>
+
+      <article class="masonry-layout__card masonry-layout__card--5">
+        <header>
+          <h3 class="masonry-layout__card-title">Performance Monitoring</h3>
+        </header>
+        <p class="masonry-layout__card-description">
+          Continuous monitoring is key to maintaining SEO success. We use advanced tools to track your website's
+          performance,
+          making necessary adjustments to optimize load times and search rankings. With our support, your Chicago
+          business
+          stays ahead of the competition.
+        </p>
+      </article>
+
+
+    </div>
+  </section>
+
+  <FaqPage faqs={faqItems} />
+
+  <CTA title="Ready to Boost Your Website’s Performance?" description={` Let Westtown Websites provide affordable SEO
+    services and performance optimization to help you rank higher, load faster, and turn visitors into customers. `}
+    buttonText="Get Started Today" buttonLink="/contact" />
+</BaseLayout>
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is SEO and why is it important?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "SEO, or Search Engine Optimization, is the process of improving your website to increase its visibility on search engines like Google. Effective SEO helps your website rank higher in search results, driving more traffic to your business. For businesses in Chicago, SEO is especially important for attracting local customers and staying ahead of competitors."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take to see SEO results?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "SEO is a long-term strategy, and results typically start to show within 3 to 6 months. However, the timeline can vary depending on factors like the competitiveness of your industry, your target audience, and the current state of your website. Local SEO efforts in Chicago can sometimes yield quicker results for businesses targeting specific neighborhoods."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are Core Web Vitals, and how do they impact SEO?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Core Web Vitals are a set of metrics that measure your website's loading speed, interactivity, and visual stability. These factors directly affect both user experience and SEO performance. Google considers Core Web Vitals when ranking websites, making them crucial for businesses aiming to improve their search visibility, especially in competitive areas like Chicago."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer technical SEO services?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we provide comprehensive technical SEO services tailored to your needs. This includes optimizing your site's architecture, improving crawlability, resolving errors, and implementing schema markup to enhance search visibility. As a Chicago-based SEO agency, we specialize in helping local businesses gain a competitive edge in search rankings."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will you optimize my site for mobile?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely! Mobile optimization is critical for SEO, especially with Google's mobile-first indexing. We ensure your website is responsive, fast-loading, and user-friendly across all devices, making it easier for Chicago customers to engage with your site on the go."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you track SEO performance?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We use industry-leading tools like Google Analytics and Google Search Console to monitor your website's traffic, rankings, and performance. Additionally, we provide detailed reports, allowing Chicago businesses to see measurable improvements over time and track their ROI on SEO efforts."
+        }
+      }
+    ]
+  }
+</script>
+
+
+<script src="/assets/js/services.js" defer></script>

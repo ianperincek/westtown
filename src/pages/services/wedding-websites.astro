@@ -1,0 +1,722 @@
+---
+import BaseLayout from "src/layouts/BaseLayout.astro";
+import CTA from "@components/CTA.astro";
+
+interface Props {
+  title: string;
+  details: string;
+}
+
+const { title, details } = Astro.props as Props;
+---
+
+<!-- <img
+src="/assets/images/services/pexels-photo-3861958.webp"
+alt="Design word cloud"
+/> -->
+<BaseLayout>
+  <section class="serviceAboutSection">
+    <div class="container">
+      <div class="serviceAboutSection__row">
+        <div class="aboutContent">
+          <h1>
+            Create Your <span class="abMark"> Dream Wedding</span> Website.
+          </h1>
+          <article class="service-section">
+            <p>
+              Custom wedding websites designed to reflect your love story and
+              simplify your big day.
+            </p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style lang="scss">
+    .serviceAboutSection {
+      padding: 52px 0 172px;
+      overflow-x: hidden;
+
+      &:hover img {
+        filter: none;
+      }
+
+      @media screen and (min-width: 62rem) {
+        padding-bottom: 0;
+      }
+    }
+
+    .container {
+      width: 100%;
+
+      margin-right: auto;
+      margin-left: auto;
+
+      @media (min-width: 576px) {
+      }
+
+      @media (min-width: 768px) {
+      }
+
+      @media (min-width: 62rem) {
+        overflow: hidden;
+      }
+
+      @media (min-width: 1200px) {
+      }
+
+      @media (min-width: 1400px) {
+      }
+    }
+
+    .serviceAboutSection__row {
+      --bs-gutter-x: 1.5rem;
+      --bs-gutter-y: 0;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 0;
+
+      width: 100%;
+
+      @media screen and (min-width: 62rem) {
+        margin-top: calc(-1 * var(--bs-gutter-y));
+        margin-right: calc(-0.5 * var(--bs-gutter-x));
+        margin-left: calc(-0.5 * var(--bs-gutter-x));
+      }
+    }
+
+    .serviceAboutSection__col {
+      flex: 0 0 auto;
+      width: 100%;
+
+      @media (min-width: 62rem) {
+        width: 50%;
+      }
+    }
+
+    .serviceAbout01Thumb {
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+
+      img {
+        position: relative;
+        filter: grayscale(1) brightness(0.5);
+        max-width: 100%;
+        transition: all ease 0.5s;
+
+        // &:hover {
+        //   filter: none;
+        // }
+      }
+
+      @media screen and (min-width: 62rem) {
+        img {
+          position: absolute;
+        }
+      }
+    }
+
+    .aboutContent {
+      padding: var(--sectionPadding);
+      max-width: 920px;
+      margin: 0 auto;
+
+      @media screen and (min-width: 62rem) {
+        padding-top: 4rem;
+      }
+    }
+
+    .aboutContentColR {
+      padding-right: calc(var(--bs-gutter-x) * 0.5);
+      padding-left: calc(var(--bs-gutter-x) * 0.5);
+      margin-top: var(--bs-gutter-y);
+      background: var(--secondary);
+      z-index: 2;
+      position: relative;
+      flex-shrink: 0;
+      width: 100%;
+      max-width: 100%;
+      height: 100%;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        background: var(--secondary);
+        z-index: -1;
+      }
+
+      @media (min-width: 992px) {
+        width: 50%;
+      }
+    }
+
+    .aboutContent h1 {
+      font-size: 2.5rem;
+      line-height: 3rem;
+      font-weight: 700;
+      letter-spacing: -0.6px;
+      text-transform: uppercase;
+      z-index: 5;
+      position: relative;
+      margin-bottom: 2rem;
+
+      .abMark {
+        color: var(--accent-coral);
+      }
+
+      @media (min-width: 62rem) {
+        font-size: 3.125rem;
+        line-height: 3.5rem;
+      }
+    }
+
+    .abMark {
+      color: var(--primary-color);
+    }
+
+    .service-section {
+      p {
+        color: var(--bodyTextColor);
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+      }
+
+      @media (min-width: 62rem) {
+        p {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  </style>
+
+  <section class="masonry-layout">
+    <div class="masonry-layout__grid">
+      <article class="masonry-layout__card masonry-layout__card--1">
+        <header>
+          <h2 class="masonry-layout__card-title">
+            Why Settle for a Generic Wedding Website?
+          </h2>
+        </header>
+        <p class="masonry-layout__card-description">
+          Your love story is one of a kind, so why should your wedding website
+          be any different? We believe your site should be just as unique as
+          your journey together. With a custom wedding website, you can do more
+          than share your details—you can showcase your style, manage your RSVPs
+          effortlessly, and give your guests a personalized experience they’ll
+          never forget. From interactive timelines to custom galleries, we
+          create websites that are beautiful, functional, and completely
+          tailored to you.
+        </p>
+      </article>
+      <article class="masonry-layout__card masonry-layout__card--2">
+        <header>
+          <h3 class="masonry-layout__card-title">
+            Custom RSVP & Guest Management
+          </h3>
+        </header>
+        <p class="masonry-layout__card-description">
+          Manage RSVPs with custom forms and track guest information easily.
+        </p>
+      </article>
+      <article class="masonry-layout__card masonry-layout__card--3">
+        <header>
+          <h3 class="masonry-layout__card-title">Event Timeline & Countdown</h3>
+        </header>
+        <p class="masonry-layout__card-description">
+          Share your wedding schedule and important event details with an
+          interactive timeline.
+        </p>
+      </article>
+      <article class="masonry-layout__card masonry-layout__card--4">
+        <header>
+          <h3 class="masonry-layout__card-title">Gift Registry Integration</h3>
+        </header>
+        <p class="masonry-layout__card-description">
+          Link all your registries in one place and make it easy for guests to
+          choose a gift.
+        </p>
+      </article>
+      <article class="masonry-layout__card masonry-layout__card--5">
+        <header>
+          <h3 class="masonry-layout__card-title">
+            Post-Wedding Photo Galleries
+          </h3>
+        </header>
+        <p class="masonry-layout__card-description">
+          Share photos and memories from your big day with an easy-to-browse
+          gallery.
+        </p>
+      </article>
+      <article class="masonry-layout__card masonry-layout__card--6">
+        <header>
+          <h3 class="masonry-layout__card-title">
+            Custom Domains & Email Invitations
+          </h3>
+        </header>
+        <p class="masonry-layout__card-description">
+          Personalize your website with a custom domain and matching email
+          invitations.
+        </p>
+      </article>
+      <article class="masonry-layout__card masonry-layout__card--7">
+        <header>
+          <h3 class="masonry-layout__card-title">
+            Live Streaming & Virtual Guestbook
+          </h3>
+        </header>
+        <p class="masonry-layout__card-description">
+          Allow guests to participate remotely and leave messages in a digital
+          guestbook.
+        </p>
+      </article>
+
+      <article class="masonry-layout__card masonry-layout__card--8">
+        <header>
+          <h3 class="masonry-layout__card-title">
+            Email Template Design & Integration
+          </h3>
+        </header>
+        <p class="masonry-layout__card-description">
+          We create custom, responsive email templates and handle the
+          integration with your email platform for seamless guest communication.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="pricing">
+    <div class="container">
+      <h2>Packages Designed for Every Couple</h2>
+      <div class="pricing-table">
+        <div class="pricing-option">
+          <h3>Basic Package</h3>
+          <p>Custom design, RSVP system, guest management, and more</p>
+          <span class="price">$???</span>
+          <ul>
+            <li>Up to 3 pages</li>
+            <li>Event timeline</li>
+            <li>Custom domain</li>
+            <li>Mobile-friendly</li>
+          </ul>
+        </div>
+
+        <div class="pricing-option">
+          <h3>Standard Package</h3>
+          <p>Includes gift registry integration, photo gallery, and more</p>
+          <span class="price">$???</span>
+          <ul>
+            <li>Up to 10 pages</li>
+            <li>Advanced RSVP system</li>
+            <li>Custom photo gallery</li>
+            <li>Custom email invitations</li>
+          </ul>
+        </div>
+
+        <div class="pricing-option">
+          <h3>Premium Package</h3>
+          <p>
+            Full package with live streaming, post-wedding updates, and more
+          </p>
+          <span class="price">$???</span>
+          <ul>
+            <li>Unlimited pages</li>
+            <li>Live streaming integration</li>
+            <li>Virtual guestbook</li>
+            <li>Advanced photo/video gallery</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style lang="scss">
+    section.pricing {
+      padding: var(--sectionPadding);
+      background-color: var(--secondaryBgLight);
+    }
+
+    .pricing .container {
+      max-width: 75rem;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .pricing h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: var(--bodyTextColor);
+    }
+
+    .pricing-table {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .pricing-option {
+      background: #fff;
+      border: 0.063rem solid #ddd;
+      border-radius: 0.5rem;
+
+      padding: 2rem;
+      max-width: 21.875rem;
+      flex: 1;
+      transition: transform 0.3s ease;
+    }
+
+    .pricing-option:hover {
+      transform: translateY(-0.625rem);
+    }
+
+    .pricing-option h3 {
+      font-size: 1.5rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .pricing-option p {
+      font-size: 1rem;
+      color: var(--bodyTextColor);
+      margin-bottom: 1.5rem;
+    }
+
+    .pricing-option .price {
+      display: block;
+      font-size: 2rem;
+      color: var(--accent-coral);
+      margin-bottom: 1.5rem;
+    }
+
+    .pricing-option ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .pricing-option ul li {
+      font-size: 1rem;
+      color: #333;
+      padding: 0.5rem 0;
+      border-bottom: 0.063rem solid var(--secondaryBgLight);
+    }
+
+    .pricing-option ul li:last-child {
+      border-bottom: none;
+    }
+
+    @media (max-width: 47.99rem) {
+      .pricing h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .pricing-table {
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+
+      .pricing-option {
+        max-width: 100%;
+        padding: 1.5rem;
+      }
+
+      .pricing-option h3 {
+        font-size: 1.25rem;
+      }
+
+      .pricing-option .price {
+        font-size: 1.75rem;
+      }
+
+      .pricing-option ul li {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+  <CTA
+    title="Ready to Grow Your Online Presence?"
+    description={`Contact us today to
+  schedule a consultation and start building a custom website that sets your business apart.`}
+    buttonText="Click here to get in touch"
+    buttonLink="/contact"
+  />
+</BaseLayout>
+
+<style lang="scss">
+  .custom-design {
+    padding: var(--sectionPadding);
+
+    max-width: 1280px;
+    gap: 10rem;
+    margin: 0 auto;
+
+    @media (min-width: 48rem) {
+      display: grid;
+      grid-template-columns: auto 500px;
+    }
+  }
+
+  .custom-design article {
+  }
+
+  .custom-design__container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .custom-design__heading {
+    margin-bottom: 20px;
+  }
+
+  .custom-design__intro {
+    margin-bottom: 20px;
+  }
+
+  .custom-design__description {
+    margin-bottom: 40px;
+  }
+
+  .custom-design__subheading {
+    margin-bottom: 2rem;
+
+    @media screen and (min-width: 48rem) {
+      font-size: 2rem;
+    }
+  }
+
+  .custom-design__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .custom-design__list-item {
+    margin-bottom: 30px;
+  }
+
+  .custom-design__list-title {
+    margin-bottom: 10px;
+  }
+
+  .custom-design__list-description {
+    margin-bottom: 20px;
+  }
+
+  .custom-design__offer-description {
+    margin-bottom: 20px;
+    max-width: 500px;
+  }
+
+  .custom-design__offer-title {
+    margin-bottom: 10px;
+  }
+
+  .custom-design__offer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+  }
+
+  .custom-design__offer-item {
+    margin-bottom: 10px;
+  }
+
+  .custom-design__offer-note {
+    margin-bottom: 40px;
+    font-size: 1rem;
+
+    @media screen and (min-width: 48rem) {
+      grid-column: span 2;
+      font-size: 1.2rem;
+    }
+  }
+
+  .custom-design__benefits-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .custom-design__benefit-item {
+    margin-bottom: 15px;
+  }
+
+  .custom-design__cta {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .custom-design__cta-text {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .custom-design__cta-description {
+    margin-bottom: 0;
+  }
+
+  .masonry-layout {
+    background: var(--secondary);
+    padding: var(--sectionPadding);
+  }
+
+  .masonry-layout__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+
+  .masonry-layout__header {
+    text-align: center;
+    margin-bottom: 40px;
+    background: var(--accent-coral) url(/assets/images/services/10.jpg)
+      no-repeat 0 0;
+    background-size: cover;
+    height: min-content;
+    border-radius: 22px;
+    height: 450px;
+    display: flex;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+
+    @media (min-width: 48rem) {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+  }
+
+  .masonry-layout__title {
+    margin-bottom: 20px;
+    color: red;
+  }
+
+  .masonry-layout__subtitle {
+    margin-bottom: 40px;
+    color: red;
+
+    @media (min-width: 48rem) {
+    }
+  }
+
+  .masonry-layout__grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    max-width: 1280px;
+    margin: 0 auto;
+
+    @media (min-width: 48rem) {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-auto-rows: minmax(200px, auto);
+    }
+  }
+
+  .masonry-layout__card {
+    padding: 1rem;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--primaryLight);
+
+    @media (min-width: 48rem) {
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+
+      header {
+        width: 50%;
+      }
+    }
+
+    @media (min-width: 82rem) {
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  // .masonry-layout__card--1 {
+  //   flex: 0 1 30%;
+  // }
+
+  // .masonry-layout__card--2 {
+  //   flex: 0 1 70%;
+  // }
+
+  // .masonry-layout__card--3,
+  // .masonry-layout__card--4 {
+  //   flex: 0 1 50%;
+  // }
+
+  // .masonry-layout__card--5 {
+  //   flex: 0 1 100%;
+  // }
+
+  // .masonry-layout__card--6 {
+  //   flex: 0 1 50%;
+  // }
+
+  .masonry-layout__card-title {
+    margin-bottom: 1.5rem;
+    color: var(--accent-blue);
+    color: #fff;
+    font-size: 1.2rem;
+
+    @media (min-width: 48rem) {
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .masonry-layout__card-description {
+    margin-bottom: 1.2rem;
+    font-size: 1rem;
+    color: var(--bodyTextColorWhite);
+
+    @media (min-width: 48rem) {
+      font-size: 1.2rem;
+    }
+  }
+
+  .masonry-layout__card-link {
+    color: var(--accent-coral);
+    text-decoration: none;
+    margin-top: auto;
+  }
+</style>
+
+<script>
+  // document.querySelectorAll(".accordion-button").forEach((button) => {
+  //   button.addEventListener("click", () => {
+  //     const accordionItem = button.parentElement;
+  //     const accordionContent =
+  //       accordionItem.querySelector(".accordion-content");
+  //     const accordionIcon = button.querySelector(".accordion-icon");
+
+  //     // Toggle active state
+  //     accordionItem.classList.toggle("active");
+
+  //     if (accordionItem.classList.contains("active")) {
+  //       accordionContent.style.maxHeight = accordionContent.scrollHeight + "px";
+  //       accordionIcon.textContent = "-";
+  //     } else {
+  //       accordionContent.style.maxHeight = 0;
+  //       accordionIcon.textContent = "+";
+  //     }
+  //   });
+  // });
+</script>

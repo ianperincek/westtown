@@ -1,0 +1,131 @@
+.serviceBlockWrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  height: 100vh;
+}
+
+.serviceBlock {
+  display: flex;
+  flex-direction: row;
+
+  @media (min-width: 48rem) {
+    height: 500px;
+  }
+}
+
+.serviceBlock__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 48rem) {
+    flex-direction: row;
+  }
+}
+
+.serviceBlock__item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  transition: all 0.2s; 
+  
+}
+
+.serviceBlock__item.dimmed {
+  opacity: 0.5;
+}
+
+.serviceBlock__button {
+  background: #f0f0f0;
+  border: none;
+  cursor: pointer;
+  width: 80px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.3s ease, flex 0.6s ease; 
+  
+  &:hover {
+    transform: translate(-.5rem)
+}
+}
+
+@media (min-width: 48rem) {
+  .serviceBlock__button {
+    height: 100%;
+    max-height: 500px;
+  }
+}
+
+.serviceBlock__buttonText {
+  writing-mode: vertical-rl;
+  transform: rotate(-180deg);
+  text-align: center;
+}
+
+.serviceBlock__itemActive .serviceBlock__buttonText { 
+  
+}
+
+.serviceBlock__button:hover,
+.serviceBlock__button:focus {
+  background-color: #e0e0e0;
+}
+
+.serviceBlock__itemActive .serviceBlock__button {
+  background-color: #005fcc;
+  color: #fff;
+}
+
+.serviceBlock__content {
+   overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.6s ease, opacity 0.6s ease;
+}
+
+.serviceBlock__itemActive .serviceBlock__content {
+  max-height: 500px; /* Adjust this value according to your content height */
+  opacity: 1;
+}
+
+.serviceBlock__item {
+  transition: flex-basis 1.2s ease;
+  flex-basis: 80px; 
+
+  &.serviceBlock__itemActive {
+    flex-basis: 100%; 
+  }
+}
+
+.serviceBlock__inner {
+  padding: 0;
+  overflow: hidden;
+  width: 0;
+  transition: opacity 0.5s ease , transform 0.5s ease .5s;
+  opacity: 0;
+  transform: translateY(-100%); 
+}
+
+.serviceBlock__itemActive .serviceBlock__inner {
+  opacity: 1;
+  transform: translateY(0); 
+  width: auto;
+  padding: 15px;
+}
+
+.serviceBlock__title {
+  margin-top: 0;
+}
+
+.serviceBlock__image img {
+  max-width: 100%;
+  height: auto;
+}
+
+

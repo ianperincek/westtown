@@ -1,0 +1,408 @@
+<section class="gallery-42 lazy-section">
+  <div class="cs-container">
+    <div class="cs-content">
+      <div class="cs-flex">
+        <span class="cs-topper">Our Portfolio</span>
+        <h3 class="cs-title">View Our Gallery</h3>
+        <h4>Our latest projects</h4>
+        <a href="https://www.osteriacourtney.us">Osteria Courtney</a>
+        <!-- <a href="https://www.solteclab.us">Soltec Lab</a> -->
+      </div>
+      <div class="cs-flex">
+        <p class="cs-text">
+          Check out some of my recent projects, including work I've completed
+          for other agencies. Each project showcases unique challenges and
+          solutions, reflecting my ability to create custom, high-performing
+          websites tailored to clients' needs.
+        </p>
+        <!-- <div aria-label="view more pictures" href="" class="cs-link">
+          View More
+        
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16.01 11H5C4.45 11 4 11.45 4 12C4 12.55 4.45 13 5 13H16.01V14.79C16.01 15.24 16.55 15.46 16.86 15.14L19.64 12.35C19.83 12.15 19.83 11.84 19.64 11.64L16.86 8.84999C16.55 8.52999 16.01 8.75999 16.01 9.19999V11Z"
+            fill="#14142B"></path>
+        </svg>
+      </div> -->
+      </div>
+    </div>
+    <div class="cs-image-group">
+      <picture class="cs-picture cs-picture-1">
+        <source
+          media="(max-width: 600px)"
+          srcset="/assets/images/portfolio/stateStreet-barbership-home.webp"
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="/assets/images/portfolio/stateStreet-barbership-home.webp"
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="/assets/images/portfolio/stateStreet-barbership-home.webp"
+          alt="formerly dress you people outside"
+          width="380"
+          height="271"
+        />
+      </picture>
+      <picture class="cs-picture cs-picture-2">
+        <source
+          media="(max-width: 600px)"
+          srcset="/assets/images/portfolio/redken.webp"
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="/assets/images/portfolio/redken.webp"
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="/assets/images/portfolio/redken.webp"
+          alt="Hanes Xtemp"
+          width="380"
+          height="271"
+        />
+      </picture>
+      <picture class="cs-picture cs-picture-3">
+        <source
+          media="(max-width: 600px)"
+          srcset="/assets/images/portfolio/soltecLabs.webp"
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="/assets/images/portfolio/soltecLabs.webp"
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="/assets/images/portfolio/soltecLabs.webp"
+          alt="Soltec Lab"
+          width="780"
+          height="582"
+        />
+      </picture>
+      <picture class="cs-picture cs-picture-4">
+        <source
+          media="(max-width: 600px)"
+          srcset="/assets/images/portfolio/o-courtney.webp"
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="/assets/images/portfolio/o-courtney.webp"
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="/assets/images/portfolio/o-courtney.webp"
+          alt="recital"
+          width="780"
+          height="582"
+        />
+      </picture>
+      <picture class="cs-picture cs-picture-5">
+        <img
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orchestra5.jpg"
+          alt="formal evening"
+          width="380"
+          height="271"
+        />
+      </picture>
+      <picture class="cs-picture cs-picture-6">
+        <source
+          media="(max-width: 600px)"
+          srcset="/assets/images/portfolio/cover-dead.webp"
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="/assets/images/portfolio/cover-dead.webp"
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="/assets/images/portfolio/cover-dead.webp"
+          alt="formal dinner"
+          width="380"
+          height="271"
+        />
+      </picture>
+    </div>
+  </div>
+
+  <style lang="scss">
+    /*-- -------------------------- -->
+<---          Gallery           -->
+<--- -------------------------- -*/
+    .lazy-section {
+      opacity: 0;
+      transform: translateY(50px);
+      transition:
+        opacity 0.6s ease-out,
+        transform 0.6s ease-out;
+    }
+
+    .lazy-section.loaded {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    /* Mobile */
+    @media only screen and (min-width: 0rem) {
+      .cs-content a {
+        color: #fff;
+        display: block;
+        margin: 0.8rem 0;
+      }
+      .cs-content h4 {
+        margin-bottom: 1rem;
+      }
+      .gallery-42 {
+        padding: var(--sectionPadding);
+        background: var(--secondaryBgLight);
+
+        .cs-container {
+          width: 100%;
+          max-width: calc(1280 / 16 * 1rem);
+          margin: auto;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          /* 48px - 64px */
+          gap: clamp(3rem, 6vw, 4rem);
+        }
+
+        .cs-content {
+          /* set text align to left if content needs to be left aligned */
+          text-align: left;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          /* centers content horizontally, set to flex-start to left align */
+          align-items: flex-start;
+        }
+
+        .cs-text {
+          margin-bottom: calc(16 / 16 * 1rem);
+          max-width: calc(630 / 16 * 1rem);
+          &:last-of-type {
+            margin-bottom: calc(32 / 16 * 1rem);
+          }
+        }
+
+        .cs-link {
+          font-size: calc(15 / 16 * 1rem);
+          font-weight: 700;
+          text-decoration: none;
+          line-height: 1.5em;
+          width: calc(100 / 16 * 1rem);
+          color: var(--headerColor);
+          position: relative;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          &:before {
+            content: "";
+            position: absolute;
+            display: block;
+            height: 2px;
+            width: 100%;
+            background: currentColor;
+            opacity: 1;
+            bottom: calc(-3 / 16 * 1rem);
+            left: 0;
+          }
+          &:hover {
+            svg {
+              transform: translateX(0.4375rem);
+            }
+          }
+
+          svg {
+            width: calc(24 / 16 * 1rem);
+            height: calc(24 / 16 * 1rem);
+            transition: transform 0.3s;
+          }
+        }
+
+        .cs-image-group {
+          width: 100%;
+          height: auto;
+          display: grid;
+          grid-template-columns: repeat(12, 1fr);
+          grid-template-rows: repeat(6, 31vw);
+          /* 16px - 20px */
+          gap: clamp(0.5rem, 1.5vw, 1.25rem);
+        }
+
+        .cs-picture {
+          display: block;
+          position: relative;
+          border: 2px solid var(--primaryLight);
+
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+
+        .cs-picture-1 {
+          grid-column: 1 / span 6;
+          grid-row: span 1;
+        }
+
+        .cs-picture-2 {
+          grid-column: 7 / span 6;
+          grid-row: span 1;
+        }
+
+        .cs-picture-3 {
+          grid-column: 1 / span 12;
+          grid-row: 2 / span 2;
+        }
+
+        .cs-picture-4 {
+          grid-column: 1 / span 12;
+          grid-row: 4 / span 2;
+        }
+
+        .cs-picture-5 {
+          grid-column: 1 / span 6;
+          grid-row: 6 / span 1;
+        }
+
+        .cs-picture-6 {
+          grid-column: 7 / span 6;
+          grid-row: 6 / span 1;
+        }
+      }
+    }
+
+    /* Tablet */
+    @media only screen and (min-width: 48rem) {
+      .gallery-42 {
+        .cs-content {
+          flex-direction: row;
+          justify-content: space-between;
+          gap: calc(48 / 16 * 1rem);
+        }
+
+        .cs-flex {
+          min-width: 45%;
+        }
+
+        .cs-image-group {
+          /* 116px - 210px */
+          grid-template-rows: repeat(3, clamp(7.25rem, 16vw, 13.125rem));
+        }
+
+        .cs-picture-1 {
+          grid-column: 1 / span 3;
+          grid-row: 1 / span 1;
+        }
+
+        .cs-picture-2 {
+          grid-column: 4 / span 3;
+          grid-row: 1 / span 1;
+        }
+
+        .cs-picture-3 {
+          grid-column: 1 / span 6;
+          grid-row: 2 / span 2;
+        }
+
+        .cs-picture-4 {
+          grid-column: 7 / span 6;
+          grid-row: 1 / span 2;
+        }
+
+        .cs-picture-5 {
+          grid-column: 7 / span 3;
+          grid-row: 3 / span 1;
+        }
+
+        .cs-picture-6 {
+          grid-column: 10 / span 3;
+          grid-row: 3 / span 1;
+        }
+      }
+    }
+
+    /* Dark mode */
+    @media only screen and (min-width: 0rem) {
+      body.dark-mode {
+        .gallery-42 {
+          background: var(--secondary);
+          .cs-title,
+          .cs-text,
+          .cs-topper {
+            color: var(--bodyTextColorWhite);
+          }
+
+          .cs-link {
+            color: var(--bodyTextColorWhite);
+
+            &:before {
+              background: var(--bodyTextColorWhite);
+            }
+
+            svg {
+              path {
+                fill: var(--bodyTextColorWhite);
+              }
+            }
+          }
+        }
+      }
+    }
+  </style>
+
+  <script>
+    const gallery = document.querySelector(".gallery-42");
+
+    // Create an IntersectionObserver
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          document.body.classList.add("dark-mode");
+        } else {
+          document.body.classList.remove("dark-mode");
+        }
+      });
+    });
+
+    // Start observing the .gallery-42 element
+    observer.observe(gallery);
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const lazySection = document.querySelector(".lazy-section");
+
+      // Create a new IntersectionObserver instance
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Once the section is in view, add the class to show it
+            lazySection.classList.add("loaded");
+            // Stop observing after it's loaded
+            observer.unobserve(lazySection);
+          }
+        });
+      });
+
+      // Observe the section
+      observer.observe(lazySection);
+    });
+  </script>
+</section>

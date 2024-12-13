@@ -1,0 +1,360 @@
+---
+import BaseLayout from "src/layouts/BaseLayout.astro";
+title: "West Town Style Guide";
+---
+
+<BaseLayout title="Styleguide" description="Westtown Websites Style Guide">
+  <!-- Style Guide Section -->
+  <section class="style-guide">
+    <h1 class="cs-title">WestTown Style Guide</h1>
+    <!-- Text Styles -->
+    <div class="text-styles">
+      <h2 class="cs-topper">Text Style Demonstrations</h2>
+      <p class="cs-topper">This is the Topper style.</p>
+      <h1 class="cs-title">This is the Title style.</h1>
+      <p class="cs-text">
+        This is the Body Text style, used for general content on the website. It
+        includes line-height and margin adjustments.
+      </p>
+    </div>
+    <!-- Color Swatches -->
+    <!-- Main Color Swatches -->
+    <div class="swatches">
+      <div class="swatches">
+        <h2 class="cs-topper">Color Swatches</h2>
+        <div class="swatch-container">
+          <div class="swatch" style="background-color: var(--primary);">
+            <span class="hex-code">#124e66</span>
+            <span class="variable-name">(Dark Teal — var(--primary))</span>
+          </div>
+          <div class="swatch" style="background-color: var(--primaryLight);">
+            <span class="hex-code">#748d92</span>
+            <span class="variable-name"
+              >(Light Grayish Teal — var(--primaryLight))</span
+            >
+          </div>
+          <div class="swatch" style="background-color: var(--secondary);">
+            <span class="hex-code">#2e3944</span>
+            <span class="variable-name">(Slate Gray — var(--secondary))</span>
+          </div>
+          <div class="swatch" style="background-color: var(--headerColor);">
+            <span class="hex-code">#1a1a1a</span>
+            <span class="variable-name">(Black — var(--headerColor))</span>
+          </div>
+          <div class="swatch" style="background-color: var(--bodyTextColor);">
+            <span class="hex-code">#212a31</span>
+            <span class="variable-name"
+              >(Very Dark Slate Gray — var(--bodyTextColor))</span
+            >
+          </div>
+          <div
+            class="swatch"
+            style="background-color: var(--bodyTextColorWhite);"
+          >
+            <span class="hex-code">#d3d9d4</span>
+            <span class="variable-name"
+              >(Light Gray — var(--secondaryBgLight))</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Bright Accent Colors -->
+      <div class="swatches">
+        <h2 class="cs-topper">Bright Accent Colors</h2>
+        <div class="swatch-container">
+          <div class="swatch" style="background-color: var(--accent-yellow);">
+            <span class="hex-code">#FFD700</span>
+            <span class="variable-name"
+              >(Bright Yellow — var(--accent-yellow))</span
+            >
+          </div>
+          <div class="swatch" style="background-color: var(--accent-orange);">
+            <span class="hex-code">#FF5733</span>
+            <span class="variable-name"
+              >(Bright Orange — var(--accent-orange))</span
+            >
+          </div>
+          <div class="swatch" style="background-color: var(--accent-coral);">
+            <span class="hex-code">#00BFFF</span>
+            <span class="variable-name"
+              >(Bright Blue — var(--accent-coral))</span
+            >
+          </div>
+          <div class="swatch" style="background-color: var(--accent-orange);">
+            <span class="hex-code">#32CD32</span>
+            <span class="variable-name"
+              >(Bright Green — var(--accent-orange))</span
+            >
+          </div>
+          <div class="swatch" style="background-color: var(--accent-purple);">
+            <span class="hex-code">#A020F0</span>
+            <span class="variable-name"
+              >(Bright Purple — var(--accent-purple))</span
+            >
+          </div>
+          <div class="swatch" style="background-color: var(--accent-pink);">
+            <span class="hex-code">#FF69B4</span>
+            <span class="variable-name">(Bright Pink — var(--accent-pink))</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Bright Accent and Muted Pairing Swatches -->
+      <div class="swatches">
+        <h2 class="cs-topper">Accent Colors with Pairing Suggestions</h2>
+        <div class="swatch-container">
+          <!-- Bright Yellow and Dark Teal -->
+          <div class="swatch-pair">
+            <div class="swatch" style="background-color: var(--accent-yellow);">
+              <span class="hex-code">#FFD700</span>
+              <span class="variable-name"
+                >(Bright Yellow — var(--accent-yellow))</span
+              >
+            </div>
+            <div class="swatch" style="background-color: var(--primary);">
+              <span class="hex-code">#124E66</span>
+              <span class="variable-name">(Dark Teal — var(--primary))</span>
+            </div>
+          </div>
+
+          <!-- Bright Orange and Slate Gray -->
+          <div class="swatch-pair">
+            <div class="swatch" style="background-color: var(--accent-orange);">
+              <span class="hex-code">#FF5733</span>
+              <span class="variable-name"
+                >(Bright Orange — var(--accent-orange))</span
+              >
+            </div>
+            <div class="swatch" style="background-color: var(--secondary);">
+              <span class="hex-code">#2E3944</span>
+              <span class="variable-name">(Slate Gray — var(--secondary))</span>
+            </div>
+          </div>
+
+          <!-- Bright Blue and Light Grayish Teal -->
+          <div class="swatch-pair">
+            <div class="swatch" style="background-color: var(--accent-coral);">
+              <span class="hex-code">#00BFFF</span>
+              <span class="variable-name"
+                >(Bright Blue — var(--accent-coral))</span
+              >
+            </div>
+            <div class="swatch" style="background-color: var(--primaryLight);">
+              <span class="hex-code">#748D92</span>
+              <span class="variable-name"
+                >(Light Grayish Teal — var(--primaryLight))</span
+              >
+            </div>
+          </div>
+
+          <!-- Bright Green and Black -->
+          <div class="swatch-pair">
+            <div class="swatch" style="background-color: var(--accent-orange);">
+              <span class="hex-code">#32CD32</span>
+              <span class="variable-name"
+                >(Bright Green — var(--accent-orange))</span
+              >
+            </div>
+            <div class="swatch" style="background-color: var(--headerColor);">
+              <span class="hex-code">#1A1A1A</span>
+              <span class="variable-name">(Black — var(--headerColor))</span>
+            </div>
+          </div>
+
+          <!-- Bright Purple and Very Dark Slate Gray -->
+          <div class="swatch-pair">
+            <div class="swatch" style="background-color: var(--accent-purple);">
+              <span class="hex-code">#A020F0</span>
+              <span class="variable-name"
+                >(Bright Purple — var(--accent-purple))</span
+              >
+            </div>
+            <div class="swatch" style="background-color: var(--bodyTextColor);">
+              <span class="hex-code">#212A31</span>
+              <span class="variable-name"
+                >(Very Dark Slate Gray — var(--bodyTextColor))</span
+              >
+            </div>
+          </div>
+
+          <!-- Bright Pink and Light Gray -->
+          <div class="swatch-pair">
+            <div class="swatch" style="background-color: var(--accent-pink);">
+              <span class="hex-code">#FF69B4</span>
+              <span class="variable-name"
+                >(Bright Pink — var(--accent-pink))</span
+              >
+            </div>
+            <div
+              class="swatch"
+              style="background-color: var(--bodyTextColorWhite);"
+            >
+              <span class="hex-code">#D3D9D4</span>
+              <span class="variable-name"
+                >(Light Gray — var(--bodyTextColorWhite))</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Style Guide CSS -->
+    <style>
+      .style-guide {
+        padding: 2rem;
+      }
+
+      .swatches {
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+      }
+
+      .swatch-container {
+        display: flex;
+        gap: 1rem;
+      }
+
+      .swatch {
+        flex: 1;
+        padding: 1rem;
+        text-align: center;
+        color: #fff;
+        font-weight: bold;
+        border-radius: 8px;
+      }
+
+      .text-styles {
+        margin-top: 2rem;
+      }
+
+      .cs-topper {
+        font-size: var(--topperFontSize, 1rem);
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        color: var(--bodyTextColor, #212a31);
+      }
+
+      .cs-title {
+        font-size: var(--headerFontSize, 2.5rem);
+        font-weight: 900;
+        margin-bottom: 1rem;
+        color: var(--headerColor, #1a1a1a);
+      }
+
+      .cs-text {
+        font-size: var(--bodyFontSize, 1rem);
+        color: var(--bodyTextColor, #212a31);
+        line-height: 1.5;
+      }
+
+      .swatch-container {
+        display: flex;
+        gap: 1rem;
+      }
+      .swatch {
+        flex: 1;
+        padding: 1rem;
+        text-align: center;
+        color: #fff;
+        font-weight: bold;
+        border-radius: 8px;
+      }
+
+      .swatches {
+        margin-bottom: 2rem;
+      }
+      .swatch-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+      .swatch-pair {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      .swatch {
+        padding: 1.5rem;
+        text-align: center;
+        color: #fff;
+        font-weight: bold;
+        border-radius: 8px;
+        flex: 1;
+      }
+
+      .swatch {
+        padding: 1.5rem;
+        text-align: center;
+        color: #fff;
+        font-weight: bold;
+        border-radius: 8px;
+      }
+
+      .swatch-pair {
+        display: flex;
+        gap: 1rem;
+      }
+
+      .hex-code {
+        display: block;
+        font-size: 1rem;
+        margin-bottom: 0.2rem;
+      }
+
+      .variable-name {
+        font-size: 0.9rem;
+        font-style: italic;
+      }
+    </style>
+  </section>
+
+  <section>
+    <div class="swatch deep-red">Deep Red</div>
+    <div class="swatch vibrant-orange">Vibrant Orange</div>
+    <div class="swatch deep-blue">Deep Blue</div>
+    <div class="swatch muted-purple">Muted Purple</div>
+    <div class="swatch soft-green">Soft Green</div>
+    <div class="swatch light-grey">Light Grey</div>
+    <div class="swatch dark-charcoal">Dark Charcoal</div>
+    <style>
+      .swatch {
+        width: 150px;
+        height: 100px;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white; /* Adjust text color as needed */
+        font-weight: bold;
+      }
+
+      .deep-red {
+        background-color: #601010;
+      }
+      .vibrant-orange {
+        background-color: #f28500;
+        color: black;
+      } /* Black text for better contrast */
+      .deep-blue {
+        background-color: #131a2b;
+      }
+      .muted-purple {
+        background-color: #4b3049;
+      }
+      .soft-green {
+        background-color: #93c572;
+        color: black;
+      } /* Black text for better contrast */
+      .light-grey {
+        background-color: #f2f2f2;
+        color: black;
+      } /* Black text for better contrast */
+      .dark-charcoal {
+        background-color: #333333;
+      }
+    </style>
+  </section>
+</BaseLayout>

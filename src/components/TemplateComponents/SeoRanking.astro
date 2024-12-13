@@ -1,0 +1,128 @@
+<section id="sbs-r" class="sbs-r">
+  <div class="cs-container">
+    <!-- Left Image Section -->
+    <div class="cs-left">
+      <picture class="cs-picture cs-picture1">
+        <source
+          media="(max-width: 600px)"
+          srcset="/assets/images/worker/at-work.jpg"
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="/assets/images/worker/at-work.jpg"
+        />
+        <img
+          aria-hidden="true"
+          decoding="async"
+          src="/assets/images/worker/at-work.jpg"
+          alt="house"
+          loading="lazy"
+          width="400"
+          height="560"
+        />
+      </picture>
+    </div>
+    <!-- Right Content Section-->
+    <div class="cs-right">
+      <span class="cs-topper">SEO Ranking</span>
+      <h2 class="cs-title">We’ll bring the customers to your doorstep.</h2>
+      <p class="cs-text">
+        Contact us today to learn more about how we can help you achieve your
+        business goals through a powerful online presence.
+      </p>
+      <p class="cs-text">
+        <strong>Accessibility: </strong>
+        <br />
+        An accessible website isn't just about inclusivity - it's a smart business
+        move. By adhering to web accessibility standards,you'll improve your SEO,
+        reach a wider audience, and create a positive brand image that fosters customer
+        loyalty.
+      </p>
+      <p class="cs-text">
+        <strong>Fluid Websites:</strong> Your website will adapt seamlessly to any
+        screen size, ensuring new clients can easily access your content from any
+        device, anywhere.
+      </p>
+      <p class="cs-text">
+        <strong>Optimization:</strong> We prioritize mobile performance for top search
+        engine rankings.
+      </p>
+    </div>
+  </div>
+</section>
+
+<style lang="scss">
+  @media only screen and (min-width: 0em) {
+    body.dark-mode {
+      .sbs-r {
+        .cs-left {
+          &:before,
+          &:after {
+            background: var(--accent);
+          }
+        }
+
+        .cs-picture2 {
+          background-color: var(--dark);
+
+          border: clamp(0.375em, 1.5vw, 0.75em) solid var(--dark);
+        }
+
+        .cs-topper {
+          color: var(--bodyTextColorWhite);
+        }
+
+        .cs-title,
+        .cs-text,
+        .cs-h3,
+        .cs-flex-p,
+        .cs-name {
+          color: var(--bodyTextColorWhite);
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 64em) {
+    .sbs-r {
+      .cs-container {
+        flex-flow: row;
+        justify-content: space-between;
+        gap: 3.25rem; // Converted from (52/16rem)
+      }
+
+      .cs-left {
+        font-size: min(1.2vw, 1em);
+        /* sends it to the right */
+        order: 2;
+        flex: none;
+      }
+
+      .cs-right {
+        margin: 0;
+      }
+    }
+  }
+
+  /* Desktop - 1024px */
+  @media only screen and (min-width: 64em) {
+    .sbs-r {
+      .cs-container {
+        flex-flow: row;
+        justify-content: space-between;
+        gap: 3.25rem; // Converted from (52/16rem)
+      }
+
+      .cs-left {
+        font-size: min(1.2vw, 1em);
+        /* sends it to the right */
+        order: 2;
+        flex: none;
+      }
+
+      .cs-right {
+        margin: 0;
+      }
+    }
+  }
+</style>

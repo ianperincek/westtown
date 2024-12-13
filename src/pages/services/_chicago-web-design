@@ -1,0 +1,264 @@
+---
+import BaseLayout from "src/layouts/BaseLayout.astro";
+import CTA from "@components/CTA.astro";
+import "src/styles/services.scss";
+
+interface Props {
+  title: string;
+  details: string;
+}
+
+const { title, details } = Astro.props as Props;
+
+import FaqPage from "@components/TemplateComponents/FaqPage.astro";
+import type { FAQItem } from "@components/TemplateComponents/FaqPage.astro";
+const faqItems: FAQItem[] = [
+  {
+    question: "How long does it take to build a custom website?",
+    answer:
+      "A five-page brochure site can be live in as little as two weeks, provided our communication is consistent and client deliverables are ready.",
+  },
+  {
+    question: "How can local SEO help my Chicago business?",
+    answer:
+      "Local SEO helps your business rank higher in Chicago-specific searches, driving more local traffic. It includes optimizing your Google My Business profile, using localized keywords, and ensuring your business appears in local map listings.",
+  },
+  {
+    question:
+      "What’s the difference between a custom website and a template-based one?",
+    answer:
+      "A custom website is built specifically for your brand and business needs, offering a unique design and functionality. Template-based websites, while faster to build, can look generic and offer limited customization options.",
+  },
+  {
+    question: "How much does a custom website cost?",
+    answer:
+      "Custom website costs vary depending on the complexity and features. We offer affordable solutions for small businesses, starting with simple brochure sites and scaling to e-commerce platforms.",
+  },
+  {
+    question: "Can I update my website myself?",
+    answer:
+      "Yes! We build websites using content management systems (CMS) like WordPress, which allow you to easily update content without technical skills. We also provide training to help you manage your site confidently.",
+  },
+  {
+    question: "How do you ensure my website stays secure?",
+    answer:
+      "We use trusted hosting services, perform regular security updates, and monitor your site for vulnerabilities. We also provide backups and security audits to ensure your website remains safe and operational.",
+  },
+  {
+    question: "Do you offer ongoing website maintenance?",
+    answer:
+      "Yes, we provide ongoing website maintenance, including updates, security checks, performance improvements, and content management, ensuring your website stays current and functional.",
+  },
+];
+---
+
+<!-- <img
+src="/assets/images/services/pexels-photo-3861958.webp"
+alt="Design word cloud"
+/> -->
+<BaseLayout
+  title="Chicago Web Design & Local SEO Services | Westtown Websites"
+  description="Dominate Chicago’s local search results with our expert web design and SEO services. Westtown Websites helps local businesses improve their search rankings and grow their online visibility in Chicago."
+>
+  <section class="serviceAboutSection">
+    <div class="container">
+      <div class="serviceAboutSection__row">
+        <div class="aboutContent">
+          <h1>
+            Helping Chicago Small Businesses <span class="abMark">Thrive</span>
+            and <span class="abMark">Grow Locally</span>.
+          </h1>
+          <article class="service-section">
+            <p>
+              Westtown Websites is passionate about supporting local Chicago
+              small businesses. Your website should not just be a digital
+              presence but a powerful tool to drive local engagement, attract
+              customers, and grow your business.
+            </p>
+
+            <p>
+              We understand the unique challenges faced by Chicago’s small
+              business community, and we’re here to help you succeed by building
+              websites that are custom-tailored to your needs. Whether it’s
+              improving your SEO to target local customers or offering
+              affordable and scalable solutions, our goal is to help your
+              business thrive in the competitive Chicago market.
+            </p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="masonry-layout">
+    <div class="masonry-layout__grid">
+      <article class="masonry-layout__card masonry-layout__card--1">
+        <header>
+          <h3 class="masonry-layout__card-title">
+            Custom Design & Chicago Branding
+          </h3>
+        </header>
+        <p class="masonry-layout__card-description">
+          First impressions matter, especially for local businesses in Chicago.
+          We design websites that capture your brand’s identity and connect with
+          your Chicago customers. From color schemes to imagery, we ensure every
+          aspect of your site speaks to your audience in a way that resonates
+          with the local community.
+        </p>
+      </article>
+
+      <article class="masonry-layout__card masonry-layout__card--2">
+        <header>
+          <h3 class="masonry-layout__card-title">
+            Local SEO for Chicago Businesses
+          </h3>
+        </header>
+        <p class="masonry-layout__card-description">
+          Optimizing your website for local Chicago SEO helps your business rank
+          higher in local search results, bringing in more foot traffic and
+          online engagement. We target local keywords, integrate Google My
+          Business, and use structured data to improve your visibility across
+          Chicago neighborhoods and beyond.
+        </p>
+      </article>
+
+      <article class="masonry-layout__card masonry-layout__card--3">
+        <header>
+          <h3 class="masonry-layout__card-title">
+            Shop Local Campaign Integration
+          </h3>
+        </header>
+        <p class="masonry-layout__card-description">
+          Join the movement to support local Chicago businesses. Our integrated
+          "Shop Local" campaigns encourage community engagement, increase brand
+          loyalty, and highlight your role in the Chicago economy. We help you
+          reach more local customers by connecting your online presence with
+          local initiatives.
+        </p>
+      </article>
+
+      <article class="masonry-layout__card masonry-layout__card--4">
+        <header>
+          <h3 class="masonry-layout__card-title">
+            Affordable Website Solutions for Chicago Entrepreneurs
+          </h3>
+        </header>
+        <p class="masonry-layout__card-description">
+          Small businesses in Chicago often have limited budgets, but that
+          shouldn’t stop you from having a professional online presence. We
+          provide flexible and affordable website solutions tailored for Chicago
+          entrepreneurs, whether you need a simple brochure site or a full-scale
+          e-commerce platform.
+        </p>
+      </article>
+
+      <article class="masonry-layout__card masonry-layout__card--5">
+        <header>
+          <h3 class="masonry-layout__card-title">
+            Website Maintenance & Support for Chicago Businesses
+          </h3>
+        </header>
+        <p class="masonry-layout__card-description">
+          Keeping your website updated and secure is crucial for your success in
+          the Chicago market. Our ongoing website maintenance and support
+          services ensure your site is always performing at its best, allowing
+          you to focus on running your business while we take care of the
+          technical details.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="custom-design">
+    <article>
+      <h3 class="custom-design__subheading">
+        Special Offer for Small Businesses!
+      </h3>
+      <p class="custom-design__offer-description">
+        We understand that budgets can be tight for small businesses, but that
+        shouldn’t stop you from having a high-performing, professional website.
+        That’s why we offer a 5-page brochure website for just $175 a month,
+        with an 8-month minimum.
+      </p>
+    </article>
+
+    <aside>
+      <h4 class="custom-design__offer-title">What’s included:</h4>
+      <ul class="custom-design__offer-list">
+        <li class="custom-design__offer-item">Hosting & DNS Management</li>
+        <li class="custom-design__offer-item">On-Page SEO</li>
+        <li class="custom-design__offer-item">24/7 Uptime Monitoring</li>
+        <li class="custom-design__offer-item">Google Analytics Integration</li>
+        <li class="custom-design__offer-item">
+          Google Business Listing & Schema Installation
+        </li>
+      </ul>
+    </aside>
+
+    <p class="custom-design__offer-note">
+      <strong>Own your content and domain:</strong> You’ll own the domain name and
+      any images or content you provide. We’ll handle the code and hosting, making
+      sure everything runs like clockwork. If you prefer to own the code as well,
+      we offer a $1900 upfront option that provides the same services but gives you
+      full ownership.
+    </p>
+  </section>
+
+  <FaqPage faqs={faqItems} />
+
+  <CTA
+    title="Ready to Grow Your Online Presence?"
+    description={` Whether you need a custom website, local SEO optimization, or ongoing website support, we are here to help your Chicago business thrive. Contact us today for a free consultation and let’s create a digital strategy that works for your local audience.
+     `}
+    buttonText="Get Started Today"
+    buttonLink="/contact"
+  />
+</BaseLayout>
+
+<script>
+  // document.querySelectorAll(".accordion-button").forEach((button) => {
+  //   button.addEventListener("click", () => {
+  //     const accordionItem = button.parentElement;
+  //     const accordionContent =
+  //       accordionItem.querySelector(".accordion-content");
+  //     const accordionIcon = button.querySelector(".accordion-icon");
+
+  //     // Toggle active state
+  //     accordionItem.classList.toggle("active");
+
+  //     if (accordionItem.classList.contains("active")) {
+  //       accordionContent.style.maxHeight = accordionContent.scrollHeight + "px";
+  //       accordionIcon.textContent = "-";
+  //     } else {
+  //       accordionContent.style.maxHeight = 0;
+  //       accordionIcon.textContent = "+";
+  //     }
+  //   });
+  // });
+</script>
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How long does it take to build a custom website?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A five-page brochure site can be live in as little as two weeks, provided our communication is consistent, and client deliverables are ready."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you use templates for your websites?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We use custom design templates and reusable components that we’ve built. This ensures your website is tailored to your needs while also being efficient and scalable."
+        }
+      }
+    ]
+  }
+</script>
+<script src="/assets/js/services.js" defer></script>
